@@ -6,7 +6,7 @@ on:
     # '40 3-21' UTC couvre 05h40 → 22h40 à Paris en hiver (UTC+1) comme en été (UTC+2),
     # donc toutes les éditions de 06h à 23h. GitHub peut retarder le départ de quelques minutes.
     - cron: '40 3-21 * * *'
-  workflow_dispatch: {}   # bouton « Run workflow » pour lancer à la main
+  workflow_dispatch: {}   # bouton « Run workflow » pour lancer à la main (l'agent de veille l'utilise aussi si le flux est trop ancien)
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v5
@@ -37,14 +37,18 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: python collect_feeds.py
 
-      - name: Publier flux_2h.md
+      - name: Publier flux_2h.md et l'état (etat/)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add flux_2h.md
+          git add flux_2h.md etat/vus.json etat/ffc_connus.json
           if git diff --cached --quiet; then
             echo "Aucun changement."
           else
             git commit -m "Flux de veille : $(TZ=Europe/Paris date '+%d/%m %Hh%M')"
-            git push
+            # L'agent de veille écrit etat/traites.jsonl pendant la journée : on se recale avant de pousser
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              sleep 5
+            done
           fi
