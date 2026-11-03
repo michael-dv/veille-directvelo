@@ -37,6 +37,7 @@ PARIS = ZoneInfo("Europe/Paris")
 NOW = datetime.now(timezone.utc)
 SINCE = NOW - timedelta(hours=24)
 OUTPUT = "flux_2h.md"
+OUTPUT_DELTA = "flux_delta.md"  # version légère : Tendances, Nouveautés, Statut technique
 TIMEOUT = 10  # secondes par requête
 MAX_ITEMS = 40  # par section
 ETAT = "etat"                                  # état persistant, versionné dans le dépôt
@@ -69,11 +70,16 @@ GN_EDITIONS = {
 }
 
 
-def google_news(query, lang="fr", days=1, hours=None):
+GN_EXCLUSIONS = "-accident -procès -meurtre -football"  # faits divers et autres sports, exclus dès la requête
+
+
+def google_news(query, lang="fr", days=1, hours=None, exclure=True):
     """Flux RSS Google News d'une recherche, limité aux N derniers jours (ou N dernières heures).
-    Les liens renvoyés sont des redirections news.google.com vers l'article."""
+    Les liens renvoyés sont des redirections news.google.com vers l'article.
+    exclure=True ajoute les exclusions de faits divers (désactivé pour les sources officielles)."""
     window = f"{hours}h" if hours else f"{days}d"
-    return f"https://news.google.com/rss/search?q={quote_plus(f'{query} when:{window}')}&{GN_EDITIONS[lang]}"
+    q = f"{query} {GN_EXCLUSIONS}" if exclure else query
+    return f"https://news.google.com/rss/search?q={quote_plus(f'{q} when:{window}')}&{GN_EDITIONS[lang]}"
 
 
 # ---------------------------------------------------------------- radar tendances
@@ -93,6 +99,29 @@ WATCHLIST = {
 }
 TREND_KEYWORDS = ["cyclisme", "cycliste", "velo", "peloton", "tour de france", "giro", "vuelta", "cyclo-cross"] + \
     [v for variants in WATCHLIST.values() for v in variants if len(v) > 4]
+# Filtre lexical des résultats Google News : au moins un terme cycliste explicite, aucun terme de fait divers.
+CYCLING_TERMS = ["cyclisme", "cycliste", "cyclistes", "velo", "velos", "coureur", "coureurs", "coureuse", "coureuses",
+                 "peloton", "etape", "cyclo-cross", "cyclocross", "piste", "velodrome", "koers", "veldrijden", "veldrit",
+                 "wielrennen", "wielrenner", "renner", "ciclismo", "ciclista", "cycling", "cyclist", "rider", "riders",
+                 "race", "uci", "worldtour", "ffc"]
+CYCLING_OUTLETS = ["directvelo", "cyclism actu", "cyclismactu", "velo101", "cyclingnews", "wielerflits", "velo club",
+                   "tuttobiciweb", "ciclo21", "escape collective", "cyclingweekly", "procyclinguk", "velonews", "idl procycling"]
+EXCLUDED_TERMS = ["accident", "proces", "meurtre", "football", "faits divers", "fait divers"]
+
+
+def gn_ok(title, mode="strict"):
+    """mode strict : terme cycliste obligatoire + exclusions ; exclude : exclusions seules ; none : tout passe."""
+    if mode == "none":
+        return True
+    n = " " + norm(title) + " "
+    if any(f" {w} " in n for w in EXCLUDED_TERMS):
+        return False
+    if mode == "exclude":
+        return True
+    terms = CYCLING_TERMS + TREND_KEYWORDS + CYCLING_OUTLETS
+    return any(f" {t} " in n or f" {t}-" in n or f"-{t} " in n for t in terms)
+
+
 # Mots qui ne commencent jamais un nom propre détecté automatiquement
 STOP_START = {"le", "la", "les", "l", "un", "une", "des", "du", "de", "d", "ce", "cette", "ces", "il", "elle", "ils", "on",
               "pour", "avec", "dans", "sur", "apres", "avant", "comment", "pourquoi", "quand", "qui", "que", "quel", "quelle",
@@ -210,18 +239,18 @@ CONFIG = {
     ],
     # Sources officielles et antidopage : fenêtre de 3 jours (communiqués rares mais décisifs)
     "officiel": [
-        {"name": "ITA, cyclisme (via Google News)", "feeds": [google_news("site:ita.sport cycling", "en", 3)]},
-        {"name": "AFLD (via Google News)", "feeds": [google_news("site:afld.fr", "fr", 3)]},
-        {"name": "UCI, communiqués (via Google News)", "feeds": [google_news("site:uci.org", "en", 3)]},
-        {"name": "UEC (via Google News)", "feeds": [google_news("site:uec.ch", "en", 3)]},
+        {"name": "ITA, cyclisme (via Google News)", "gn_filter": "none", "feeds": [google_news("site:ita.sport cycling", "en", 3, exclure=False)]},
+        {"name": "AFLD (via Google News)", "gn_filter": "none", "feeds": [google_news("site:afld.fr", "fr", 3, exclure=False)]},
+        {"name": "UCI, communiqués (via Google News)", "gn_filter": "none", "feeds": [google_news("site:uci.org", "en", 3, exclure=False)]},
+        {"name": "UEC (via Google News)", "gn_filter": "none", "feeds": [google_news("site:uec.ch", "en", 3, exclure=False)]},
         {"name": "UCI, enregistrement des équipes 2027 (via Google News)",
-         "feeds": [google_news('UCI ("2027") (enregistrement OR licence OR "liste des équipes" OR WorldTeam OR ProTeam)', "fr", 3),
-                   google_news('UCI ("2027") ("team registration" OR "registered teams" OR licence OR WorldTeam OR ProTeam)', "en", 3)],
+         "gn_filter": "none", "feeds": [google_news('UCI ("2027") (enregistrement OR licence OR "liste des équipes" OR WorldTeam OR ProTeam)', "fr", 3, exclure=False),
+                   google_news('UCI ("2027") ("team registration" OR "registered teams" OR licence OR WorldTeam OR ProTeam)', "en", 3, exclure=False)],
          "prefiltered": True, "merge": True},
         {"name": "TAS / CAS, cyclisme (via Google News)",
-         "feeds": [google_news('("Tribunal arbitral du sport" OR TAS OR "Court of Arbitration for Sport" OR CAS) (cyclisme OR cycling OR cycliste OR cyclist)', "fr", 7)]},
+         "gn_filter": "none", "feeds": [google_news('("Tribunal arbitral du sport" OR TAS OR "Court of Arbitration for Sport" OR CAS) (cyclisme OR cycling OR cycliste OR cyclist)', "fr", 7, exclure=False)]},
         {"name": "Discipline FFC (via Google News)",
-         "feeds": [google_news('(FFC OR "Fédération française de cyclisme") (sanction OR suspension OR suspendu OR "commission de discipline" OR radiation)', "fr", 3)]},
+         "gn_filter": "none", "feeds": [google_news('(FFC OR "Fédération française de cyclisme") (sanction OR suspension OR suspendu OR "commission de discipline" OR radiation)', "fr", 3, exclure=False)]},
     ],
     # Annonces des équipes françaises (Google News, requête par équipe + verbes d'annonce)
     "equipes": ["Groupama-FDJ United", "Decathlon CMA CGM", "Cofidis", "TotalEnergies", "Unibet Rose Rockets",
@@ -296,8 +325,14 @@ def fetch_feed(source):
         if r is not None and r.ok:
             parsed = feedparser.parse(r.content)
             if parsed.entries:
-                record(source["name"], url, code, len(parsed.entries))
-                return parsed.entries
+                entries = parsed.entries
+                if "news.google.com" in url:
+                    mode = source.get("gn_filter", "strict")
+                    kept = [e for e in entries if gn_ok(e.get("title", ""), mode)]
+                    record(source["name"], url, code, len(kept), f"{len(entries) - len(kept)} écarté(s) par le filtre lexical" if len(kept) < len(entries) else "")
+                    return kept
+                record(source["name"], url, code, len(entries))
+                return entries
             record(source["name"], url, code, 0, "réponse sans entrées de flux")
         else:
             record(source["name"], url, code)
@@ -314,9 +349,10 @@ def fetch_feed(source):
         url = google_news(query, lang, days)
         r, code = get(url)
         parsed = feedparser.parse(r.content) if r is not None and r.ok else None
-        record(source["name"], url, code, len(parsed.entries) if parsed else 0, "repli Google News")
+        kept = [e for e in parsed.entries if gn_ok(e.get("title", ""), source.get("gn_filter", "strict"))] if parsed else []
+        record(source["name"], url, code, len(kept), "repli Google News")
         if parsed:
-            return parsed.entries
+            return kept
     return []
 
 
@@ -395,8 +431,62 @@ def section_pqr():
     return blocks
 
 
+CYCLISMACTU_SITEMAPS = ["https://www.cyclismactu.net/sitemap-news.xml", "https://www.cyclismactu.net/sitemap_news.xml",
+                        "https://www.cyclismactu.net/news-sitemap.xml", "https://www.cyclismactu.net/sitemap.xml"]
+CYCLISMACTU_PAGES = ["https://www.cyclismactu.net/cyclisme/", "https://www.cyclismactu.net/"]
+
+
+def fetch_cyclismactu():
+    """Cyclism'Actu : sitemap news si disponible, sinon liste des articles des pages Cyclisme et Accueil
+    (le flux RSS public ne contient que 5 éléments)."""
+    name = "Cyclism'Actu"
+    for url in CYCLISMACTU_SITEMAPS:
+        r, code = get(url)
+        if not r or not r.ok or "<url" not in r.text:
+            record(name + " (sitemap)", url, code, 0, "absent ou vide" if r is not None else "")
+            continue
+        soup = BeautifulSoup(r.content, "html.parser")
+        out = []
+        for u in soup.find_all("url"):
+            loc = u.find("loc")
+            if not loc or "/news-" not in loc.get_text():
+                continue
+            title = u.find(re.compile("title$"))
+            date = u.find(re.compile("publication_date$")) or u.find("lastmod")
+            e = {"title": title.get_text(strip=True) if title else loc.get_text(strip=True).rsplit("/", 1)[-1],
+                 "link": loc.get_text(strip=True)}
+            if date:
+                try:
+                    e["published_parsed"] = datetime.fromisoformat(date.get_text(strip=True).replace("Z", "+00:00")).utctimetuple()
+                except ValueError:
+                    pass
+            out.append(e)
+        record(name + " (sitemap)", url, code, len(out))
+        if out:
+            return out
+    for url in CYCLISMACTU_PAGES:
+        r, code = get(url)
+        if not r or not r.ok:
+            record(name + " (page)", url, code)
+            continue
+        soup = BeautifulSoup(r.text, "html.parser")
+        seen, out = set(), []
+        for a in soup.find_all("a", href=True):
+            href = urljoin(url, a["href"])
+            title = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
+            if "/news-" not in href or href in seen or len(title) < 15:
+                continue
+            seen.add(href)
+            out.append({"title": title, "link": href})
+        record(name + " (page)", url, code, len(out), "lecture de la page (heures non disponibles)")
+        if out:
+            return out
+    return fetch_feed(next(s for s in CONFIG["medias"] if s["name"] == name))
+
+
 def section_medias():
-    return [(src["name"], recent(fetch_feed(src))) for src in CONFIG["medias"]]
+    return [(src["name"], recent(fetch_cyclismactu() if src["name"] == "Cyclism'Actu" else fetch_feed(src)))
+            for src in CONFIG["medias"]]
 
 
 def bluesky_token():
@@ -504,7 +594,33 @@ def section_reddit():
     return recent(fetch_feed(CONFIG["reddit"]))
 
 
+def section_ffc_jina():
+    """Rendu JavaScript de la page FFC via le service de lecture r.jina.ai (Markdown avec les liens)."""
+    url = "https://r.jina.ai/https://ffc.fr/ressources/"
+    try:
+        r = requests.get(url, headers={"User-Agent": HEADERS["User-Agent"], "Accept": "text/plain"}, timeout=45)
+        code = f"{r.status_code} {'OK' if r.ok else r.reason}"
+    except requests.RequestException as e:
+        record("FFC Ressources (rendu r.jina.ai)", url, f"Erreur ({type(e).__name__})")
+        return []
+    out, seen = [], set()
+    if r.ok:
+        for m in re.finditer(r"\[([^\]]{3,300})\]\((https?://(?:www\.)?ffc\.fr/ressources/[^/)\s]+/[^/)\s]+/?)\)", r.text):
+            title, href = m.group(1), m.group(2)
+            title = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", title)
+            title = re.sub(r"\s+", " ", re.sub(r"^(Document|Télécharger)\s+", "", title.replace("*", ""))).strip()
+            if href in seen or not title:
+                continue
+            seen.add(href)
+            out.append((title, href))
+    record("FFC Ressources (rendu r.jina.ai)", url, code, len(out), "" if out else "aucun lien de document dans le rendu")
+    return out
+
+
 def section_ffc():
+    jina = section_ffc_jina()
+    if jina:
+        return jina
     src = CONFIG["ffc"]
     for url in src["urls"]:
         r, code = get(url)
@@ -573,7 +689,7 @@ def load_traites():
 def load_surveillance():
     try:
         with open(SURVEILLANCE, encoding="utf-8") as f:
-            return [l.strip() for l in f if l.strip() and not l.strip().startswith("#")]
+            return [l.strip().strip('"').strip() for l in f if l.strip() and not l.strip().startswith("#")]
     except OSError:
         return []
 
@@ -603,7 +719,7 @@ def section_surveillance():
     for i in range(0, len(names), 6):
         chunk = names[i:i + 6]
         q = "(" + " OR ".join(f'"{n}"' for n in chunk) + ") (cyclisme OR vélo OR cycliste OR coureur OR équipe)"
-        src = {"name": f"Surveillance nominative ({chunk[0]} …)", "feeds": [google_news(q, "fr", 1)]}
+        src = {"name": f"Surveillance nominative ({chunk[0]} …)", "feeds": [google_news(q, "fr", 1)], "gn_filter": "exclude"}
         out += recent(fetch_feed(src))
     seen, res = set(), []
     for it in sorted(out, key=lambda x: x[0] or NOW, reverse=True):
@@ -618,7 +734,7 @@ def section_equipes():
     for team in CONFIG["equipes"]:
         q = f'"{team}" (annonce OR officialise OR signe OR recrue OR prolonge OR "a signé" OR effectif OR arrivée OR départ)'
         out += [(dt, f"[{team}] {t}", l) for dt, t, l in recent(fetch_feed({"name": f"Équipe : {team} (via Google News)",
-                                                                              "feeds": [google_news(q, "fr", 1)]}))]
+                                                                              "feeds": [google_news(q, "fr", 1)], "gn_filter": "exclude"}))]
     seen, res = set(), []
     for it in sorted(out, key=lambda x: x[0] or NOW, reverse=True):
         if url_key(it[2]) not in seen:
@@ -782,6 +898,12 @@ def main():
 
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write("\n".join(md))
+    # Version légère pour les éditions horaires : en-tête, Tendances, Nouveautés, Statut technique
+    statut = md[md.index("## 10. Statut technique des sources"):]
+    delta = md[:4] + radar + nouv + statut
+    delta[0] = "# Flux de veille DirectVelo (delta horaire)"
+    with open(OUTPUT_DELTA, "w", encoding="utf-8") as f:
+        f.write("\n".join(delta))
     print(f"{OUTPUT} écrit ({len(STATUS)} requêtes).")
 
 
