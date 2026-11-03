@@ -1,0 +1,72 @@
+# Noms surveillés par le flux de veille (un par ligne). Les lignes commençant par # sont ignorées.
+# Le script cherche chaque jour ces noms dans Google News, par paquets de 6, associés à cyclisme / vélo / coureur / équipe.
+# Ajoutez ou retirez librement des noms : coureurs, clubs, encadrants, organisateurs.
+
+# --- Coureurs pros français sans contrat 2027 ou en suspens ---
+Victor Lafay
+Florian Sénéchal
+Rémy Rochas
+Enzo Paleni
+Axel Laurance
+Hugo-Fabien Renard-Haquin
+Rémi Capron
+Faure Prost
+Hennequin
+Wattelle
+Dauge
+Tesson
+Guernalec
+Delbove
+Vadic
+Primož Roglič
+
+# --- Jeunes et espoirs français suivis ---
+Aubin Sparfel
+Victor Devos
+Soren Bruyère Joumard
+Valentin Martinet
+Simon Defrance
+Louka Lesueur
+Zéphirin Le Normand-Lucas
+
+# --- Encadrants ---
+Cédric Barre
+Léo Peters
+Tony Hurel
+Grégory Pouvreault
+
+# --- Clubs de DN et Conti françaises ---
+VC Rouen 76
+CIC Pro Cycling Academy
+Vendée U
+UC Cholet 49
+VC Pays de Loudéac
+Team Bricquebec Cotentin
+Moyon Percy Manche Normandie
+Team 74-Haute-Savoie
+CR4C Roanne
+Charvieu-Chavagneux
+Bourg-en-Bresse Ain Cyclisme
+VC Villefranche Beaujolais
+AVC Aix Provence Dole
+ESEG Douai
+VCA Saint-Quentin
+Team Vittel
+Elite Fondations
+Béziers Méditerranée Cyclisme
+Atria-Clermont
+Belo Klub Malouin
+Team EliteOrga
+LMP-La Roche Vendée
+UC Haguenau
+VCU Schwenheim
+Nice Métropole Côte d'Azur
+Van Rysel-Roubaix
+
+# --- Équipes féminines françaises ---
+Tenvels Le Dévoluy
+Team Abadie-Magnan
+VC Morteau-Montbenoît
+Team Buffaz
+Vendée Féminine
+Cofidis Women
