@@ -44,12 +44,16 @@ BLUESKY_QUERIES = ["DirectVelo", "TotalEnergies", "Mercato cyclisme"]
 CONFIG = {
     "directvelo": {
         "name": "DirectVelo",
-        "feeds": ["https://www.directvelo.com/rss", "https://www.directvelo.com/rss.xml"],
+        "feeds": ["https://www.directvelo.com/rss/actualites", "https://www.directvelo.com/rss"],
         "home": "https://www.directvelo.com/actualites",
     },
     "gruppetto": {
         "name": "Le Gruppetto (forum)",
-        "feeds": ["https://legruppetto.fr/forum/app.php/feed", "https://www.legruppetto.fr/forum/app.php/feed"],
+        # Flux par forum (phpBB) : f=12 « Cyclisme sur route : Professionnels » (mercato,
+        # équipes, amateurs), f=13 « Cyclo-Cross, Piste, VTT & Autres disciplines ».
+        "forums": {"Route (pros, mercato, équipes, amateurs)": "https://legruppetto.fr/forum/feed.php?f=12",
+                   "Cyclo-cross, piste, VTT": "https://legruppetto.fr/forum/feed.php?f=13"},
+        "feeds": ["https://legruppetto.fr/forum/feed.php"],
         "home": "https://legruppetto.fr/forum/",
     },
     "pqr": [
@@ -61,14 +65,14 @@ CONFIG = {
         {"name": "Le Dauphiné Libéré", "feeds": ["https://www.ledauphine.com/sport/rss", "https://www.ledauphine.com/rss"], "home": "https://www.ledauphine.com/sport"},
     ],
     "medias": [
-        {"name": "Cyclism'Actu", "feeds": ["https://www.cyclismactu.net/rss.xml", "https://www.cyclismactu.net/rss"], "home": "https://www.cyclismactu.net/"},
+        {"name": "Cyclism'Actu", "feeds": ["https://www.cyclismactu.net/rss_social.xml", "https://www.cyclismactu.net/rss.xml"], "home": "https://www.cyclismactu.net/"},
         {"name": "Velo101", "feeds": ["https://www.velo101.com/feed", "https://www.velo101.com/feed/"], "home": "https://www.velo101.com/"},
         {"name": "WielerFlits", "feeds": ["https://www.wielerflits.nl/feed/", "https://www.wielerflits.nl/rss"], "home": "https://www.wielerflits.nl/"},
-        {"name": "In de Leiderstrui", "feeds": ["https://www.indeleiderstrui.nl/feed", "https://www.indeleiderstrui.nl/rss"], "home": "https://www.indeleiderstrui.nl/"},
+        {"name": "In de Leiderstrui", "feeds": ["https://www.indeleiderstrui.nl/sitemap/news.xml", "https://www.indeleiderstrui.nl/feed"], "home": "https://www.indeleiderstrui.nl/"},
         {"name": "Cyclingnews", "feeds": ["https://www.cyclingnews.com/feeds.xml", "https://www.cyclingnews.com/rss/"], "home": "https://www.cyclingnews.com/"},
     ],
     "reddit": {"name": "Reddit r/peloton", "feeds": ["https://www.reddit.com/r/peloton/new/.rss"], "home": None},
-    "ffc": {"name": "FFC Ressources", "url": "https://www.ffc.fr/ressources/"},
+    "ffc": {"name": "FFC Ressources", "urls": ["https://ffc.fr/ressources", "https://www.ffc.fr/ressources/"]},
 }
 
 STATUS = []  # (source, url, code, nb_elements, detail)
@@ -186,14 +190,21 @@ def section_directvelo():
 
 
 def section_gruppetto():
+    """Renvoie [(nom_du_forum, éléments)] à partir des flux par forum ;
+    repli sur le flux général filtré par sujets si ces flux ne répondent pas."""
     src = CONFIG["gruppetto"]
+    blocks = []
+    for label, url in src["forums"].items():
+        blocks.append((label, recent(fetch_feed({"name": f"Le Gruppetto ({label})", "feeds": [url]}))))
+    if any(items for _, items in blocks) or any(s[2].startswith("200") for s in STATUS if s[0].startswith("Le Gruppetto (")):
+        return blocks
     entries = fetch_feed(src)
 
     def text(e):
         cats = " ".join(t.get("term", "") + " " + (t.get("label") or "") for t in e.get("tags", []))
         return f"{cats} {e.get('title', '')}"
 
-    return recent(entries, GRUPPETTO_TOPICS, text)
+    return [("Flux général filtré", recent(entries, GRUPPETTO_TOPICS, text))]
 
 
 def section_pqr():
@@ -260,22 +271,27 @@ def section_reddit():
 
 def section_ffc():
     src = CONFIG["ffc"]
-    r, code = get(src["url"])
-    if not r or not r.ok:
-        record(src["name"], src["url"], code)
-        return []
-    soup = BeautifulSoup(r.text, "html.parser")
-    seen, out = set(), []
-    for a in soup.find_all("a", href=True):
-        href = urljoin(src["url"], a["href"])
-        # Les documents ont la forme /ressources/<rubrique>/<fichier>/
-        if not re.search(r"/ressources/[^/?#]+/[^/?#]+/?$", href) or href in seen:
+    for url in src["urls"]:
+        r, code = get(url)
+        if not r or not r.ok:
+            record(src["name"], url, code)
             continue
-        title = a.get_text(" ", strip=True) or a.get("title", "") or href
-        seen.add(href)
-        out.append((title, href))
-    record(src["name"], src["url"], code, len(out))
-    return out
+        soup = BeautifulSoup(r.text, "html.parser")
+        seen, out = set(), []
+        for a in soup.find_all("a", href=True):
+            href = urljoin(url, a["href"])
+            # Les documents ont la forme /ressources/<rubrique>/<fichier>/
+            if not re.search(r"/ressources/[^/?#]+/[^/?#]+/?$", href) or href in seen:
+                continue
+            title = re.sub(r"\s+", " ", a.get_text(" ", strip=True) or a.get("title", "") or href)
+            title = re.sub(r"^Document\s+", "", title)
+            seen.add(href)
+            out.append((title, href))
+        detail = "" if out else "page reçue mais aucun lien de document trouvé (page de protection ou contenu chargé en JavaScript ?)"
+        record(src["name"], url, code, len(out), detail)
+        if out:
+            return out
+    return []
 
 
 # ---------------------------------------------------------------- écriture
@@ -290,7 +306,9 @@ def main():
     ]
 
     md += ["## 1. Nos publications internes (DirectVelo)", ""] + lines(section_directvelo())
-    md += ["## 2. Forum Le Gruppetto (Transferts, Équipes, Amateurs, Cyclo-cross)", ""] + lines(section_gruppetto())
+    md += ["## 2. Forum Le Gruppetto (route pros : mercato, équipes, amateurs ; cyclo-cross)", ""]
+    for name, items in section_gruppetto():
+        md += [f"### {name}", ""] + lines(items)
 
     md += ["## 3. Presse quotidienne régionale (filtrée sur le cyclisme)", ""]
     for name, items in section_pqr():
