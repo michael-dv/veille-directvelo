@@ -3,7 +3,9 @@
 
 Récupère les publications des dernières 24 heures (DirectVelo, Le Gruppetto, PQR,
 médias spécialisés, Bluesky, Reddit, FFC Ressources, presse internationale,
-sources officielles et antidopage, bases de transferts et cyclo-cross) et écrit
+sources officielles et antidopage, bases de transferts et cyclo-cross), ajoute en
+tête un radar « Tendances & signaux Google Discover » (Google Trends France,
+médias sportifs grand public, sujets cités par 3 sources ou plus) et écrit
 un fichier Markdown statique, avec en fin de fichier le statut HTTP de chaque source.
 
 Toutes les adresses sont regroupées dans CONFIG ci-dessous : si une source passe
@@ -17,6 +19,8 @@ clé "gn", une recherche Google News équivalente.
 import os
 import re
 import time
+import unicodedata
+from collections import defaultdict
 import warnings
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin, quote_plus
@@ -58,10 +62,96 @@ GN_EDITIONS = {
 }
 
 
-def google_news(query, lang="fr", days=1):
-    """Flux RSS Google News d'une recherche, limité aux N derniers jours.
+def google_news(query, lang="fr", days=1, hours=None):
+    """Flux RSS Google News d'une recherche, limité aux N derniers jours (ou N dernières heures).
     Les liens renvoyés sont des redirections news.google.com vers l'article."""
-    return f"https://news.google.com/rss/search?q={quote_plus(f'{query} when:{days}d')}&{GN_EDITIONS[lang]}"
+    window = f"{hours}h" if hours else f"{days}d"
+    return f"https://news.google.com/rss/search?q={quote_plus(f'{query} when:{window}')}&{GN_EDITIONS[lang]}"
+
+
+# ---------------------------------------------------------------- radar tendances
+# Coureurs et équipes suivis en priorité (nom affiché -> variantes recherchées, sans accents ni majuscules).
+WATCHLIST = {
+    "Paul Seixas": ["seixas"], "Tadej Pogačar": ["pogacar"], "Jonas Vingegaard": ["vingegaard"],
+    "Mathieu van der Poel": ["van der poel", "vdp"], "Wout van Aert": ["van aert"], "Remco Evenepoel": ["evenepoel"],
+    "Julian Alaphilippe": ["alaphilippe"], "Romain Grégoire": ["romain gregoire"], "Lenny Martinez": ["lenny martinez"],
+    "Paul Magnier": ["magnier"], "Kévin Vauquelin": ["vauquelin"], "David Gaudu": ["gaudu"], "Valentin Madouas": ["madouas"],
+    "Pauline Ferrand-Prévot": ["ferrand-prevot", "ferrand prevot"], "Demi Vollering": ["vollering"],
+    "Primož Roglič": ["roglic"], "Thibau Nys": ["thibau nys"], "Émilien Jacquelin": ["jacquelin"],
+    "Decathlon CMA CGM": ["decathlon"], "Groupama-FDJ": ["groupama"], "Cofidis": ["cofidis"],
+    "TotalEnergies": ["totalenergies"], "Unibet Rose Rockets": ["unibet", "rose rockets"], "FDJ United-Suez": ["fdj united-suez", "fdj-suez"],
+    "Visma-Lease a Bike": ["visma"], "UAE Team Emirates": ["uae team", "uae emirates"], "Soudal Quick-Step": ["soudal"],
+    "Lidl-Trek": ["lidl-trek", "lidl trek"], "Netcompany Ineos": ["ineos"], "Alpecin": ["alpecin"], "Red Bull-Bora": ["red bull-bora", "bora"],
+    "Tour de France": ["tour de france"], "Giro": ["giro"], "Vuelta": ["vuelta"],
+}
+TREND_KEYWORDS = ["cyclisme", "cycliste", "velo", "peloton", "tour de france", "giro", "vuelta", "cyclo-cross"] + \
+    [v for variants in WATCHLIST.values() for v in variants if len(v) > 4]
+# Mots qui ne commencent jamais un nom propre détecté automatiquement
+STOP_START = {"le", "la", "les", "l", "un", "une", "des", "du", "de", "d", "ce", "cette", "ces", "il", "elle", "ils", "on",
+              "pour", "avec", "dans", "sur", "apres", "avant", "comment", "pourquoi", "quand", "qui", "que", "quel", "quelle",
+              "en", "et", "au", "aux", "mais", "ou", "son", "sa", "ses", "leur", "the", "a", "an", "in", "on", "for", "with",
+              "how", "why", "what", "het", "een", "il", "lo", "gli", "el", "los", "las", "video", "direct", "officiel",
+              "mercato", "transfert", "transferts", "cyclisme", "resultats", "classement", "classements", "photos"}
+SOURCE_NAMES = {"directvelo", "google news", "cyclingnews", "velo101", "wielerflits", "l equipe", "sporza", "hln"}
+
+
+def norm(text):
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9 -]+", " ", text.lower()).strip()
+
+
+def entities(title):
+    """Noms propres d'un titre : coureurs/équipes de la WATCHLIST + suites de 2 à 4 mots à majuscule."""
+    found, n = set(), " " + norm(title) + " "
+    for name, variants in WATCHLIST.items():
+        if any(f" {v} " in n or f" {v}-" in n or f"-{v} " in n for v in variants):
+            found.add(name)
+    for m in re.finditer(r"\b([A-ZÀ-Ý][\w'’-]+(?:\s+(?:van|der|de|du|le|la|den|von|di)?\s*[A-ZÀ-Ý][\w'’-]+){1,3})", title):
+        cand = re.sub(r"\s+", " ", m.group(1)).strip()
+        words = norm(cand).split()
+        if len(words) < 2 or words[0] in STOP_START or norm(cand) in SOURCE_NAMES:
+            continue
+        if any(norm(cand) in [norm(x) for x in found] or norm(cand) in norm(x) for x in found):
+            continue
+        found.add(cand)
+    return found
+
+
+TRACKED = defaultdict(set)  # entité -> ensemble des sources qui la citent
+
+
+def track(source, items):
+    for item in items:
+        title = item[1] if len(item) > 2 else item[0]
+        for ent in entities(title):
+            TRACKED[ent].add(source)
+    return items
+
+
+def velocity(min_sources=3, top=10):
+    hot = sorted(((e, len(s)) for e, s in TRACKED.items() if len(s) >= min_sources), key=lambda x: -x[1])
+    return hot[:top]
+
+
+def section_trends():
+    """Google Trends France (RSS) filtré sur le vélo : (sujet, trafic, article associé, lien)."""
+    url = "https://trends.google.com/trending/rss?geo=FR"
+    r, code = get(url)
+    entries = feedparser.parse(r.content).entries if r is not None and r.ok else []
+    out = []
+    for e in entries:
+        text = " ".join(str(v) for k, v in e.items() if k in ("title", "summary") or "news_item" in k)
+        if not any(k in " " + norm(text) + " " for k in TREND_KEYWORDS):
+            continue
+        out.append((e.get("title", "?"), e.get("ht_approx_traffic", "?"),
+                    e.get("ht_news_item_title", ""), e.get("ht_news_item_url", "")))
+    record("Google Trends France", url, code, len(entries), f"{len(out)} sujet(s) vélo")
+    return out
+
+
+DISCOVER_MEDIA = {"name": "Médias grand public « capteurs Discover » (via Google News, 12 h)",
+                  "feeds": [google_news("(site:le10sport.com OR site:rmcsport.bfmtv.com OR site:dicodusport.fr "
+                                        "OR site:sports.fr OR site:eurosport.fr) cyclisme", "fr", hours=12)]}
 
 
 CONFIG = {
@@ -413,52 +503,84 @@ def section_ffc():
 
 # ---------------------------------------------------------------- écriture
 
+def block(md, title, items, source=None):
+    """Ajoute une sous-section au Markdown et enregistre ses titres pour le calcul de vélocité."""
+    md += [f"### {title}", ""] + lines(track(source or title, items))
+
+
 def main():
+    body = []
+
+    body += ["## 1. Nos publications internes (DirectVelo)", ""] + lines(section_directvelo())
+    body += ["## 2. Forum Le Gruppetto (route pros : mercato, équipes, amateurs ; cyclo-cross)", ""]
+    for name, items in section_gruppetto():
+        block(body, name, items, f"Le Gruppetto – {name}")
+
+    body += ["## 3. Presse quotidienne régionale (filtrée sur le cyclisme)", ""]
+    for name, items in section_pqr():
+        block(body, name, items)
+
+    body += ["## 4. Médias spécialisés", ""]
+    for name, items in section_medias():
+        block(body, name, items)
+
+    body += ["## 5. Réseaux sociaux", "", "### Bluesky", ""]
+    bsky = section_bluesky()
+    track("Bluesky", bsky)
+    if bsky:
+        body += [f"- {fmt_time(dt)} — [{q}] [{text}]({link})" for dt, text, link, q in bsky] + [""]
+    else:
+        body += lines([])
+    block(body, "Reddit r/peloton", section_reddit())
+
+    body += ["## 6. Sources primaires : FFC Ressources (page 1)", ""]
+    ffc = section_ffc()
+    body += [f"- [{t}]({u})" for t, u in ffc] + [""] if ffc else lines([])
+
+    body += ["## 7. Presse internationale (transferts & cyclo-cross)", ""]
+    for name, items in section_list("international"):
+        block(body, name, items)
+
+    body += ["## 8. Sources officielles & antidopage (ITA, AFLD, UCI, UEC — 3 derniers jours)", ""]
+    for name, items in section_list("officiel"):
+        block(body, name, items)
+
+    body += ["## 9. Bases de données : transferts & cyclo-cross", "", "### Derniers transferts", ""]
+    tr = section_transferts()
+    body += [f"- [{t}]({u})" for t, u in tr] + [""] if tr else lines([])
+    block(body, "Cyclocross24", recent(fetch_feed(CONFIG["cyclocross24"])))
+
+    # Radar tendances (placé en tête du fichier, calculé après la collecte)
+    radar = ["## TENDANCES & SIGNAUX GOOGLE DISCOVER", ""]
+    media = recent(fetch_feed(DISCOVER_MEDIA))
+    track("Médias grand public", media)
+    hot = velocity()
+    if hot:
+        radar += ["🔥 Sujets à forte vélocité (potentiel Discover) : "
+                  + ", ".join(f"{e} ({n} sources)" for e, n in hot), ""]
+    else:
+        radar += ["🔥 Sujets à forte vélocité (potentiel Discover) : aucun nom cité par 3 sources ou plus sur la fenêtre.", ""]
+    radar += ["### Google Trends France (sujets liés au vélo)", ""]
+    trends = section_trends()
+    if trends:
+        for topic, traffic, art, link in trends:
+            line = f"- **{topic}** (trafic ≈ {traffic})"
+            if art:
+                line += f" — article associé : [{art}]({link})" if link else f" — {art}"
+            radar.append(line)
+        radar.append("")
+    else:
+        radar += ["_Aucun sujet vélo dans les tendances Google France en ce moment._", ""]
+    radar += ["### Baromètre des médias grand public (Le10Sport, RMC Sport, Dicodusport, Sports.fr, Eurosport — 12 h)", ""]
+    radar += lines(media)
+
     md = [
         "# Flux de veille DirectVelo (tampon 2 h)",
         "",
         f"Généré le {NOW.astimezone(PARIS).strftime('%d/%m/%Y à %Hh%M')} (heure de Paris). "
         f"Fenêtre : publications depuis le {SINCE.astimezone(PARIS).strftime('%d/%m à %Hh%M')}.",
         "",
-    ]
-
-    md += ["## 1. Nos publications internes (DirectVelo)", ""] + lines(section_directvelo())
-    md += ["## 2. Forum Le Gruppetto (route pros : mercato, équipes, amateurs ; cyclo-cross)", ""]
-    for name, items in section_gruppetto():
-        md += [f"### {name}", ""] + lines(items)
-
-    md += ["## 3. Presse quotidienne régionale (filtrée sur le cyclisme)", ""]
-    for name, items in section_pqr():
-        md += [f"### {name}", ""] + lines(items)
-
-    md += ["## 4. Médias spécialisés", ""]
-    for name, items in section_medias():
-        md += [f"### {name}", ""] + lines(items)
-
-    md += ["## 5. Réseaux sociaux", "", "### Bluesky", ""]
-    bsky = section_bluesky()
-    if bsky:
-        md += [f"- {fmt_time(dt)} — [{q}] [{text}]({link})" for dt, text, link, q in bsky] + [""]
-    else:
-        md += lines([])
-    md += ["### Reddit r/peloton", ""] + lines(section_reddit())
-
-    md += ["## 6. Sources primaires : FFC Ressources (page 1)", ""]
-    ffc = section_ffc()
-    md += [f"- [{t}]({u})" for t, u in ffc] + [""] if ffc else lines([])
-
-    md += ["## 7. Presse internationale (transferts & cyclo-cross)", ""]
-    for name, items in section_list("international"):
-        md += [f"### {name}", ""] + lines(items)
-
-    md += ["## 8. Sources officielles & antidopage (ITA, AFLD, UCI, UEC — 3 derniers jours)", ""]
-    for name, items in section_list("officiel"):
-        md += [f"### {name}", ""] + lines(items)
-
-    md += ["## 9. Bases de données : transferts & cyclo-cross", "", "### Derniers transferts", ""]
-    tr = section_transferts()
-    md += [f"- [{t}]({u})" for t, u in tr] + [""] if tr else lines([])
-    md += ["### Cyclocross24", ""] + lines(recent(fetch_feed(CONFIG["cyclocross24"])))
+    ] + radar + body
 
     md += ["## 10. Statut technique des sources", "",
            "| Source | URL interrogée | Code HTTP | Éléments | Remarque |",
