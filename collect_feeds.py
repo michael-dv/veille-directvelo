@@ -172,7 +172,7 @@ CONFIG = {
     "pqr": [
         {"name": "Ouest-France", "feeds": ["https://www.ouest-france.fr/rss/sport", "https://www.ouest-france.fr/rss-en-continu.xml"], "home": "https://www.ouest-france.fr/sport/"},
         {"name": "Le Télégramme (via Google News)", "feeds": [google_news("site:letelegramme.fr cyclisme")], "prefiltered": True},
-        {"name": "Le Progrès", "feeds": ["https://www.leprogres.fr/sport/rss", "https://www.leprogres.fr/rss"], "home": "https://www.leprogres.fr/sport"},
+        {"name": "Le Progrès", "feeds": ["https://www.leprogres.fr/rss"], "home": "https://www.leprogres.fr/sport"},  # /sport/rss renvoie un flux vide
         {"name": "Sud Ouest", "feeds": ["https://www.sudouest.fr/sport/rss.xml", "https://www.sudouest.fr/rss.xml"], "home": "https://www.sudouest.fr/sport/"},
         {"name": "La Voix du Nord (via Google News)", "feeds": [google_news("site:lavoixdunord.fr cyclisme")], "prefiltered": True},
         {"name": "PQR complémentaire : NR, La Montagne, L'Est Républicain, DNA, La Dépêche, Midi Libre, La Provence, Nice-Matin (via Google News)",
