@@ -105,12 +105,15 @@ TREND_KEYWORDS = ["cyclisme", "cycliste", "velo", "peloton", "tour de france", "
 CYCLING_TERMS = ["cyclisme", "cycliste", "cyclistes", "velo", "velos", "coureur", "coureurs", "coureuse", "coureuses",
                  "peloton", "etape", "cyclo-cross", "cyclocross", "piste", "velodrome", "koers", "veldrijden", "veldrit",
                  "wielrennen", "wielrenner", "renner", "ciclismo", "ciclista", "cycling", "cyclist", "rider", "riders",
-                 "race", "uci", "worldtour", "ffc"]
+                 "race", "uci", "worldtour", "ffc", "course", "courses", "vtt", "bmx", "gravel", "maillot", "contre-la-montre",
+                 "chrono", "sprinteur", "grimpeur", "classique", "cyclosportive", "criterium", "ronde", "giro", "vuelta",
+                 "cordon-ragot", "ferrand-prevot", "alaphilippe", "seixas"]
 CYCLING_OUTLETS = ["directvelo", "cyclism actu", "cyclismactu", "velo101", "cyclingnews", "wielerflits", "velo club",
                    "tuttobiciweb", "ciclo21", "escape collective", "cyclingweekly", "procyclinguk", "velonews", "idl procycling"]
 EXCLUDED_TERMS = ["accident", "proces", "meurtre", "football", "faits divers", "fait divers"]
 
 
+SURV_TERMS = []  # noms de etat/surveillance.txt (normalisés), chargés dans main() : un nom suivi suffit à garder un titre
 REJECTED = []  # (source, titre, lien) écartés par le filtre lexical : liste de contrôle en fin de flux complet
 
 
@@ -123,7 +126,7 @@ def gn_ok(title, mode="strict"):
         return False
     if mode == "exclude":
         return True
-    terms = CYCLING_TERMS + TREND_KEYWORDS + CYCLING_OUTLETS
+    terms = CYCLING_TERMS + TREND_KEYWORDS + CYCLING_OUTLETS + SURV_TERMS
     return any(f" {t} " in n or f" {t}-" in n or f"-{t} " in n for t in terms)
 
 
@@ -787,6 +790,7 @@ def main():
     FIRST_RUN = VUS_DB is None
     VUS_DB = VUS_DB or {}
     traites = load_traites()
+    SURV_TERMS.extend(norm(n) for n in load_surveillance())
     body = []
 
     body += ["## 1. Nos publications internes (DirectVelo)", ""] + lines(mark_new("DirectVelo", section_directvelo()))
