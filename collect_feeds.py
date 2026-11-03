@@ -39,7 +39,15 @@ HEADERS = {
 PQR_KEYWORDS = ["cyclisme", "vélo", "velo", "peloton", "coureur", "n1", "n2", "n3",
                 "mercato", "cyclo-cross", "cyclocross"]
 GRUPPETTO_TOPICS = ["transfert", "équipe", "equipe", "amateur", "cyclo-cross", "cyclocross"]
-BLUESKY_QUERIES = ["DirectVelo", "TotalEnergies", "Mercato cyclisme"]
+BLUESKY_QUERIES = ["DirectVelo", "TotalEnergies", "Mercato cyclisme"]  # recherche : seulement si les secrets Bluesky existent
+# Comptes Bluesky lus sans authentification (getAuthorFeed est public). Ajoutez-en si besoin.
+BLUESKY_ACTORS = ["directvelo.bsky.social"]
+
+
+def google_news(query):
+    """Flux RSS Google News d'une recherche, limité aux dernières 24 h, en français."""
+    return f"https://news.google.com/rss/search?q={quote_plus(query + ' when:1d')}&hl=fr&gl=FR&ceid=FR:fr"
+
 
 CONFIG = {
     "directvelo": {
@@ -58,10 +66,10 @@ CONFIG = {
     },
     "pqr": [
         {"name": "Ouest-France", "feeds": ["https://www.ouest-france.fr/rss/sport", "https://www.ouest-france.fr/rss-en-continu.xml"], "home": "https://www.ouest-france.fr/sport/"},
-        {"name": "Le Télégramme", "feeds": ["https://www.letelegramme.fr/rss/sports.xml", "https://www.letelegramme.fr/sports/rss.xml"], "home": "https://www.letelegramme.fr/sports/"},
+        {"name": "Le Télégramme (via Google News)", "feeds": [google_news("site:letelegramme.fr cyclisme")], "prefiltered": True},
         {"name": "Le Progrès", "feeds": ["https://www.leprogres.fr/sport/rss", "https://www.leprogres.fr/rss"], "home": "https://www.leprogres.fr/sport"},
         {"name": "Sud Ouest", "feeds": ["https://www.sudouest.fr/sport/rss.xml", "https://www.sudouest.fr/rss.xml"], "home": "https://www.sudouest.fr/sport/"},
-        {"name": "La Voix du Nord", "feeds": ["https://www.lavoixdunord.fr/sports/rss", "https://www.lavoixdunord.fr/rss"], "home": "https://www.lavoixdunord.fr/sports"},
+        {"name": "La Voix du Nord (via Google News)", "feeds": [google_news("site:lavoixdunord.fr cyclisme")], "prefiltered": True},
         {"name": "Le Dauphiné Libéré", "feeds": ["https://www.ledauphine.com/sport/rss", "https://www.ledauphine.com/rss"], "home": "https://www.ledauphine.com/sport"},
     ],
     "medias": [
@@ -70,6 +78,7 @@ CONFIG = {
         {"name": "WielerFlits", "feeds": ["https://www.wielerflits.nl/feed/", "https://www.wielerflits.nl/rss"], "home": "https://www.wielerflits.nl/"},
         {"name": "In de Leiderstrui", "feeds": ["https://www.indeleiderstrui.nl/sitemap/news.xml", "https://www.indeleiderstrui.nl/feed"], "home": "https://www.indeleiderstrui.nl/"},
         {"name": "Cyclingnews", "feeds": ["https://www.cyclingnews.com/feeds.xml", "https://www.cyclingnews.com/rss/"], "home": "https://www.cyclingnews.com/"},
+        {"name": "L'Équipe (via Google News)", "feeds": [google_news("site:lequipe.fr cyclisme")]},
     ],
     "reddit": {"name": "Reddit r/peloton", "feeds": ["https://www.reddit.com/r/peloton/new/.rss"], "home": None},
     "ffc": {"name": "FFC Ressources", "urls": ["https://ffc.fr/ressources", "https://www.ffc.fr/ressources/"]},
@@ -210,7 +219,9 @@ def section_gruppetto():
 def section_pqr():
     blocks = []
     for src in CONFIG["pqr"]:
-        blocks.append((src["name"], recent(fetch_feed(src), PQR_KEYWORDS)))
+        # Les flux Google News sont déjà filtrés par la requête « cyclisme »
+        keywords = None if src.get("prefiltered") else PQR_KEYWORDS
+        blocks.append((src["name"], recent(fetch_feed(src), keywords)))
     return blocks
 
 
@@ -230,37 +241,57 @@ def bluesky_token():
         return None
 
 
+def bluesky_post(p, label):
+    """Convertit un post Bluesky (format de l'API) en ligne (date, texte, lien, étiquette)."""
+    try:
+        dt = datetime.fromisoformat(p["record"]["createdAt"].replace("Z", "+00:00"))
+    except (KeyError, ValueError):
+        dt = None
+    handle = p.get("author", {}).get("handle", "?")
+    rkey = p.get("uri", "").rsplit("/", 1)[-1]
+    text = re.sub(r"\s+", " ", p.get("record", {}).get("text", ""))[:200]
+    likes, reposts = p.get("likeCount", 0), p.get("repostCount", 0)
+    return (dt, f"@{handle} : {text} ({likes} j'aime, {reposts} reposts)",
+            f"https://bsky.app/profile/{handle}/post/{rkey}", label)
+
+
 def section_bluesky():
     out = []
-    token = None
-    for q in BLUESKY_QUERIES:
-        params = f"q={quote_plus(q)}&limit=25&sort=latest&since={SINCE.strftime('%Y-%m-%dT%H:%M:%SZ')}"
-        url = f"https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?{params}"
+
+    # 1. Comptes suivis, sans authentification (endpoint public getAuthorFeed)
+    for actor in BLUESKY_ACTORS:
+        url = f"https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor={quote_plus(actor)}&limit=10"
         r, code = get(url)
-        if (r is None or r.status_code in (401, 403)) and token is None:
-            token = bluesky_token() or ""
-        if (r is None or not r.ok) and token:
+        feed = r.json().get("feed", []) if r is not None and r.ok else []
+        record(f"Bluesky @{actor}", url.split("&")[0], code, len(feed))
+        for item in feed:
+            post = bluesky_post(item.get("post", {}), f"@{actor}")
+            if post[0] is None or post[0] >= SINCE:
+                out.append(post)
+
+    # 2. Posts Bluesky indexés par Google News (sans compte)
+    gn = {"name": "Bluesky (via Google News)", "feeds": [google_news('site:bsky.app "cyclisme"')]}
+    for dt, title, link in recent(fetch_feed(gn)):
+        out.append((dt, title, link, "Google News"))
+
+    # 3. Recherche par mots-clés : seulement si les secrets BSKY_HANDLE / BSKY_APP_PASSWORD sont définis
+    token = bluesky_token()
+    if token:
+        for q in BLUESKY_QUERIES:
+            params = f"q={quote_plus(q)}&limit=25&sort=latest&since={SINCE.strftime('%Y-%m-%dT%H:%M:%SZ')}"
             url = f"https://bsky.social/xrpc/app.bsky.feed.searchPosts?{params}"
             try:
                 r = requests.get(url, headers={**HEADERS, "Authorization": f"Bearer {token}"}, timeout=TIMEOUT)
                 code = f"{r.status_code} {'OK' if r.ok else r.reason} (authentifié)"
             except requests.RequestException as e:
                 r, code = None, f"Erreur ({type(e).__name__})"
-        posts = r.json().get("posts", []) if r is not None and r.ok else []
-        record(f"Bluesky « {q} »", url.split("?")[0], code, len(posts))
-        for p in posts:
-            try:
-                dt = datetime.fromisoformat(p["record"]["createdAt"].replace("Z", "+00:00"))
-            except (KeyError, ValueError):
-                dt = None
-            if dt and dt < SINCE:
-                continue
-            handle = p.get("author", {}).get("handle", "?")
-            rkey = p.get("uri", "").rsplit("/", 1)[-1]
-            text = re.sub(r"\s+", " ", p.get("record", {}).get("text", ""))[:200]
-            likes, reposts = p.get("likeCount", 0), p.get("repostCount", 0)
-            out.append((dt, f"@{handle} : {text} ({likes} j'aime, {reposts} reposts)",
-                        f"https://bsky.app/profile/{handle}/post/{rkey}", q))
+            posts = r.json().get("posts", []) if r is not None and r.ok else []
+            record(f"Bluesky recherche « {q} »", url.split("?")[0], code, len(posts))
+            for p in posts:
+                post = bluesky_post(p, q)
+                if post[0] is None or post[0] >= SINCE:
+                    out.append(post)
+
     out.sort(key=lambda x: x[0] or NOW, reverse=True)
     return out[:MAX_ITEMS]
 
