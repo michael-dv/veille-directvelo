@@ -111,6 +111,9 @@ CYCLING_OUTLETS = ["directvelo", "cyclism actu", "cyclismactu", "velo101", "cycl
 EXCLUDED_TERMS = ["accident", "proces", "meurtre", "football", "faits divers", "fait divers"]
 
 
+REJECTED = []  # (source, titre, lien) écartés par le filtre lexical : liste de contrôle en fin de flux complet
+
+
 def gn_ok(title, mode="strict"):
     """mode strict : terme cycliste obligatoire + exclusions ; exclude : exclusions seules ; none : tout passe."""
     if mode == "none":
@@ -331,6 +334,7 @@ def fetch_feed(source):
                 if "news.google.com" in url:
                     mode = source.get("gn_filter", "strict")
                     kept = [e for e in entries if gn_ok(e.get("title", ""), mode)]
+                    REJECTED.extend((source["name"], e.get("title", ""), e.get("link", "")) for e in entries if e not in kept)
                     record(source["name"], url, code, len(kept), f"{len(entries) - len(kept)} écarté(s) par le filtre lexical" if len(kept) < len(entries) else "")
                     return kept
                 record(source["name"], url, code, len(entries))
@@ -904,6 +908,10 @@ def main():
         "",
     ] + radar + nouv + body
 
+    md += ["## 14. Contrôle du filtre lexical (titres Google News écartés, 80 au plus)", "",
+           "_À relire de temps en temps : un vrai article cycliste ici signale un terme à ajouter au filtre (CYCLING_TERMS)._", ""]
+    md += [f"- {src} — [{t}]({l})" for src, t, l in REJECTED[:80]] or ["_Aucun._"]
+    md.append("")
     md += ["## 10. Statut technique des sources", "",
            "| Source | URL interrogée | Code HTTP | Éléments | Remarque |",
            "|---|---|---|---|---|"]
