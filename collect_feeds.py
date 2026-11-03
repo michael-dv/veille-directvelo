@@ -2,32 +2,37 @@
 """Collecte des flux de veille DirectVelo -> flux_2h.md
 
 Récupère les publications des dernières 24 heures (DirectVelo, Le Gruppetto, PQR,
-médias spécialisés, Bluesky, Reddit, FFC Ressources) et écrit un fichier Markdown
-statique, avec en fin de fichier le statut HTTP de chaque source.
+médias spécialisés, Bluesky, Reddit, FFC Ressources, presse internationale,
+sources officielles et antidopage, bases de transferts et cyclo-cross) et écrit
+un fichier Markdown statique, avec en fin de fichier le statut HTTP de chaque source.
 
 Toutes les adresses sont regroupées dans CONFIG ci-dessous : si une source passe
 en erreur dans le tableau de statut, il suffit de corriger son URL ici.
 Pour chaque site, plusieurs URL de flux sont essayées dans l'ordre ; si aucune
 ne répond, le script cherche le flux annoncé dans la page d'accueil
-(<link rel="alternate" type="application/rss+xml">).
+(<link rel="alternate" type="application/rss+xml">), puis, si la source a une
+clé "gn", une recherche Google News équivalente.
 """
 
 import os
 import re
 import time
+import warnings
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin, quote_plus
 from zoneinfo import ZoneInfo
 
 import feedparser
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
+
+warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 PARIS = ZoneInfo("Europe/Paris")
 NOW = datetime.now(timezone.utc)
 SINCE = NOW - timedelta(hours=24)
 OUTPUT = "flux_2h.md"
-TIMEOUT = 20
+TIMEOUT = 10  # secondes par requête
 MAX_ITEMS = 40  # par section
 
 HEADERS = {
@@ -44,9 +49,19 @@ BLUESKY_QUERIES = ["DirectVelo", "TotalEnergies", "Mercato cyclisme"]  # recherc
 BLUESKY_ACTORS = ["directvelo.bsky.social"]
 
 
-def google_news(query):
-    """Flux RSS Google News d'une recherche, limité aux dernières 24 h, en français."""
-    return f"https://news.google.com/rss/search?q={quote_plus(query + ' when:1d')}&hl=fr&gl=FR&ceid=FR:fr"
+GN_EDITIONS = {
+    "fr": "hl=fr&gl=FR&ceid=FR:fr",
+    "nl": "hl=nl&gl=BE&ceid=BE:nl",
+    "it": "hl=it&gl=IT&ceid=IT:it",
+    "es": "hl=es&gl=ES&ceid=ES:es",
+    "en": "hl=en-US&gl=US&ceid=US:en",
+}
+
+
+def google_news(query, lang="fr", days=1):
+    """Flux RSS Google News d'une recherche, limité aux N derniers jours.
+    Les liens renvoyés sont des redirections news.google.com vers l'article."""
+    return f"https://news.google.com/rss/search?q={quote_plus(f'{query} when:{days}d')}&{GN_EDITIONS[lang]}"
 
 
 CONFIG = {
@@ -70,6 +85,10 @@ CONFIG = {
         {"name": "Le Progrès", "feeds": ["https://www.leprogres.fr/sport/rss", "https://www.leprogres.fr/rss"], "home": "https://www.leprogres.fr/sport"},
         {"name": "Sud Ouest", "feeds": ["https://www.sudouest.fr/sport/rss.xml", "https://www.sudouest.fr/rss.xml"], "home": "https://www.sudouest.fr/sport/"},
         {"name": "La Voix du Nord (via Google News)", "feeds": [google_news("site:lavoixdunord.fr cyclisme")], "prefiltered": True},
+        {"name": "PQR complémentaire : NR, La Montagne, L'Est Républicain, DNA, La Dépêche, Midi Libre, La Provence, Nice-Matin (via Google News)",
+         "feeds": [google_news("(site:lanouvellerepublique.fr OR site:lamontagne.fr OR site:estrepublicain.fr OR site:dna.fr "
+                               "OR site:ladepeche.fr OR site:midilibre.fr OR site:laprovence.com OR site:nicematin.com) cyclisme")],
+         "prefiltered": True},
         {"name": "Le Dauphiné Libéré", "feeds": ["https://www.ledauphine.com/sport/rss", "https://www.ledauphine.com/rss"], "home": "https://www.ledauphine.com/sport"},
     ],
     "medias": [
@@ -80,6 +99,31 @@ CONFIG = {
         {"name": "Cyclingnews", "feeds": ["https://www.cyclingnews.com/feeds.xml", "https://www.cyclingnews.com/rss/"], "home": "https://www.cyclingnews.com/"},
         {"name": "L'Équipe (via Google News)", "feeds": [google_news("site:lequipe.fr cyclisme")]},
     ],
+    "international": [
+        {"name": "Tuttobiciweb (Italie)", "feeds": ["https://www.tuttobiciweb.it/rss", "https://www.tuttobiciweb.it/rss.xml"],
+         "home": "https://www.tuttobiciweb.it/", "gn": ("site:tuttobiciweb.it", "it", 1)},
+        {"name": "La Gazzetta dello Sport, ciclismo (via Google News)", "feeds": [google_news("site:gazzetta.it ciclismo", "it")]},
+        {"name": "Ciclo21 (Espagne)", "feeds": ["https://www.ciclo21.com/feed/"], "home": "https://www.ciclo21.com/",
+         "gn": ("site:ciclo21.com", "es", 1)},
+        {"name": "Sporza, Het Nieuwsblad, HLN (via Google News)",
+         "feeds": [google_news("(site:sporza.be OR site:nieuwsblad.be OR site:hln.be) (koers OR veldrijden OR transfer)", "nl")]},
+        {"name": "Escape Collective", "feeds": ["https://escapecollective.com/feed/"], "home": "https://escapecollective.com/",
+         "gn": ("site:escapecollective.com", "en", 1)},
+    ],
+    # Sources officielles et antidopage : fenêtre de 3 jours (communiqués rares mais décisifs)
+    "officiel": [
+        {"name": "ITA, cyclisme (via Google News)", "feeds": [google_news("site:ita.sport cycling", "en", 3)]},
+        {"name": "AFLD (via Google News)", "feeds": [google_news("site:afld.fr", "fr", 3)]},
+        {"name": "UCI, communiqués (via Google News)", "feeds": [google_news("site:uci.org", "en", 3)]},
+        {"name": "UEC (via Google News)", "feeds": [google_news("site:uec.ch", "en", 3)]},
+    ],
+    "transferts": {
+        "name": "Transferts (ProCyclingStats, sinon FirstCycling)",
+        "urls": ["https://www.procyclingstats.com/transfers.php", "https://firstcycling.com/transfer.php"],
+        "max": 15,
+    },
+    "cyclocross24": {"name": "Cyclocross24", "feeds": ["https://www.cyclocross24.com/feed/"],
+                     "home": "https://www.cyclocross24.com/", "gn": ("site:cyclocross24.com", "en", 1)},
     "reddit": {"name": "Reddit r/peloton", "feeds": ["https://www.reddit.com/r/peloton/new/.rss"], "home": None},
     "ffc": {"name": "FFC Ressources", "urls": ["https://ffc.fr/ressources", "https://www.ffc.fr/ressources/"]},
 }
@@ -147,6 +191,14 @@ def fetch_feed(source):
             record(source["name"], found, code, len(parsed.entries), "flux auto-découvert")
             return parsed.entries
         record(source["name"], found, code, 0, "flux auto-découvert")
+    if source.get("gn"):
+        query, lang, days = source["gn"]
+        url = google_news(query, lang, days)
+        r, code = get(url)
+        parsed = feedparser.parse(r.content) if r is not None and r.ok else None
+        record(source["name"], url, code, len(parsed.entries) if parsed else 0, "repli Google News")
+        if parsed:
+            return parsed.entries
     return []
 
 
@@ -296,6 +348,40 @@ def section_bluesky():
     return out[:MAX_ITEMS]
 
 
+def section_list(key):
+    return [(src["name"], recent(fetch_feed(src))) for src in CONFIG[key]]
+
+
+def section_transferts():
+    """Lit le tableau des derniers transferts (PCS, sinon FirstCycling) : une ligne par mouvement."""
+    src = CONFIG["transferts"]
+    for url in src["urls"]:
+        r, code = get(url)
+        if not r or not r.ok:
+            record(src["name"], url, code, 0, "bloqué ou indisponible" if r is not None else "")
+            continue
+        soup = BeautifulSoup(r.text, "html.parser")
+        out = []
+        for table in soup.find_all("table"):
+            for tr in table.find_all("tr"):
+                cells = [c.get_text(" ", strip=True) for c in tr.find_all("td")]
+                cells = [c for c in cells if c]
+                if len(cells) < 2:
+                    continue
+                a = tr.find("a", href=True)
+                link = urljoin(url, a["href"]) if a else url
+                out.append((" | ".join(cells)[:200], link))
+                if len(out) >= src["max"]:
+                    break
+            if out:
+                break
+        detail = "" if out else "page reçue mais aucun tableau lisible (protection anti-robot ?)"
+        record(src["name"], url, code, len(out), detail)
+        if out:
+            return out
+    return []
+
+
 def section_reddit():
     return recent(fetch_feed(CONFIG["reddit"]))
 
@@ -361,7 +447,20 @@ def main():
     ffc = section_ffc()
     md += [f"- [{t}]({u})" for t, u in ffc] + [""] if ffc else lines([])
 
-    md += ["## 7. Statut technique des sources", "",
+    md += ["## 7. Presse internationale (transferts & cyclo-cross)", ""]
+    for name, items in section_list("international"):
+        md += [f"### {name}", ""] + lines(items)
+
+    md += ["## 8. Sources officielles & antidopage (ITA, AFLD, UCI, UEC — 3 derniers jours)", ""]
+    for name, items in section_list("officiel"):
+        md += [f"### {name}", ""] + lines(items)
+
+    md += ["## 9. Bases de données : transferts & cyclo-cross", "", "### Derniers transferts", ""]
+    tr = section_transferts()
+    md += [f"- [{t}]({u})" for t, u in tr] + [""] if tr else lines([])
+    md += ["### Cyclocross24", ""] + lines(recent(fetch_feed(CONFIG["cyclocross24"])))
+
+    md += ["## 10. Statut technique des sources", "",
            "| Source | URL interrogée | Code HTTP | Éléments | Remarque |",
            "|---|---|---|---|---|"]
     for source, url, code, count, detail in STATUS:
