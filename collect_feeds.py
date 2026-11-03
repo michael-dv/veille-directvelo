@@ -654,7 +654,7 @@ def main():
     traites = load_traites()
     body = []
 
-    body += ["## 1. Nos publications internes (DirectVelo)", ""] + lines(section_directvelo())
+    body += ["## 1. Nos publications internes (DirectVelo)", ""] + lines(mark_new("DirectVelo", section_directvelo()))
     body += ["## 2. Forum Le Gruppetto (route pros : mercato, équipes, amateurs ; cyclo-cross)", ""]
     for name, items in section_gruppetto():
         block(body, name, items, f"Le Gruppetto – {name}")
