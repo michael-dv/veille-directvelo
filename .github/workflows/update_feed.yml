@@ -2,9 +2,10 @@ name: Mise à jour du flux de veille
 
 on:
   schedule:
-    # Heures UTC : '50 */2' = 05h50, 07h50, 09h50… à Paris en hiver (UTC+1),
-    # 06h50, 08h50… en été (UTC+2). GitHub peut retarder le départ de quelques minutes.
-    - cron: '50 */2 * * *'
+    # Toutes les heures à :40 (UTC), avant chaque édition de la veille (déclenchée à :54, heure de Paris).
+    # '40 3-21' UTC couvre 05h40 → 22h40 à Paris en hiver (UTC+1) comme en été (UTC+2),
+    # donc toutes les éditions de 06h à 23h. GitHub peut retarder le départ de quelques minutes.
+    - cron: '40 3-21 * * *'
   workflow_dispatch: {}   # bouton « Run workflow » pour lancer à la main
 
 permissions:
