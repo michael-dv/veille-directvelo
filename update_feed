@@ -1,0 +1,49 @@
+name: Mise à jour du flux de veille
+
+on:
+  schedule:
+    # Heures UTC : '50 */2' = 05h50, 07h50, 09h50… à Paris en hiver (UTC+1),
+    # 06h50, 08h50… en été (UTC+2). GitHub peut retarder le départ de quelques minutes.
+    - cron: '50 */2 * * *'
+  workflow_dispatch: {}   # bouton « Run workflow » pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer les dépendances
+        run: pip install feedparser requests beautifulsoup4
+
+      - name: Collecter les flux
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: python collect_feeds.py
+
+      - name: Publier flux_2h.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add flux_2h.md
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "Flux de veille : $(TZ=Europe/Paris date '+%d/%m %Hh%M')"
+            git push
+          fi
