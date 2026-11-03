@@ -70,7 +70,9 @@ GN_EDITIONS = {
 }
 
 
-GN_EXCLUSIONS = "-accident -procès -meurtre -football"  # faits divers et autres sports, exclus dès la requête
+# Exclusions dans la requête : désactivées, car Google News renvoie un flux vide pour les requêtes « site: » qui en
+# contiennent (constaté le 03/11/2026). Les faits divers sont écartés après coup par gn_ok() (EXCLUDED_TERMS).
+GN_EXCLUSIONS = ""
 
 
 def google_news(query, lang="fr", days=1, hours=None, exclure=True):
@@ -78,7 +80,7 @@ def google_news(query, lang="fr", days=1, hours=None, exclure=True):
     Les liens renvoyés sont des redirections news.google.com vers l'article.
     exclure=True ajoute les exclusions de faits divers (désactivé pour les sources officielles)."""
     window = f"{hours}h" if hours else f"{days}d"
-    q = f"{query} {GN_EXCLUSIONS}" if exclure else query
+    q = f"{query} {GN_EXCLUSIONS}" if exclure and GN_EXCLUSIONS else query
     return f"https://news.google.com/rss/search?q={quote_plus(f'{q} when:{window}')}&{GN_EDITIONS[lang]}"
 
 
@@ -477,8 +479,17 @@ def fetch_cyclismactu():
             if "/news-" not in href or href in seen or len(title) < 15:
                 continue
             seen.add(href)
-            out.append({"title": title, "link": href})
-        record(name + " (page)", url, code, len(out), "lecture de la page (heures non disponibles)")
+            e = {"title": title, "link": href}
+            m = re.match(r"^(\d{1,2}):(\d{2})\s+(.*)$", title)
+            if m:  # les articles du jour sont précédés de leur heure de publication (heure de Paris)
+                h, mi = int(m.group(1)), int(m.group(2))
+                local = NOW.astimezone(PARIS).replace(hour=h, minute=mi, second=0, microsecond=0)
+                if local > NOW.astimezone(PARIS) + timedelta(minutes=5):
+                    local -= timedelta(days=1)
+                e["title"] = m.group(3)
+                e["published_parsed"] = local.astimezone(timezone.utc).utctimetuple()
+            out.append(e)
+        record(name + " (page)", url, code, len(out), "lecture de la page (heure lue pour les articles du jour)")
         if out:
             return out
     return fetch_feed(next(s for s in CONFIG["medias"] if s["name"] == name))
@@ -594,33 +605,37 @@ def section_reddit():
     return recent(fetch_feed(CONFIG["reddit"]))
 
 
-def section_ffc_jina():
-    """Rendu JavaScript de la page FFC via le service de lecture r.jina.ai (Markdown avec les liens)."""
-    url = "https://r.jina.ai/https://ffc.fr/ressources/"
-    try:
-        r = requests.get(url, headers={"User-Agent": HEADERS["User-Agent"], "Accept": "text/plain"}, timeout=45)
-        code = f"{r.status_code} {'OK' if r.ok else r.reason}"
-    except requests.RequestException as e:
-        record("FFC Ressources (rendu r.jina.ai)", url, f"Erreur ({type(e).__name__})")
+def section_ffc_api(n=18):
+    """Documents FFC via l'API WordPress publique du site (type « ressources » et ses fichiers attachés).
+    Renvoie [(titre, lien du document, date)] : un élément par fichier, lien au format ffc.fr/ressources/<rubrique>/<fichier>/."""
+    base = "https://ffc.fr/wp-json/wp/v2"
+    url = f"{base}/ressources?per_page={n}&orderby=date&order=desc&_fields=id,date,modified,link,title"
+    r, code = get(url)
+    if not r or not r.ok:
+        record("FFC Ressources (API WordPress)", url, code)
         return []
-    out, seen = [], set()
-    if r.ok:
-        for m in re.finditer(r"\[([^\]]{3,300})\]\((https?://(?:www\.)?ffc\.fr/ressources/[^/)\s]+/[^/)\s]+/?)\)", r.text):
-            title, href = m.group(1), m.group(2)
-            title = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", title)
-            title = re.sub(r"\s+", " ", re.sub(r"^(Document|Télécharger)\s+", "", title.replace("*", ""))).strip()
-            if href in seen or not title:
-                continue
-            seen.add(href)
-            out.append((title, href))
-    record("FFC Ressources (rendu r.jina.ai)", url, code, len(out), "" if out else "aucun lien de document dans le rendu")
+    try:
+        items = r.json()
+    except ValueError:
+        record("FFC Ressources (API WordPress)", url, code, 0, "réponse non JSON")
+        return []
+    out = []
+    for it in items:
+        title = BeautifulSoup(it.get("title", {}).get("rendered", ""), "html.parser").get_text(" ", strip=True)
+        mr, _ = get(f"{base}/media?parent={it['id']}&per_page=10&_fields=id,date,link")
+        medias = mr.json() if mr is not None and mr.ok else []
+        if not medias:
+            out.append((title, it.get("link", ""), it.get("date", "")))
+        for m in medias:
+            out.append((title, m.get("link", ""), m.get("date", "") or it.get("date", "")))
+    record("FFC Ressources (API WordPress)", url, code, len(out), f"{len(items)} ressources")
     return out
 
 
 def section_ffc():
-    jina = section_ffc_jina()
-    if jina:
-        return jina
+    api = section_ffc_api()
+    if api:
+        return [(f"{t} ({d[:10]})" if d else t, u) for t, u, d in api]
     src = CONFIG["ffc"]
     for url in src["urls"]:
         r, code = get(url)
