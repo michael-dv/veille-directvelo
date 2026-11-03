@@ -16,6 +16,7 @@ ne répond, le script cherche le flux annoncé dans la page d'accueil
 clé "gn", une recherche Google News équivalente.
 """
 
+import json
 import os
 import re
 import time
@@ -38,6 +39,12 @@ SINCE = NOW - timedelta(hours=24)
 OUTPUT = "flux_2h.md"
 TIMEOUT = 10  # secondes par requête
 MAX_ITEMS = 40  # par section
+ETAT = "etat"                                  # état persistant, versionné dans le dépôt
+VUS = f"{ETAT}/vus.json"                       # URL -> première détection (7 jours glissants)
+TRAITES = f"{ETAT}/traites.jsonl"              # écrit par l'agent de veille : sujets/URL déjà traités
+FFC_CONNUS = f"{ETAT}/ffc_connus.json"         # URL des documents FFC -> première détection
+SURVEILLANCE = f"{ETAT}/surveillance.txt"      # noms surveillés (un par ligne, # = commentaire)
+FFC_NEW_HOURS = 3                              # un document FFC reste « nouveau » 3 h
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; DirectVeloVeilleBot/1.0; veille éditoriale)",
@@ -121,6 +128,7 @@ TRACKED = defaultdict(set)  # entité -> ensemble des sources qui la citent
 
 
 def track(source, items):
+    mark_new(source, items)
     for item in items:
         title = item[1] if len(item) > 2 else item[0]
         for ent in entities(title):
@@ -206,6 +214,26 @@ CONFIG = {
         {"name": "AFLD (via Google News)", "feeds": [google_news("site:afld.fr", "fr", 3)]},
         {"name": "UCI, communiqués (via Google News)", "feeds": [google_news("site:uci.org", "en", 3)]},
         {"name": "UEC (via Google News)", "feeds": [google_news("site:uec.ch", "en", 3)]},
+        {"name": "UCI, enregistrement des équipes 2027 (via Google News)",
+         "feeds": [google_news('UCI ("2027") (enregistrement OR licence OR "liste des équipes" OR WorldTeam OR ProTeam)', "fr", 3),
+                   google_news('UCI ("2027") ("team registration" OR "registered teams" OR licence OR WorldTeam OR ProTeam)', "en", 3)],
+         "prefiltered": True, "merge": True},
+        {"name": "TAS / CAS, cyclisme (via Google News)",
+         "feeds": [google_news('("Tribunal arbitral du sport" OR TAS OR "Court of Arbitration for Sport" OR CAS) (cyclisme OR cycling OR cycliste OR cyclist)', "fr", 7)]},
+        {"name": "Discipline FFC (via Google News)",
+         "feeds": [google_news('(FFC OR "Fédération française de cyclisme") (sanction OR suspension OR suspendu OR "commission de discipline" OR radiation)', "fr", 3)]},
+    ],
+    # Annonces des équipes françaises (Google News, requête par équipe + verbes d'annonce)
+    "equipes": ["Groupama-FDJ United", "Decathlon CMA CGM", "Cofidis", "TotalEnergies", "Unibet Rose Rockets",
+                "FDJ United-Suez", "St Michel-Préférence Home-Auber 93", "Nice Métropole Côte d'Azur",
+                "CIC Pro Cycling Academy", "Van Rysel-Roubaix", "Mayenne Monbana My Pie", "Ma Petite Entreprise",
+                "VC Rouen 76", "Burgos Burpellet BH"],
+    # Résultats du week-end et de la semaine (48 h) : cyclo-cross, piste, courses amateurs
+    "resultats": [
+        {"name": "Cyclo-cross : résultats (via Google News, 48 h)",
+         "feeds": [google_news('(cyclo-cross OR cyclocross) (classement OR résultats OR "s\'impose" OR victoire OR vainqueur)', "fr", 2)]},
+        {"name": "Courses amateurs et piste : résultats (via Google News, 48 h)",
+         "feeds": [google_news('(cyclisme) ("Coupe de France" OR N1 OR "élite nationale" OR piste OR vélodrome) (classement OR résultats OR "s\'impose" OR victoire)', "fr", 2)]},
     ],
     "transferts": {
         "name": "Transferts (ProCyclingStats, sinon FirstCycling)",
@@ -501,6 +529,112 @@ def section_ffc():
     return []
 
 
+# ---------------------------------------------------------------- état persistant
+
+def load_json(path, default):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return default
+
+
+def save_json(path, data):
+    os.makedirs(ETAT, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=0, sort_keys=True)
+
+
+def url_key(u):
+    """Clé de comparaison d'une URL : sans protocole, sans paramètres de suivi, sans / final."""
+    u = re.sub(r"^https?://(www\.)?", "", (u or "").strip())
+    u = re.sub(r"[?&](utm_[^&]+|oc=\d+|hl=[^&]+|gl=[^&]+|ceid=[^&]+)", "", u)
+    return u.rstrip("/?&").lower()
+
+
+def load_traites():
+    """URL déjà traitées par l'agent (fichier JSON Lines : une ligne {"url": ..., ...} par sujet)."""
+    keys = set()
+    try:
+        with open(TRAITES, encoding="utf-8") as f:
+            for line in f:
+                try:
+                    rec = json.loads(line)
+                except ValueError:
+                    continue
+                for u in [rec.get("url")] + list(rec.get("urls", []) or []):
+                    if u:
+                        keys.add(url_key(u))
+    except OSError:
+        pass
+    return keys
+
+
+def load_surveillance():
+    try:
+        with open(SURVEILLANCE, encoding="utf-8") as f:
+            return [l.strip() for l in f if l.strip() and not l.strip().startswith("#")]
+    except OSError:
+        return []
+
+
+NEW_ITEMS = []  # (date, source, titre, lien) : éléments vus pour la première fois à cette génération
+
+
+def mark_new(source, items):
+    """Repère les éléments jamais vus aux générations précédentes et met à jour etat/vus.json en mémoire."""
+    for it in items:
+        dt, title, link = it[0], it[1], it[2]
+        k = url_key(link)
+        if not k:
+            continue
+        if k not in VUS_DB:
+            VUS_DB[k] = {"vu": NOW.isoformat(timespec="minutes"), "source": source, "titre": title[:160],
+                         "pub": dt.isoformat(timespec="minutes") if dt else None}
+            if not FIRST_RUN:
+                NEW_ITEMS.append((dt, source, title, link))
+    return items
+
+
+def section_surveillance():
+    """Recherche Google News par paquets de 6 noms surveillés (coureurs, clubs, encadrants)."""
+    names = load_surveillance()
+    out = []
+    for i in range(0, len(names), 6):
+        chunk = names[i:i + 6]
+        q = "(" + " OR ".join(f'"{n}"' for n in chunk) + ") (cyclisme OR vélo OR cycliste OR coureur OR équipe)"
+        src = {"name": f"Surveillance nominative ({chunk[0]} …)", "feeds": [google_news(q, "fr", 1)]}
+        out += recent(fetch_feed(src))
+    seen, res = set(), []
+    for it in sorted(out, key=lambda x: x[0] or NOW, reverse=True):
+        if url_key(it[2]) not in seen:
+            seen.add(url_key(it[2]))
+            res.append(it)
+    return res[:MAX_ITEMS], len(names)
+
+
+def section_equipes():
+    out = []
+    for team in CONFIG["equipes"]:
+        q = f'"{team}" (annonce OR officialise OR signe OR recrue OR prolonge OR "a signé" OR effectif OR arrivée OR départ)'
+        out += [(dt, f"[{team}] {t}", l) for dt, t, l in recent(fetch_feed({"name": f"Équipe : {team} (via Google News)",
+                                                                              "feeds": [google_news(q, "fr", 1)]}))]
+    seen, res = set(), []
+    for it in sorted(out, key=lambda x: x[0] or NOW, reverse=True):
+        if url_key(it[2]) not in seen:
+            seen.add(url_key(it[2]))
+            res.append(it)
+    return res[:MAX_ITEMS]
+
+
+def recent_hours(entries, hours):
+    since = NOW - timedelta(hours=hours)
+    out = [(entry_datetime(e), e.get("title", "(sans titre)").strip(), e.get("link", "")) for e in entries]
+    out = [x for x in out if not x[0] or x[0] >= since]
+    out.sort(key=lambda x: x[0] or NOW, reverse=True)
+    return out[:MAX_ITEMS]
+
+
 # ---------------------------------------------------------------- écriture
 
 def block(md, title, items, source=None):
@@ -508,7 +642,16 @@ def block(md, title, items, source=None):
     md += [f"### {title}", ""] + lines(track(source or title, items))
 
 
+VUS_DB = {}
+FIRST_RUN = False
+
+
 def main():
+    global VUS_DB, FIRST_RUN
+    VUS_DB = load_json(VUS, None)
+    FIRST_RUN = VUS_DB is None
+    VUS_DB = VUS_DB or {}
+    traites = load_traites()
     body = []
 
     body += ["## 1. Nos publications internes (DirectVelo)", ""] + lines(section_directvelo())
@@ -535,7 +678,24 @@ def main():
 
     body += ["## 6. Sources primaires : FFC Ressources (page 1)", ""]
     ffc = section_ffc()
-    body += [f"- [{t}]({u})" for t, u in ffc] + [""] if ffc else lines([])
+    connus = load_json(FFC_CONNUS, None)
+    ffc_first = connus is None
+    connus = connus or {}
+    ffc_new = []
+    for t, u in ffc:
+        k = url_key(u)
+        if k not in connus:
+            # À la première exécution, les documents existants sont enregistrés comme anciens
+            connus[k] = "2000-01-01T00:00+00:00" if ffc_first else NOW.isoformat(timespec="minutes")
+            if not ffc_first:
+                ffc_new.append((t, u))
+        elif datetime.fromisoformat(connus[k]) >= NOW - timedelta(hours=FFC_NEW_HOURS):
+            ffc_new.append((t, u))
+    if ffc:
+        save_json(FFC_CONNUS, connus)
+        body += [f"- {'🆕 **NOUVEAU** — ' if (t, u) in ffc_new else ''}[{t}]({u})" for t, u in ffc] + [""]
+    else:
+        body += lines([])
 
     body += ["## 7. Presse internationale (transferts & cyclo-cross)", ""]
     for name, items in section_list("international"):
@@ -549,6 +709,18 @@ def main():
     tr = section_transferts()
     body += [f"- [{t}]({u})" for t, u in tr] + [""] if tr else lines([])
     block(body, "Cyclocross24", recent(fetch_feed(CONFIG["cyclocross24"])))
+
+    body += ["## 11. Surveillance nominative (coureurs, clubs, encadrants : etat/surveillance.txt)", ""]
+    surv, n_names = section_surveillance()
+    body += [f"_{n_names} noms surveillés._", ""]
+    block(body, "Articles citant un nom surveillé", surv, "Surveillance nominative")
+
+    body += ["## 12. Annonces des équipes françaises (via Google News)", ""]
+    block(body, "Annonces repérées", section_equipes(), "Annonces des équipes")
+
+    body += ["## 13. Résultats (48 h) : cyclo-cross, piste, courses amateurs", ""]
+    for src in CONFIG["resultats"]:
+        block(body, src["name"], recent_hours(fetch_feed(src), 48))
 
     # Radar tendances (placé en tête du fichier, calculé après la collecte)
     radar = ["## TENDANCES & SIGNAUX GOOGLE DISCOVER", ""]
@@ -574,13 +746,32 @@ def main():
     radar += ["### Baromètre des médias grand public (Le10Sport, RMC Sport, Dicodusport, Sports.fr, Eurosport — 12 h)", ""]
     radar += lines(media)
 
+    # Nouveautés depuis la génération précédente (hors URL déjà traitées par l'agent)
+    nouv = ["## 0. NOUVEAUTÉS DEPUIS LA GÉNÉRATION PRÉCÉDENTE", ""]
+    if FIRST_RUN:
+        nouv += ["_Première génération avec mémoire : la liste des nouveautés sera disponible à la prochaine génération._", ""]
+    else:
+        fresh = [x for x in NEW_ITEMS if url_key(x[3]) not in traites]
+        fresh.sort(key=lambda x: x[0] or NOW, reverse=True)
+        if ffc_new:
+            nouv += [f"- 🆕 **ALERTE FFC — nouveau document** : [{t}]({u})" for t, u in ffc_new]
+        nouv += [f"- {fmt_time(dt)} — {src} — [{t}]({l})" for dt, src, t, l in fresh[:120]] or \
+                ["_Aucune publication nouvelle depuis la génération précédente._"]
+        if len(fresh) > 120:
+            nouv.append(f"- … et {len(fresh) - 120} autres (voir les sections ci-dessous).")
+        nouv.append("")
+    # Purge des URL vues il y a plus de 7 jours, puis sauvegarde
+    limit = (NOW - timedelta(days=7)).isoformat(timespec="minutes")
+    VUS_DB = {k: v for k, v in VUS_DB.items() if v.get("vu", "") >= limit}
+    save_json(VUS, VUS_DB)
+
     md = [
         "# Flux de veille DirectVelo (tampon 2 h)",
         "",
         f"Généré le {NOW.astimezone(PARIS).strftime('%d/%m/%Y à %Hh%M')} (heure de Paris). "
         f"Fenêtre : publications depuis le {SINCE.astimezone(PARIS).strftime('%d/%m à %Hh%M')}.",
         "",
-    ] + radar + body
+    ] + radar + nouv + body
 
     md += ["## 10. Statut technique des sources", "",
            "| Source | URL interrogée | Code HTTP | Éléments | Remarque |",
