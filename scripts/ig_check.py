@@ -12,7 +12,7 @@ for entite, handles in cands.items():
     for h in handles:
         if h in out["resultats"]:
             continue
-        fields = f"business_discovery.username({h}){{username,name,followers_count,media_count,media.limit(1){{timestamp}}}}"
+        fields = f"business_discovery.username({h}){{username,name,biography,followers_count,media_count,media.limit(1){{timestamp}}}}"
         try:
             r = requests.get(f"{GRAPH}/{uid}", params={"fields": fields, "access_token": tok}, timeout=15)
             d = r.json()
@@ -23,7 +23,7 @@ for entite, handles in cands.items():
             b = d["business_discovery"]
             m = (b.get("media") or {}).get("data") or [{}]
             out["resultats"][h] = {"entite": entite, "ok": True, "username": b.get("username"), "nom": b.get("name"),
-                                   "abonnes": b.get("followers_count"), "publications": b.get("media_count"),
+                                   "abonnes": b.get("followers_count"), "bio": (b.get("biography") or "")[:200], "publications": b.get("media_count"),
                                    "dernier": m[0].get("timestamp")}
         else:
             err = d.get("error", {})
