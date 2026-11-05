@@ -1,0 +1,25 @@
+# Comptes Bluesky lus à chaque génération du flux (un identifiant par ligne, # = commentaire).
+# Vérifiés le 05/11/2026 : comptes actifs dans le mois. Les reposts et les réponses sont ignorés.
+# Notre compte
+directvelo.bsky.social
+# Journalistes et mercato
+dnlbenson.bsky.social        # Daniel Benson (mercato, Substack)
+gregienco.be                 # Grégory Ienco, Belga / CyclismeRevue
+globalpeloton.bsky.social    # Dan Challis, Escape Collective
+robynemz.bsky.social         # Robyn, journaliste cyclisme
+matildaprice.bsky.social     # Tilda Price, Cyclingnews (cyclisme féminin)
+timbonvilleginn.bsky.social  # Tim Bonville-Ginn, journaliste indépendant
+writebikerepeat.bsky.social  # Katy M, journaliste indépendante
+sadhbhos.bsky.social         # Sadhbh O'Shea, attachée de presse Jayco AlUla
+matthieusrvnt.bsky.social    # Matthieu, Le Gruppetto
+# Médias, blogs, forums
+legruppetto.fr
+inrng.com                    # The Inner Ring
+escapecollective.bsky.social
+domestiquecycling.com
+cyclismerevue.be
+hetiskoers.bsky.social
+chouchoutes.cc               # podcast cyclisme féminin
+procyclingstats.com
+# Équipes
+greenedgecycling.bsky.social # Jayco AlUla
