@@ -57,11 +57,14 @@ HEADERS = {
 PQR_KEYWORDS = ["cyclisme", "vélo", "velo", "peloton", "coureur", "n1", "n2", "n3",
                 "mercato", "cyclo-cross", "cyclocross"]
 GRUPPETTO_TOPICS = ["transfert", "équipe", "equipe", "amateur", "cyclo-cross", "cyclocross"]
-BLUESKY_QUERIES = ["DirectVelo", "TotalEnergies", "Mercato cyclisme"]  # recherche : seulement si les secrets Bluesky existent
+BLUESKY_QUERIES = ["DirectVelo", "mercato cyclisme", "transfert cyclisme", "cyclisme N1", "cyclo-cross", "Seixas", "TotalEnergies cyclisme",
+                   "Groupama-FDJ", "Decathlon CMA CGM", "Cofidis", "FFC cyclisme", "cyclisme féminin"]  # recherche : seulement si les secrets Bluesky existent
 # Comptes Bluesky lus sans authentification (getAuthorFeed est public) : liste éditable dans etat/bluesky.txt
 # (un identifiant par ligne, # = commentaire). Repli si le fichier manque :
 BLUESKY_FILE = f"{ETAT}/bluesky.txt"
 BLUESKY_ACTORS = ["directvelo.bsky.social"]
+BLUESKY_PER_ACCOUNT = 6   # posts gardés au plus par compte et par génération
+BLUESKY_MAX = 200         # posts Bluesky au plus dans le flux
 # Chaînes YouTube suivies : liste éditable dans etat/youtube.txt (« ID de chaîne | nom | velo » ;
 # « velo » = chaîne généraliste, on ne garde que les vidéos dont le titre parle de cyclisme).
 YOUTUBE_FILE = f"{ETAT}/youtube.txt"
@@ -522,15 +525,44 @@ def section_medias():
 
 
 def bluesky_token():
-    handle, password = os.getenv("BSKY_HANDLE"), os.getenv("BSKY_APP_PASSWORD")
+    """Ouvre une session Bluesky avec BSKY_HANDLE / BSKY_APP_PASSWORD. Renvoie (jeton, URL du serveur) ou (None, None).
+    Le serveur (PDS) du compte est résolu à partir de l'identifiant, pour les comptes hébergés hors de bsky.social."""
+    handle = (os.getenv("BSKY_HANDLE") or "").strip().lstrip("@")
+    password = (os.getenv("BSKY_APP_PASSWORD") or "").strip()
     if not handle or not password:
-        return None
+        return None, None
+    servers = ["https://bsky.social"]
     try:
-        r = requests.post("https://bsky.social/xrpc/com.atproto.server.createSession",
-                          json={"identifier": handle, "password": password}, timeout=TIMEOUT)
-        return r.json().get("accessJwt") if r.ok else None
-    except requests.RequestException:
-        return None
+        did = handle if handle.startswith("did:") else requests.get(
+            "https://bsky.social/xrpc/com.atproto.identity.resolveHandle", params={"handle": handle},
+            timeout=TIMEOUT).json().get("did")
+        if did and did.startswith("did:plc:"):
+            doc = requests.get(f"https://plc.directory/{did}", timeout=TIMEOUT).json()
+            pds = next((s["serviceEndpoint"] for s in doc.get("service", []) if s.get("id") == "#atproto_pds"), None)
+            if pds and pds.rstrip("/") not in servers:
+                servers.append(pds.rstrip("/"))
+    except (requests.RequestException, ValueError):
+        pass
+    last = "aucune réponse"
+    for base in servers:
+        try:
+            r = requests.post(f"{base}/xrpc/com.atproto.server.createSession",
+                              json={"identifier": handle, "password": password}, timeout=TIMEOUT)
+        except requests.RequestException as e:
+            last = f"Erreur ({type(e).__name__})"
+            continue
+        if r.ok and r.json().get("accessJwt"):
+            record("Bluesky connexion (compte de la veille)", f"{base}/xrpc/com.atproto.server.createSession",
+                   f"{r.status_code} OK", 1, "session ouverte : recherche par mots-clés active")
+            return r.json()["accessJwt"], base
+        try:
+            msg = r.json().get("message") or r.json().get("error") or ""
+        except ValueError:
+            msg = ""
+        last = f"{r.status_code} {r.reason} {msg}".strip()
+    record("Bluesky connexion (compte de la veille)", "createSession", last, 0,
+           "échec de connexion : vérifier les secrets BSKY_HANDLE (identifiant sans @) et BSKY_APP_PASSWORD (mot de passe d'application)")
+    return None, None
 
 
 def bluesky_post(p, label):
@@ -561,8 +593,12 @@ def load_list(path, default):
 def section_bluesky():
     out = []
 
-    # 1. Comptes suivis, sans authentification (endpoint public getAuthorFeed) : posts propres, hors réponses et reposts
-    for actor in load_list(BLUESKY_FILE, BLUESKY_ACTORS):
+    # 1. Comptes suivis, sans authentification (endpoint public getAuthorFeed) : posts propres, hors réponses et reposts.
+    #    Ligne de etat/bluesky.txt : « identifiant » ou « identifiant | velo » (compte généraliste : on ne garde que les
+    #    posts qui parlent de cyclisme). Au plus BLUESKY_PER_ACCOUNT posts par compte, pour qu'aucun compte ne noie les autres.
+    def one(line):
+        parts = [p.strip() for p in line.split("|")]
+        actor, filtre = parts[0], len(parts) > 1 and parts[1] == "velo"
         url = (f"https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor={quote_plus(actor)}"
                f"&limit=30&filter=posts_no_replies")
         r, code = get(url)
@@ -570,23 +606,32 @@ def section_bluesky():
             feed = r.json().get("feed", []) if r is not None and r.ok else []
         except ValueError:
             feed = []
-        kept = 0
+        posts = []
         for item in feed:
             if item.get("reason"):  # repost : on ne garde que ce que le compte publie lui-même
                 continue
             post = bluesky_post(item.get("post", {}), f"@{actor}")
-            if post[0] is None or post[0] >= SINCE:
-                out.append(post)
-                kept += 1
-        record(f"Bluesky @{actor}", url.split("&")[0], code, kept, "" if feed else "aucun post renvoyé")
+            if post[0] is not None and post[0] < SINCE:
+                continue
+            if filtre and not gn_ok(post[1], "strict"):
+                continue
+            posts.append(post)
+        record(f"Bluesky @{actor}", url.split("&")[0], code, min(len(posts), BLUESKY_PER_ACCOUNT),
+               "" if feed else "aucun post renvoyé")
+        return posts[:BLUESKY_PER_ACCOUNT]
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(8) as ex:
+        for posts in ex.map(one, load_list(BLUESKY_FILE, BLUESKY_ACTORS)):
+            out += posts
 
     # 2. Recherche par mots-clés : seulement si les secrets BSKY_HANDLE / BSKY_APP_PASSWORD sont définis
     #    (la recherche publique sans compte renvoie 403 depuis 2025 : ce n'est pas une panne).
-    token = bluesky_token()
+    token, base = bluesky_token()
     if token:
         for q in BLUESKY_QUERIES:
             params = f"q={quote_plus(q)}&limit=25&sort=latest&since={SINCE.strftime('%Y-%m-%dT%H:%M:%SZ')}"
-            url = f"https://bsky.social/xrpc/app.bsky.feed.searchPosts?{params}"
+            url = f"{base}/xrpc/app.bsky.feed.searchPosts?{params}"
             try:
                 r = requests.get(url, headers={**HEADERS, "Authorization": f"Bearer {token}"}, timeout=TIMEOUT)
                 code = f"{r.status_code} {'OK' if r.ok else r.reason} (authentifié)"
@@ -604,7 +649,7 @@ def section_bluesky():
         if p[2] not in seen:
             seen.add(p[2])
             res.append(p)
-    return res[:MAX_ITEMS]
+    return res[:BLUESKY_MAX]
 
 
 YT_HEADERS = {**HEADERS, "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
