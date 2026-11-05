@@ -1,10 +1,10 @@
 # Flux de veille DirectVelo (delta horaire)
 
-Généré le 05/11/2026 à 17h27 (heure de Paris). Fenêtre : publications depuis le 04/11 à 17h27.
+Généré le 05/11/2026 à 17h41 (heure de Paris). Fenêtre : publications depuis le 04/11 à 17h41.
 
 ## TENDANCES & SIGNAUX GOOGLE DISCOVER
 
-🔥 Sujets à forte vélocité (potentiel Discover) : Paul Seixas (9 sources), Tadej Pogačar (9 sources), Wout van Aert (8 sources), Decathlon CMA CGM (7 sources), Giro (7 sources), Remco Evenepoel (7 sources), Unibet Rose Rockets (6 sources), Tour de France (5 sources), Soudal Quick-Step (5 sources), Donavan Grondin (4 sources)
+🔥 Sujets à forte vélocité (potentiel Discover) : Tadej Pogačar (9 sources), Paul Seixas (8 sources), Wout van Aert (8 sources), Giro (7 sources), Decathlon CMA CGM (6 sources), Unibet Rose Rockets (6 sources), Remco Evenepoel (6 sources), Tour de France (5 sources), Soudal Quick-Step (5 sources), Mathieu van der Poel (5 sources)
 
 ### Google Trends France (sujets liés au vélo)
 
@@ -21,93 +21,18 @@ _Aucun sujet vélo dans les tendances Google France en ce moment._
 
 ## 0. NOUVEAUTÉS DEPUIS LA GÉNÉRATION PRÉCÉDENTE
 
-- heure inconnue — Cyclism'Actu — [Analyse Seixas, Finn, Philipsen… les talents à suivre de la génération 2006](https://www.cyclismactu.net/news-cyclisme-route-analyse-seixas-finn-philipsen-talents-suivre-de-generation-2006-96711.html)
-- 05/11 17h25 — Cyclingnews — ['It's about time' - BMC enter women's peloton with Basque Laboral Kutxa team partnership](https://www.cyclingnews.com/pro-cycling/womens-cycling/its-about-time-bmc-enter-womens-peloton-with-basque-laboral-kutxa-team-partnership/)
-- 05/11 17h24 — Bluesky — [@spaziociclismo.bsky.social : EF Education-EasyPost, Roberto Capello sul passaggio tra i pro’: “Sono fiducioso di poter vivere un 2027 ricco di successi con la squadra e di diventare un corridore forte” (0 j'aime, 0 reposts)](https://bsky.app/profile/spaziociclismo.bsky.social/post/3mzlbr6khvd2h)
-- 05/11 17h24 — Médias grand public — ["Je ne vois pas pourquoi Paul n'y serait pas", un coéquipier de Seixas laisse entendre qu'il disputera le Tour de France 2027 - RMC Sport](https://news.google.com/rss/articles/CBMimwJBVV95cUxNbWxrdUZMRG95cnJPNVRuNzJwNFA3V0cxTThOWE83RjFvWEZyNUxZczhtbDhkX25sUlhqRkFSVkV1VnM4Vjl4a1g5ODRyLS1UNzY4NjJwV2xWYkZlUzdjMHh1ajZHZ3Rhd1FzcF9FREt0MDdjOF91OFJCSTV4amR1VGxyVjF1bkhreXpBUWFGbzZyZ2VlWXoxVjhGZHFHOEkzYk1VRUY5ZG43SWdHVzNra3EzdGx2b0k4R3BsRzlMQk9uenJvYzZ0UlJwcm5GX1d1Y3RUWDJ2VWFxdXB5bDBKbVJKaGN2UTVENFVxeHZsek5Db1VMRW5JYUV1SnRTWkp6bncyNGpVSm15OXNEZ204RVhVYm5NRE16TUZJ?oc=5)
-- 05/11 17h16 — Bluesky — [@timbonvilleginn.bsky.social : With several broken bones to recover from an a partially paralysed face, Ronan Augé 🇫🇷 finally leaves hospital more than a month after his Tour de Langkawi 🇲🇾 crash... veloracycling.com/news/ronan-a.. (1 j'aime, 0 reposts)](https://bsky.app/profile/timbonvilleginn.bsky.social/post/3mzlbdeehpc2g)
-- 05/11 17h16 — Cyclism'Actu — [Route Matxin Fernandez : "Remporter les trois Grands Tours la même année…"](https://www.cyclismactu.net/news-cyclisme-route-matxin-fernandez-remporter-trois-grands-tours-meme-annee-96706.html)
-- 05/11 17h14 — L'Équipe (via Google News) — [« Quand tu as fait quinze ans de carrière, c'est difficile à accepter » : comment les ex-coureurs cyclistes vivent leur reconversion professionnelle - L'Équipe](https://news.google.com/rss/articles/CBMipwJBVV95cUxPM3lxc3M0VzNEX2I1a25NSllpaEhKNDR0ZUlrQWthOS1idjZ2bGNtZG5kT0E0bHFONlFoUm9XREVPc1BOcF80cXp4eTBjU0ZLRTJZQWRkX3dYM21KdVU3NmRCR0FOR1BKVFFYY1RTQUpqS2ZpTF9LTVI2dVFVaVkyMVZkU2Q0U1dkZ3dvdGNrNEtpOGtyQTlYUzZGYll1cVdvc2lqMGp5d0ZwVFduTU9BSFJCZWc3TGxMX0RmU1ZUa2tYOGh4ajc5Nm5LSHFWdGN3WXRoN0U0akFaR2FOUFBJa0Q5b0dmclhWMzUyUGhmbUo3dUE5bkVhYXRtbDB1Z3BRVlNhd0xWYmFzRXJ4cUVJLWpTQnB6S21jd181UEdaNG1TaFRaM3NJ?oc=5)
-- 05/11 17h11 — Bluesky — [@indeleiderstrui.bsky.social : Deense sprintsensatie moet pas op de plaats maken door aanwezigheid Olav Kooij #wielrennen #TourdeFrance #sprint #OlavKooij #TobiasLundAndresen (0 j'aime, 0 reposts)](https://bsky.app/profile/indeleiderstrui.bsky.social/post/3mzlb2mrkh52j)
-- 05/11 17h08 — Bluesky — [@wielerflits.bsky.social : 'Het is alsof Paul Seixas aanvoelt dat elk overbodig Frans woord de torenhoge verwachtingen verder aanwakkert'  (0 j'aime, 0 reposts)](https://bsky.app/profile/wielerflits.bsky.social/post/3mzlauehsdg2j)
-- 05/11 17h07 — Annonces des équipes — [[Van Rysel-Roubaix] Samuel Leroux et plusieurs professionnels au départ de la Beach Race 2026 de Gravelines - Delta FM](https://news.google.com/rss/articles/CBMirwFBVV95cUxONjFmWmprOE1EbVVkcTJhOFFZTmluaFM0UjJDQ01pU3d4Sk4xRGF1TFV4cHEycGRsaTljTmdqYVZFckk0T1ZnaFF4T0Rsb25naEs5TjJURDU3ZmZCdmN5S1F3SmNyWktvS25TUnp5NFFRbk5xb0pnXzFKRDctQW5TUW13RmwyRWR1QXd1eXhuQlY2RF9BcTRUdjV2WElUYUszdmstSXR4QjkwR0lQM0Nv?oc=5)
-- 05/11 17h06 — Bluesky — [@idlprocycling.bsky.social : Newlywed Dylan van Baarle shares pictures from rollercoaster month: Hit by car weeks before wedding #DylanVanBaarle #Newlywed #Cycling #Wedding #LifeChanges (0 j'aime, 0 reposts)](https://bsky.app/profile/idlprocycling.bsky.social/post/3mzlaqqhd2g2j)
-- 05/11 17h04 — Médias grand public — ["Pogacar, anatomy of a Goat" : le documentaire exceptionnel sur le champion slovène - Eurosport](https://news.google.com/rss/articles/CBMi8AFBVV95cUxPYjRuekxPY2ljYWlNUGRNSmphdWdxLTQ2MmNlc01iMGQ5UzRqazQzZ2huRWJNRkhfYXZoVjBET2RBU3VsMFFWNUlFMFV1WDVPQmxOZXprQVFYWkI3Y1dqSzdSTFUteXR3MTdhVjlIRHFFcll3VnJTOU5qeVdadWpPdVBKbDlmaDFHMk85NUVVZUdWVC1yUnM2RU95SmtjSU9CM0tlUHhnZlNoUS1lXzBZWEhmazBMazdZVVYxSXVlNTJEYVc3VlBMX0dKNnhrMl9Pb2ZUSGNNc0E0ZnBSRDdWMmU4LW5xcTV2TWJMWE1WWUc?oc=5)
-- 05/11 17h03 — Bluesky — [@cyclingnews.com : Look 795 Blade RS: Much improved aerodynamically, a joy to ride, and French but in a good way www.cyclingnews.com/bikes/look-7... (3 j'aime, 0 reposts)](https://bsky.app/profile/cyclingnews.com/post/3mzlalxt2xi2u)
-- 05/11 17h03 — Le Gruppetto – Route (pros, mercato, équipes, amateurs) — [Cyclisme sur route : Professionnels • Re: [Season Awards 2026] Qualifs. l Classique H de l'année](https://legruppetto.fr/forum/viewtopic.php?t=25022&p=4235968#p4235968)
-- 05/11 17h01 — Bluesky — [@news.radial.racing : 'Het is alsof Paul Seixas aanvoelt dat elk overbodig Frans woord de torenhoge verwachtingen verder aanwakkert' WielerFlits (0 j'aime, 0 reposts)](https://bsky.app/profile/news.radial.racing/post/3mzlagv75z3qx)
-- 05/11 17h00 — Bluesky — [@velo-velo-velo.bsky.social : How much has gravel changed in 2026? Here are the key things we noticed at the biggest races in the world. bit.ly/4zgOJjj (0 j'aime, 0 reposts)](https://bsky.app/profile/velo-velo-velo.bsky.social/post/3mzlag75wvv25)
-- 05/11 17h00 — DirectVelo — [Un coureur promu au VC Villefranche Beaujolais](https://www.directvelo.com/actualite/133155/un-coureur-promu-au-vc-villefranche-beaujolais)
-- 05/11 17h00 — WielerFlits — ['Het is alsof Paul Seixas aanvoelt dat elk overbodig Frans woord de torenhoge verwachtingen verder aanwakkert'](https://www.wielerflits.nl/nieuws/het-is-alsof-paul-seixas-aanvoelt-dat-elk-overbodig-frans-woord-de-torenhoge-verwachtingen-verder-aanwakkert/)
-- 05/11 17h00 — Cyclingnews — [Look 795 Blade RS: Much improved aerodynamically, a joy to ride, and French but in a good way](https://www.cyclingnews.com/bikes/look-795-blade-rs-2026-review/)
-- 05/11 16h56 — Médias grand public — [ATP Paris 1000 - Et regardez qui voilà ! Le passing incroyable de Van Assche en bout de course - Eurosport](https://news.google.com/rss/articles/CBMi8wFBVV95cUxPcGhfRUdXUzdRU01wSnI5MmZDZnNXSmFXYU96MDFRQlF0d3ktMC1SVF9XWHN5MzFiSHl4WFA0UFRLWEFkRUhvUFJ4SE1ucFlqSFh3STBXOHpvWVpmNDZzbmU4UkM3VnBtVGpjSG5XVDV1T2tGQ3p6YURvZTF1cGNUSkV1V3VITXhEbnJMRktQR3NUVU1GRDVUaVgxbmQ3VGM3Qm5iSUl2QXgtaXl5V29WMEFocUVVa0NEdnJtQ1NRUU5pVmpfZ0JHNEliaS1yWHBkM215azl5bUtrVkZUWjdEVWIzZ3Q4cTRiOVJSSTVZVnhoZFE?oc=5)
-- 05/11 16h55 — Bluesky — [@esciclismo.com : 📢 Ruiz de Larrinaga: "Vamos al Europeo con ganas y a luchar por todo" | Campeonato de Europa de ciclocross Mas información 👉 www.esciclismo.com/actualidad/c... #ciclismo #Zeddam2026 #CX #Ciclocross #C (0 j'aime, 0 reposts)](https://bsky.app/profile/esciclismo.com/post/3mzla5qupq225)
-- 05/11 16h55 — In de Leiderstrui — [Deense sprintsensatie moet pas op de plaats maken door aanwezigheid Olav Kooij](https://www.indeleiderstrui.nl/wielrennen/deense-sprintsensatie-moet-pas-op-de-plaats-maken-door-aanwezigheid-olav-kooij)
-- 05/11 16h54 — Surveillance nominative — [Transfert: Decathlon CMA CGM chipe un grand talent français à la Soudal Quick-Step - Cyclism'Actu](https://news.google.com/rss/articles/CBMi0wFBVV95cUxPYzdUNmpBXy1waTJ6M2JoNUJxSGpqYkVCdENpcEVqdkNsZ3FIcVFrQVZ6ZXZlS0h1MTd2WklnY1pFdzRWTEtwOXpOeWRsWlRleHpacDViUzVSRFB4ZUx1TzBHWUpWd3NaSWdNeUowRWVSUEduVW1VSEtfalkzVVJ2WkZrNU9lSXpSQjdvTGUxUTdhaExLeHhYNWxGOEgxV0Z3VU1hc01PT0lvbTRFMTl6QzhDNldaZUszb1o1RVJpUW9rSE5tWDZUQ0ZrRS0zck9CdVcw0gFcQVVfeXFMTzZtZFFSZXB2dzB5OXBhYVU5cWViQXNhRWp5M0NMbWxuQ3hWc1FNcWt3RmMtT0x6RWpSZkl3d3dhUjhXd1FackgyS0hQcTRieUhONWVfYm1MUG5MZGY?oc=5)
-- 05/11 16h54 — Cyclo-cross : résultats (via Google News, 48 h) — [Transfert: Decathlon CMA CGM chipe un grand talent français à la Soudal Quick-Step - Cyclism'Actu](https://news.google.com/rss/articles/CBMiywFBVV95cUxNSjBmb3hQTTZxSHJkQXNsNUtaSENDOVRNRi1CbEdLYjdTMUlxNng1NDdwQnJTcVF1V09qd2tlcmtLZVFVTEtTYmlxRC10WXlaMzN0cEFxV2c3NHlZeGR5RUM0N0VJcVR5N0NrSkVfa2VnX2FhLUczS2d5NFVFRXllMURKZlhFendxcHhRQWk1Y0t6NElYZkkxUkNtM0lDZHd1LTFnc0poUnZfTVNGNk9hS1JTLWJFMFJsVDQ5OFBnWC1aMFJOd2ZlVlNPTdIBXEFVX3lxTE82bWRRUmVwdncweTlwYWFVOXFlYkFzYUVqeTNDTG1sbkN4VnNRTXFrd0ZjLU9MekVqUmZJd3d3YVI4V3dRWnJIMktIUHE0YnlITjVlX2JtTFBuTGRm?oc=5)
-- 05/11 16h53 — Cyclism'Actu — [Transfert Decathlon CMA CGM chipe un grand talent français à la Soudal Quick-Step](https://www.cyclismactu.net/news-cyclisme-route-transfert-decathlon-cma-cgm-chipe-un-grand-talent-francais-a-soudal-quick-step-96712.html)
-- 05/11 16h43 — Bluesky — [@spaziociclismo.bsky.social : Solution Tech, l’organico prende sempre più forma: Matteo Fabbro e Kyrylo Tsarenko confermati, per Pozzovivo c’è l’accordo verbale e arriva Verre (0 j'aime, 0 reposts)](https://bsky.app/profile/spaziociclismo.bsky.social/post/3mzl7ia6jjp2q)
-- 05/11 16h40 — Le Télégramme (via Google News) — [Salon international des collectionneurs vélo - Sortir en Bretagne : actu agenda Brest, Lorient, Rennes… - Le Télégramme](https://news.google.com/rss/articles/CBMiywFBVV95cUxOUFBTR01wLXB2RjloeDhsclVfek5pdnQtcUZVU0xacEZuZjhVUGg2bGliQWtrRDF5ZHJJRlJfR0d2Zzd6c3M1cHY3ZHRzc1dWN1VDei1WOGVwZUJpdHBDeFpaNTZsaXJZVWNlQUkyVFpxMmQtQTlNMm1IcUI5b29xZjhMTFB6cWhHdnRXMVBYc2hzTFpSNjN4cTFqY1pDQ3ZpbnQ2bVRraGR2QjFRQzFPODN1dEJYSllKa3FpaV93R2d6RE9RVUtJNzZxcw?oc=5)
-- 05/11 16h34 — Bluesky — [@wielerflits.bsky.social : Opmerkelijk: UCI nomineert Evenepoel, Van Aert en Van der Poel voor nieuwe award, maar houdt zich niet aan eigen format  (1 j'aime, 0 reposts)](https://bsky.app/profile/wielerflits.bsky.social/post/3mzl6y3bgww2a)
-- 05/11 16h33 — Le Gruppetto – Route (pros, mercato, équipes, amateurs) — [Cyclisme sur route : Professionnels • Re: [Season Awards 2026] Qualifs. l Consultant de l'année](https://legruppetto.fr/forum/viewtopic.php?t=25023&p=4235960#p4235960)
-- 05/11 16h32 — Le Gruppetto – Route (pros, mercato, équipes, amateurs) — [Cyclisme sur route : Professionnels • Re: [Season Awards 2026] Qualifs. l Gruppettiste de l'année](https://legruppetto.fr/forum/viewtopic.php?t=25024&p=4235959#p4235959)
-- 05/11 16h31 — Le Gruppetto – Route (pros, mercato, équipes, amateurs) — [Cyclisme sur route : Professionnels • Re: [Season Awards 2026] Qualifs. l Classique H de l'année](https://legruppetto.fr/forum/viewtopic.php?t=25022&p=4235958#p4235958)
-- 05/11 16h30 — Relais réseaux sociaux — [Dumoulin klokt toptijd in marathon, maar deze ex-renner nóg beter - Wielerkrant.be](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQ3JibXBLZnZrcTZiY1lKMmtpZzh4NXcxekpHemM4cmFucFcyUS1CS0w3VEVKTTZXNmxDdGN4S09ydlJNNmZ1Mk5HOEdfc1RIVnpQZDJvRXFuMWp2bXQ5THd6SzZBTEJ6NDQ1ZWx4c2NuSTRIVEh6VjlXMVBUZjlTdDRSM0lSeTMzZmVqajVQX0tRVWZrQ3ZYR2s4eFVBRlNJb3FXMUl1WnUzcFd1b2hfSHBCXzNyOWVnTnF3UlNFY2VWSmRlcVpfcThqNUczWFdwTnAyZ25fa9IB3AFBVV95cUxQZWpNaEJnUElIZ2RBMFJ2Y19JQ2daRjZ4OHlMM2hudzlBOGdWSWlXdzRmVUtoR0dhalN3cU9XTl91LS1UZk51c3VsM3lOUHk4azYyMmRwcEVmNnVMWnM1bko1UWhnME84LWxLby1zb2VMRVZYZFZBTFktZ1pOaG5RY2t2aWxSemFKNUlaUFp4SUJJRzBrQk9KOVMwQi1QTjZRVktmLXc1TzNINnpGcGNiOUljNld2ekVQWkQzcWZfSHk1bHdSLXRicXgyUV9IcFE5UjhRNE9wa1liemU5?oc=5)
-- 05/11 16h28 — Surveillance nominative — [Analyse: Seixas, Finn, Philipsen… les talents à suivre de la génération 2006 - Cyclism'Actu](https://news.google.com/rss/articles/CBMitwFBVV95cUxQMWRGTnlfY1VZXzV3RlJaQk1rTVBNdnNCLVJkM08xdlZJLTlHTWVnY1UybnpIWjNSUlFaNjVaVTNZTUJUY2ZyWUZvdHVSRGFHZUd0Ykl5OTYxdEtMRmpfZmdnNUE3V0hMRTNsdmd5V3czb0t6d1NEbWR6UzY4bHFsazhIWGR0WmNsUHhSaUpyNmR6ZGRGQ0pHVVhWZ19iMENlRGtrOFA1UDRoUnlZYVpBS1pwQmNTN2PSAVxBVV95cUxNeUtUdDV1UDVWTTRXczFuWUFYZlpUY3BDVElwekRZM3Y4OTc5VW9JSWd3SkloenVYOGpDY2l6TmwtRl9lMXVHbk42QlFaeHJOWTJHSzRiSHVOdmRrVQ?oc=5)
-- 05/11 16h26 — Bluesky — [@marcabot.bsky.social :  El Giro más brutal busca estrellas: Evenepoel, Seixas y el sueño de reunir a los mejores  (0 j'aime, 0 reposts)](https://bsky.app/profile/marcabot.bsky.social/post/3mzl6jbgbrq2l)
-- 05/11 16h24 — Bluesky — [@domestiquecycling.com : 🇪🇸 Mikel Landa reflects on 🇧🇪 Quick-Step spell 🗣️ “I felt very much at home right from the start. It’s a team with a different mindset, more focused on the Classics races, but the truth is that it’s g (2 j'aime, 0 reposts)](https://bsky.app/profile/domestiquecycling.com/post/3mzl6gcm27k2b)
-- 05/11 16h24 — WielerFlits — [Opmerkelijk: UCI nomineert Evenepoel, Van Aert en Van der Poel voor nieuwe award, maar houdt zich niet aan eigen format](https://www.wielerflits.nl/nieuws/uci-nomineert-evenepoel-van-aert-en-van-der-poel-voor-nieuwe-award-maar-houdt-zich-niet-aan-eigen-format/)
-- 05/11 16h20 — Bluesky — [@timbonvilleginn.bsky.social : Swiss bike brand BMC announce they will provide the bikes for Laboral Kutxa-Fundación Euskadi 🇪🇸 for 2027 after parting with Chinese brand XDS X-Lab. (4 j'aime, 0 reposts)](https://bsky.app/profile/timbonvilleginn.bsky.social/post/3mzl66zmf5s2j)
-- 05/11 16h20 — In de Leiderstrui — ['Ben er best goed in, maar niet uitmuntend': Lucinda Brand kent rivalen en valkuilen voor EK veldrijden](https://www.indeleiderstrui.nl/veldrijden/ben-er-best-goed-in-maar-niet-uitmuntend-lucinda-brand-kent-rivalen-en-valkuilen-voor-ek-veldrijden)
-- 05/11 16h19 — La Voix du Nord (via Google News) — [Pourquoi ne voit-on plus de vélos Lime les jours de manifestation ? - La Voix du Nord](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQb3ZPN2txNFJDYm5EdXdUZG1lZnhhcjVkVlFsZGlyNkEwX0ctcURoUWt3bXN3VlNuSGJ0V2xxY3phdEJSaVVFWVBpYldKX3pqM2gtazJxLXJXbG5qaGRERDRFdzV0aDJFSVdDcFlJRzNZcmd1UmxhSXo1UUItWDZJd2FKeGVIdHY5LTE1TWdhYlBrYi16VEpNYkg0TmtieDRobVFPQzI0VDdKSTh3TVJxSGFhMUk4ZlU0?oc=5)
-- 05/11 16h17 — Bluesky — [@spaziociclismo.bsky.social : Netcompany Ineos, Geraint Thomas traccia il bilancio della stagione 2026: “Se guardo solo ai risultati, direi che non è andata bene. Ma penso abbiamo fatto un paio di passi in avanti” (0 j'aime, 0 reposts)](https://bsky.app/profile/spaziociclismo.bsky.social/post/3mzl5ymn7sw2c)
-- 05/11 16h16 — Le Télégramme (via Google News) — [Ballet de danse classique « Casse-Noisette » - Sortir en Bretagne : actu agenda Brest, Lorient, Rennes… - Le Télégramme](https://news.google.com/rss/articles/CBMivwFBVV95cUxNTGZteFBFZndXYjdWOUx3VmV2d0k1aHI3TV8ybmFGYzlmSm84WHpMeXd0MXcwTWpBbEtlTXJOeU85X05nUTJDUzJWSG8tXzVfQk9ld1FVTzVaTGxRSHRIU3V3RS0yamZjbWg5REpsWnFrOTVUbk9jTXYybVM4QnBvLVRoaDBuOXdaZC14dDNxd000c1dnb3hDWkFoX3AzUl9nblpnaFB5b185a2pZUUplWWhGaE5YeXcxVjFiU2xvWQ?oc=5)
-- 05/11 16h15 — Bluesky — [@timbonvilleginn.bsky.social : Eddy Merckx now puts Tadej Pogačar above him in new TNT Sports/Eurosport documentary... veloracycling.com/news/tadej-p... (2 j'aime, 0 reposts)](https://bsky.app/profile/timbonvilleginn.bsky.social/post/3mzl5vtjdtk2d)
-- 05/11 16h12 — Le Gruppetto – Route (pros, mercato, équipes, amateurs) — [Cyclisme sur route : Professionnels • Re: [Season Awards 2026] 1er Tour l Coureur de l'année](https://legruppetto.fr/forum/viewtopic.php?t=25019&p=4235955#p4235955)
-- 05/11 16h12 — Bluesky — [@news.radial.racing : Le Contre-pied de Jean-Marc Ghéraille: qui veut gagner des millions ? Paul Seixas DH Les Sports+ (Cyclisme) (0 j'aime, 0 reposts)](https://bsky.app/profile/news.radial.racing/post/3mzl5pjtbzaty)
-- 05/11 16h11 — Bluesky — [@thebritishcontinental.co.uk : None of Derby's four winners will race at Pontypool this weekend as the Cyclo-cross National Trophy clashes with the European Championships. Honor Elliott, Finn Mansfield and Charlotte Lissaman head t (0 j'aime, 0 reposts)](https://bsky.app/profile/thebritishcontinental.co.uk/post/3mzl5p6mbbs2v)
-- 05/11 16h10 — Annonces des équipes — [[Decathlon CMA CGM] Le Contre-pied de Jean-Marc Ghéraille: qui veut gagner des millions ? Paul Seixas - DHnet](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQTVFrYjFqMTFZX0FDRDRCc3FwZm44RTcyOURILUJESFpIdjJWZHNQSmFHbmlqSHVRQ1c0NTBwMzM4eWdfSU40cnJtOWJRLXRVQXZSSTVHTmt3Sm5MRHIxNlNUUG9RU0dmMGFXb2lNQV82Z2ZqOVdUZjZnMW1YWFNHeU42dGEwR0swRE13NFJWZUZqRHRMY0RlT2dyaDhZclNEZUNGQVhlUXV4aFRZMkJ2WmIzdmpvbHJheVFoR213MHVfaERwS1VRcktUN0dSSDlUd0VrdGRoWFZpUE9EMkE?oc=5)
-- 05/11 16h06 — Médias grand public — [UAE Team Emirates: Les ambitions de « Matxin » Fernandez - Sports.fr](https://news.google.com/rss/articles/CBMimwFBVV95cUxNYnFOMmpOYWs1S2NUWThWOV9qbWVLWVNkVlRhU1lzbmRiYWRnMUFFaXFqT0l6aHJaN194Qk9fMUVJZ3RzekNxVUM1SW9WVlAzbGRfbElkcW5uNDZNRnppYnVjYVRXdTg1N1p3UGNoVnFralFlVkhpalpaY0dnd3JxRjZsWldRbFRnQUJaODdla3RQQjdpVmpVUlZwaw?oc=5)
-- 05/11 16h03 — UCI, enregistrement des équipes 2027 (via Google News) — [L’UCI et Big Bobble Hats prolongent leur partenariat - UCI.org](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOODBEc2tBR0tESngzeE14em9CcGo3RDByVW1zZkR6clhaOGY2aGdLZTNqME90cGdob0c5Ujl4a3FaeTdodGEzdURUaUZVbFhjVVUyX280VjlsdnR2Q04yYk1NNTJxejNjenpNOVIxT19EeXF2RWNMV1dLaFB3UFZEZ0lkcDF0RGdPZ0U2MGVaUEFEM1M0YkJKMDJPV1Zha3JyS2Vnc2ZGMl8?oc=5)
-- 05/11 16h03 — PQR complémentaire : NR, La Montagne, L'Est Républicain, DNA, La Dépêche, Midi Libre, La Provence, Nice-Matin (via Google News) — [Plus de 1 000 coureurs attendus pour chasser les chronos ce dimanche sur La Méridienne - ladepeche.fr](https://news.google.com/rss/articles/CBMi0AFBVV95cUxORWdDMVFWQjgxOWRJYkE4Z0xKdHhkZUhIQ3FydndpZ0NaRFZZazBBYWNqTVY2d0s3bWJOeWR1ZzRwZ0lZemVDMzF1d0czTm8tNnRhRDdmM0wyLVdaWWZzSlozZC1odXFYM0VPRVRFQnBqU292Y29EMkxERHZIdDFTX21PSWo3M0lsakVxbkdiVTR3VlZPdUdaOUZwRGlYbmpzakpnUHR3Nm9qOUs0OWEwU3NiQ1UtSTVpZmw3Nm9DaHpjYmVzS3Y3bVIzbnF3Wl9H?oc=5)
-- 05/11 16h02 — Sporza, Het Nieuwsblad, HLN (via Google News) — [“Natuurlijk is de Ronde van Vlaanderen mijn favoriete koers”: in Etikhove ademt men wielrennen en stoomt men de volgende generatie klaar - Nieuwsblad](https://news.google.com/rss/articles/CBMimwJBVV95cUxQaXhJYmxaZGcxZFdqU1puUWx1OEY3Q1JfWjFOUmRabk9DWHdzMXFJVl81SnBUaWF5QVgtSndJQXktS2tWdzdGVVBoM1o1TEp3UzFHOEo1OWtLUjdDYnlBME1mSmlLYW5ZOHNqSGtkRW5DV25vWnRBSjlUN3FaTmpRbkdnWXQ0dFJRYlNrLUl3a2JRMXFoMlBUczRCblk2U1NKeHZqQVllSnBmalBMS3ZOVlMzUlpkOVdpMndjRU9TbTJ5Yl84YVBHT3Z6SFV2UjBPQjEyck5qSnl2Q3hOTURLRGFLU0J3SjZieldiZDNEVkJiMzJsQjh0dFJ5OVQybWZhZVBlS1pNc3BlZzZpcEJNNjc5dmkyTGNTcDNF?oc=5)
-- 05/11 16h00 — Bluesky — [@velo-velo-velo.bsky.social : The newest top-rated Virginia Tech helmet isn't aero. From independent safety scores to maximum ventilation, tell us what drives your purchasing decisions. bit.ly/48uiK3c (0 j'aime, 0 reposts)](https://bsky.app/profile/velo-velo-velo.bsky.social/post/3mzl52wwmeq23)
-- 05/11 16h00 — Instagram — [@uci_cycling : Four more years of rainbow hats🌈 We’re delighted to extend our partnership with bigbobblehats, Official Supplier of the UCI Cyclo-cross World Championships until 2030! 🤝 Since 2018, their iconic rainb](https://www.instagram.com/p/DfXTfGvCnIW/)
-- 05/11 16h00 — In de Leiderstrui — [Lars Boom, Lucinda Brand, kamp Nys en Nieuwenhuis over EK-hindernis die nergens na te bootsen is](https://www.indeleiderstrui.nl/veldrijden/lars-boom-lucinda-brand-kamp-nys-en-nieuwenhuis-over-ek-hindernis-die-nergens-na-te-bootsen-is)
-- 05/11 15h56 — La Voix du Nord (via Google News) — [Cyclisme : le Nordiste Victor Devos en passe de rejoindre Decathlon CMA-CGM ? - La Voix du Nord](https://news.google.com/rss/articles/CBMixwFBVV95cUxOcUFfbThwYk5iT2JrMFBCVmVlbGRkaDRSN0hGYjhJT3ZzX1JDMG5MNWlETEQwanZpWWFPc0ZvMVZhVS1QTzZuNk54OGljMHJ3RnFFSUktV3NUOW8wZFFPRml6RTFldjB5NGJZVjF0Mm00TWtlOEJXdEtnZklKemlLdTJVVDFnUTZXZzBoenI4Y2FrUzZCQkN5cFZtODhUWkRfQngxTGtjc0FIcXdKMUlDbHBrUjczWVBuQ2czRDRuWGZVWFNIR3dn?oc=5)
-- 05/11 15h55 — Sporza, Het Nieuwsblad, HLN (via Google News) — [Simon Goossens ruilt Alpecin-Premier Tech voor Tarteletto-Isorex: “Ik trek op veel terreinen mijn streng” - HLN](https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVmxyeDQ5YU1rdkNDXzRNUmljeF81MFNQTk56N2wwc19pRGVrVnNpcEY4djQ1cFNwZHlFMU14OEhfVENrUEZKZUh4Z0g4VGthZlE4bi1kZy1kVkl2WDhMVGpMdi1CR1NWRnlJMF80bDVqOTdoSVlQQks5YXcwcUIxTi02Ynp4TWVDVDZERFB0QlR4a0FMNnU1bTI1NDhoR0hVVmZiSjY0dDlnYzBRbDJDNXFNR2ZXMXY3XzhrUUFqal9PX1pJaGtTSWhEVEFzYjhHZFpXcElab2FLbXN2UVE1MWZyZw?oc=5)
-- 05/11 15h50 — Instagram — [@equipegroupamafdj : Comment repérer facilement des photos générées par l'IA ? 🤔🪄](https://www.instagram.com/p/DfXSTOhCLb6/)
-- 05/11 15h48 — Bluesky — [@domestiquecycling.com : Why 🇮🇹 Vincenzo Nibali thinks the 2027 Giro suits 🇫🇷 Paul Seixas 🗣️ "I read he's interested in riding the Giro and that's not by chance." 📰 www.domestiquecycling.com/en/news/if-i... 📸 Cor Vos (2 j'aime, 0 reposts)](https://bsky.app/profile/domestiquecycling.com/post/3mzl4g4hqmk2y)
-- 05/11 15h46 — Bluesky — [@matosvelo.fr : Visite de l'usine Origine à Rouvignies : www.matosvelo.fr/post/2026/11... (0 j'aime, 0 reposts)](https://bsky.app/profile/matosvelo.fr/post/3mzl4bftmi22m)
-- 05/11 15h43 — DirectVelo — [Un Championnat de Belgique tout près de la frontière française](https://www.directvelo.com/actualite/133118/un-championnat-de-belgique-tout-pres-de-la-frontiere-francaise)
-- 05/11 15h42 — Bluesky — [@cyclingnews.com : The Traka World Series 'natural evolution' of Gravel Earth Series with collection of seven races, €84,000 prize purse and promise of live streaming www.cyclingnews.com/pro-cycling/... (0 j'aime, 0 reposts)](https://bsky.app/profile/cyclingnews.com/post/3mzl43lhhdy2q)
-- 05/11 15h40 — Cyclingnews — [The Traka World Series a 'natural evolution' of Gravel Earth Series with collection of seven races, €84,000 prize purse and promise of live streaming](https://www.cyclingnews.com/pro-cycling/racing/the-traka-world-series-natural-evolution-of-gravel-earth-series-with-collection-of-seven-races-eur84-000-prize-purse-and-promise-of-live-streaming/)
-- 05/11 15h38 — Bluesky — [@wielerflits.bsky.social : Geraint Thomas ziet ondanks teleurstellend seizoen aanknopingspunten voor Netcompany INEOS  (0 j'aime, 0 reposts)](https://bsky.app/profile/wielerflits.bsky.social/post/3mzl3tghxt42f)
-- 05/11 15h31 — Bluesky — [@adambecket.bsky.social : good. www.theguardian.com/culture/2026... (2 j'aime, 0 reposts)](https://bsky.app/profile/adambecket.bsky.social/post/3mzl3hgqjj22c)
-- 05/11 15h30 — Cyclism'Actu — [Route Tobias Lund Andresen : "Si je devais lancer les sprints d'Olav Kooij…](https://www.cyclismactu.net/news-cyclisme-route-tobias-lund-andresen-si-devais-lancer-sprints-d-olav-kooij-96710.html)
-- 05/11 15h29 — Velo101 — [Présentation des championnats d’Europe de cyclo-cross 2026](https://www.velo101.com/courses/championnats-deurope-cyclocross/presentation-des-championnats-deurope-de-cyclo-cross-2026/)
-- 05/11 15h28 — WielerFlits — [Geraint Thomas ziet ondanks teleurstellend seizoen aanknopingspunten voor Netcompany INEOS](https://www.wielerflits.nl/nieuws/geraint-thomas-ziet-ondanks-teleurstellend-seizoen-aanknopingspunten-voor-netcompany-ineos/)
-- 05/11 15h20 — Bluesky — [@charlesrisemapple.bsky.social : Es que le pago yo el billete aunque tenga que pedir un Cofidis. (1 j'aime, 0 reposts)](https://bsky.app/profile/charlesrisemapple.bsky.social/post/3mzl2sj775s2c)
-- 05/11 15h18 — Relais réseaux sociaux — [Karnataka: Speeding Motorcycle Rams Into 8-Year-Old Cyclist in Bhadravati, CCTV Footage Goes Viral - Asianet Newsable](https://news.google.com/rss/articles/CBMi9wFBVV95cUxQb1dyX1NCWV9nUWcwbUxQejg3aU9zb3N5NXR0QktNOE9ENGJWQ3RSaGliekFvcElNTllFT0dzbE9RMkdJWlh4VmRLYzQ4Q3Flb2htd2ZqdmQ0ZTZFUGpmR2VXVGlZaGVJOUE4SXBsR1hkN2w4bjVmdDBIZEJCRi1zSkJuQUczMGlEcU5welRrZm1mOFRfTlN4ZHVEUjlZWW42dXhFSnQ5Wk5ydnhBN1BNdjViUUVuY0FybFJzT2pqQVlpN0hkUFhKVmhTSVVPY3hET3o5R1kzcmsyMTRVeXpSRllVSjdYWk1UclhmYW05UkNzRmF2N2JB0gH8AUFVX3lxTFBycnpLaFR5cGxyUi1kNUVpb1U4VkpFWV9sekxrWWE4Rjc4NDAyNHlDWnI3WjNJd25jaHNzamt1bk44TXhDNTNYT043TnprLTFFYXNkdDVIYjhHVXZ6dGROYnV2MGJKNjdmd1hSM21jWThNUkljVkM2eUlqbzFwbjVEZVNOUDREdlpXa2FZNnJmYzE1akl6ZkdmZXpyOFlUUUVxWUVqOUlvS2hrNHV4X21acldaeVhkdXVXRU1halpnMXVGU3ZvcmZrZEVNNXdDOF83Uy1ldTlzOHJ1aFdrTkpYcHpFbTJvV0VmeHp2dFp1R2dpQTJ6VUN2N09JOA?oc=5)
-- 05/11 15h17 — Le Gruppetto – Cyclo-cross, piste, VTT — [Cyclo-Cross, Piste, VTT &amp; Autres disciplines • Re: Cyclo Cross - Calendrier et résultats](https://legruppetto.fr/forum/viewtopic.php?t=140&p=4235942#p4235942)
-- 05/11 15h02 — Ouest-France — [Football. N2 : à Milizac, Corentin Jacob garde les pieds sur terre](https://www.ouest-france.fr/sport/football/milizac-saint-pierre/football-n2-a-milizac-corentin-jacob-garde-les-pieds-sur-terre-a9bce1cc-d905-11f1-9911-9179baff22e2?utm_source=fluxpublicsports&utm_medium=fluxrss&utm_campaign=banquedecontenu)
-- 05/11 15h02 — Ouest-France — [Tennis de table. « J’aime aussi la rigueur de ce sport », confie Tom Bertrait,14 ans, joueur de N3 au Nantes TT](https://www.ouest-france.fr/sport/tennis-de-table/nantes-tt/tennis-de-table-jaime-aussi-la-rigueur-de-ce-sport-confie-tom-bertrait-14-ans-joueur-de-n3-au-nantes-tt-ab913f82-d876-11f1-ba78-588612207db6?utm_source=fluxpublicsports&utm_medium=fluxrss&utm_campaign=banquedecontenu)
-- 05/11 14h57 — Bluesky — [@sudouest-17.bsky.social : Cyclo-cross : le Vélo Club Rochefortais prend ses aises à Soubise dimanche 🔗https://l.sudouest.fr/A1Ys (0 j'aime, 0 reposts)](https://bsky.app/profile/sudouest-17.bsky.social/post/3mzkzkkimbw25)
-- 05/11 14h53 — Annonces des équipes — [[TotalEnergies] VIDÉO. Manifestations du 5 novembre : les images du lycée attaqué et incendié près de Toulouse par des personnes cagoulées - Centre Presse Aveyron](https://news.google.com/rss/articles/CBMiigJBVV95cUxPWmpBNzlHcksxYndJM0J2Ylh3NkkwTlZmRkpUSjh6d1o3bUtVbGJRTVRmNUxVcDVfOUU0dVNQS2lTNVlXVzdTNkduckQ2MTd1enZ6ODM3bHR5ZEtEOFYzTk0zcmVZQ2prREVtRkVXUFoyaG9NMEhFZUR6SEsxbGlEdXJPMWVLTGhwaVZubExjSjRCR2ZrRThxcE44SEV1WnRHbFVYdEs2dE54bTZqTnZCdWowb1BnRmhrLWlnQV9qT3M1LWVhUlVPYkZ2RzAtNU9ieW1pVkxmT0NNa01YX1ZuZ0FnNkMtNXpPdUtMQnc5VGpYMjNrdTlFZE9HdER4SkdkVHlaNVpuZzhVUQ?oc=5)
-- 05/11 14h51 — La Voix du Nord (via Google News) — [La commune de Oisy-le-Verger récompensée pour son animation lors du passage d’une course cycliste féminine - La Voix du Nord](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPd21ieXpubm01SGN6TTFtMDZkeTdhU0dVZU5wNEZ6QTgzTloyX2FHa0JlYjZWZDYtMzJSMjVUY0g0NVM3Qlptb3R6S2RsZ1R4cEpGLTNTM21MaDB5T0NLNVA1TlZ5c2NCZmtBSmdza1BRd2pwdkVQVzBZRW8zM2VDdXVGQWwwYUZSVFN1Vjkya2ZBLTRmSG9vVmR5eDFUZEdEanZOay04S1A5czBTZnlVOEFVemZUTWVNU29wRHU1T3VyR0ppOFNlX0VDUWtVME1C?oc=5)
-- 05/11 14h39 — Cyclism'Actu — [Vélo La mythique marque italienne Bianchi en grosse difficulté financière](https://www.cyclismactu.net/news-cyclisme-route-velo-la-mythique-marque-italienne-bianchi-en-grosse-difficulte-financiere-96689.html)
-- 05/11 12h40 — Annonces des équipes — [[Decathlon CMA CGM] Route: Tobias Lund Andresen : «Si je devais lancer les sprints d'Olav Kooij… - Cyclism'Actu](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWlh0UFVFVTd3ZnBtZFQwQjhxYl94UWtaZ0dCb2JVdHNIUkQ5SjcyNTVua3U5bGZLV1ExZHp0Tmp6U092bmNfTlA5amhaQkoxT0J1dUFJcHdIcko1dXVsTlJXclB6MUVpYmpNb3ZwUFNZMVgzOWZkM2FNbXc3TmpveHl0aWNCTURxX0VzUTZzZ0p5M3hBYjB4dnpWNVV6S3BDSmxTc2ZlZmxpVFZqVVgwcUVhOVVvUE1p0gFcQVVfeXFMTWtiUHdySG5ZN0Nxak9DYnl0d182X0FyTUI4bGlpUHNHbWtFTElUUjZGQXVZVnpNWFlSaUtzeG9nSWJfWklZTUlOLWJmdWlKTVhNOVVUWTZTeDdUcDM?oc=5)
-- 05/11 10h57 — Relais réseaux sociaux — [E-bike riders to face crackdown over ‘wild west’ and pavement blocking parking - Ham & High](https://news.google.com/rss/articles/CBMipgFBVV95cUxOeGF0clh1b0M1emFyMDVQV2lRQ2JjOHJ4YVMzVVBVLVIxN0NETGpfb3NSVUFQS2xmaVFCNGJuaEcxcXFmVm91MWFxdUtxS0paYVRkS3QzTXI0akNBaElPZFNETUt5VWVHaTVNWjZDWFNqNmpZeklOVWtsejRNWVdmNld0cnB2Tm51bUVvTFc3LW5LLWNLSVA1ZzFQeFBEUC15NF8xUUtB?oc=5)
-- 05/11 10h43 — Annonces des équipes — [[TotalEnergies] Lourdes : le jiu-jitsu brésilien fait son arrivée au centre Maison du Monde 65 - NRPyrenees.fr](https://news.google.com/rss/articles/CBMixAFBVV95cUxQNFNGU1BzWjh5dGpnQm5uS0swcGd6NjBTUWp3ZEk1OWFzWG43MVMzcXQ0aVF3eENXN0kweVdrcGh4QWlqMXpMZVVBb21wQ052cTF0VldMYjlUSE5QTE5LMHd3d0Y5cUU0R0g4SkZOUnhHOHdFV3dPdXQzYU8tclV6UVFWaVg5X0F6d2xhUHk5RU1UWWRQSjlEeTNnWW5UVGotcWFhUkhCa3BYb0NRbkFXcEFXLXVWNmE0c3Jqa1lYb01COFIt?oc=5)
-- 05/11 10h13 — Annonces des équipes — [[TotalEnergies] Alerte à la bombe dans un airbus : le vol Dublin – Rome dérouté vers une base aérienne française, et ce n'est pas le seul - Centre Presse Aveyron](https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQXpncTlQREM3dURrdWY1M3RYU3VMMWZDR05IWTJ3VXZwNmM2OUhGOUlkUTM5ZDRsQmctOE50SktpM25GLUpkdXpEalpCWjV0eEJSdzlGWm52SFBtWU9ZUGJwWnVBT2xNeVBOTlZEd1ZldjJNLUVRaUNLQlVZSm1MdmVqZG81Y1AwMGJ2R1NIUmxPTzlEa0Q4Q29wMEx0YjlPVVZCT1NHOTJOSDNsV3FpOGJmQ0NLNE5OMG1haUdmR3pZblczRG1fcE45Qkxjc2JOejFvY0pvZGVKSVZIMWoxMzhvQlJZdw?oc=5)
-- 05/11 09h43 — Tuttobiciweb (Italie) — [CAMPANA APPRODA ALLA "DEVO" DELLA CANYON SRAM: SIGLATO UN BIENNALE](https://www.tuttobiciweb.it/article/2026/11/05/1793868219/ciclismo-canyon-sram-generation-agata-campana-velociste-mercato-ciclismo)
-- 05/11 09h00 — Ciclo21 (Espagne) — [Ciclocross: Resultados UCI 2026-2027](https://www.ciclo21.com/ciclocross-resultados-uci-2026-2027/)
-- 05/11 07h20 — Ciclo21 (Espagne) — [JJOO juventud: España con Jiménez y Wymmersch](https://www.ciclo21.com/jjoo-juventud-jimenez-y-wymmersch-con-espana/)
-- 05/11 05h12 — Annonces des équipes — [[TotalEnergies] Les causeries autour de la photographie se poursuivent - NRPyrenees.fr](https://news.google.com/rss/articles/CBMipwFBVV95cUxPR0V5WVRYUnlGTFZBazNuZ24tTWx4MC1CUHZ2WlJUOEpVTlNLNG83d1pkbk9FN2lUbVRMN2l4TFdscGpqXzlQUVBrcFhvWlZXY2swTnUyM0xrWUo0ejhoeUhEMUlGaUtuQmg2QlhmTVRfVGdFaVZUdWFSSzFyTF9ka1RSMDgtOVpZOFYycGRBSmlselBPTllUakV0Y1NuQ2FRQnlraUdrdw?oc=5)
-- 05/11 05h12 — Annonces des équipes — [[TotalEnergies] Écologie et cadre de vie au cœur du prochain Café citoyen - NRPyrenees.fr](https://news.google.com/rss/articles/CBMirAFBVV95cUxQdDlFQjQ2X1BmdTVwTmpKVV9MZ25xY2RBM3RXbG9DZm13VzMwZGNMd0tGM3AwaG5GcHdKNUxLbDBueTBfY2lkbXUwRlFZX214aDVRMjcwZy00QTNva2V1SkpwZ1BrdU1qU2NaTHhwLWxhZFZOZ0RxX25rWFQzeEJ0Ulo2R1FSMWVFZmVwdzNabjNsSGM2ZExIeTkxd25MeTRFN1hQazRIelVmaXZx?oc=5)
-- 04/11 19h35 — UCI, communiqués (via Google News) — [Greenzone Zalaegerszeg XCO - UCI.org](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBDQ3dBZ2Rtb0Q3VU5TbjM4QUxsMGZxenkwbndPQkFULWx3M0ZsRkxmb0tER0E3UEc5T244WUVNVll0V0N2QkdoUzBjQTZJRUctNWJEX2FYSnFsVDdhazRiQ3czNWo?oc=5)
-- 04/11 17h48 — Cyclo-cross : résultats (via Google News, 48 h) — [Route: Wout van Aert : «Le Tour des Flandres ? Je continue à y croire, mais…» - Cyclism'Actu](https://news.google.com/rss/articles/CBMitwFBVV95cUxPWnktTXBXRWR4eHpGUGMzU3U4cWVhZ1U0ZkZ1eWhZVTM5LWc3b1NuT0ZFRVp0MENjcFZyN3VVUHZ2ZWZzdGFfVVR3bXpwUFUtdlpqWjRGZ09WbFFqeTlfT2JGWGE3RFgwcEVueTYtWFFxcGF6cWdUQWlFR2RUU0hTNzY1VHhkMU83aERoRXZObGVyNDIzYUhBRDdRYUZ2RFZ6ZGJ0TFh5blVGaDJ3cmhNd0J0YlExSVnSAVxBVV95cUxNUFphazA3Rlg1YmpTLWFHRVNCUDhQUzVuMENjemt5YlVOa0Jxb0RkZkxTV3piS2hlTnhpeDRPRnNDUy1HSzVCQUVpSjNtbkNGaHRlc2Z4YXozTGlWMQ?oc=5)
-- 03/11 20h18 — Courses amateurs et piste : résultats (via Google News, 48 h) — [Théophile Vassal - DirectVelo](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5lc3Y4UXlTcE9mTGNWOHBiNS1oZ1k5TEhTMXI1RU1wZk1SakFIM3pDLVdlRDl3MjlNTjBCRzlBUk9DS09JdWVBOFhiRWtJeXhicDlHV01CeG52SDdTNHEyWHlLYlhlcnl1?oc=5)
+- 05/11 17h38 — Bluesky — [@indeleiderstrui.bsky.social : Mathieu van der Poel en Wout van Aert hebben volgende award-nominatie binnen #MathieuVanDerPoel #WoutVanAert #UCI #Wielrennen #WielrennerVanHetJaar (0 j'aime, 0 reposts)](https://bsky.app/profile/indeleiderstrui.bsky.social/post/3mzlckkaeso2j)
+- 05/11 17h38 — Cyclism'Actu — [Tour d'Italie Luca Guercilena : "Faire un Giro pour les vrais coureurs"](https://www.cyclismactu.net/news-giro-route-tour-d-italie-luca-guercilena-faire-un-giro-pour-vrais-coureurs-96699.html)
+- 05/11 17h35 — Bluesky — [@esciclismo.com : 📢 Dani Moreno gana la Titan Forest Patagonia y se convierte en el primer vencedor de gravel Mas información 👉 www.esciclismo.com/actualidad/m... #ciclismo #BTT #Mountainbike #TitanForestPatagonia (0 j'aime, 0 reposts)](https://bsky.app/profile/esciclismo.com/post/3mzlcewie3s2l)
+- 05/11 17h32 — Bluesky — [@idlprocycling.bsky.social : How the European Championship favourites will tackle the 99 steps this weekend: 'Take the stairs instead of the elevator' #EuropeanChampionships #Cyclocross #Zeddam #99Steps #CyclingLife (0 j'aime, 0 reposts)](https://bsky.app/profile/idlprocycling.bsky.social/post/3mzlc6vt55t2e)
+- 05/11 17h30 — Bluesky — [@wielerflits.bsky.social : Telenet Superprestige Avondcross Middelkerke 2026: Programma en uitslagen  (0 j'aime, 0 reposts)](https://bsky.app/profile/wielerflits.bsky.social/post/3mzlc4pah7v2z)
+- 05/11 17h30 — Bluesky — [@esciclismo.com : 📢 Roberto Capello da el salto al WorldTour con EF Education-EasyPost Mas información 👉 www.esciclismo.com/actualidad/c... #ciclismo (0 j'aime, 0 reposts)](https://bsky.app/profile/esciclismo.com/post/3mzlc3unbec2b)
+- 05/11 17h28 — DirectVelo — [Moyon Percy Vélo Club engage deux Juniors](https://www.directvelo.com/actualite/133156/moyon-percy-velo-club-engage-deux-juniors)
+- 05/11 17h27 — Bluesky — [@cyclingnews.com : 'It's about time' - BMC enter women's peloton with Basque Laboral Kutxa team partnership www.cyclingnews.com/pro-cycling/... (2 j'aime, 1 reposts)](https://bsky.app/profile/cyclingnews.com/post/3mzlbx7k6zh2q)
+- 05/11 17h25 — In de Leiderstrui — [Mathieu van der Poel en Wout van Aert hebben volgende award-nominatie binnen](https://www.indeleiderstrui.nl/wielrennen/mathieu-van-der-poel-en-wout-van-aert-hebben-volgende-award-nominatie-binnen)
+- 05/11 16h28 — Surveillance nominative — [Analyse: Seixas, Finn, Philipsen… les talents à suivre de la génération 2006 - Cyclism'Actu](https://news.google.com/rss/articles/CBMiXEFVX3lxTE15S1R0NXVQNVZNNFdzMW5ZQVhmWlRjcENUSXB6RFkzdjg5NzlVb0lJZ3dKSWh6dVg4akNjaXpObC1GX2UxdUduTjZCUVp4ck5ZMkdLNGJIdU52ZGtV0gFcQVVfeXFMTXlLVHQ1dVA1Vk00V3MxbllBWGZaVGNwQ1RJcHpEWTN2ODk3OVVvSUlnd0pJaHp1WDhqQ2Npek5sLUZfZTF1R25ONkJRWnhyTlkyR0s0Ykh1TnZka1U?oc=5)
+- 05/11 15h18 — Relais réseaux sociaux — [Karnataka: Speeding Motorcycle Rams Into 8-Year-Old Cyclist in Bhadravati, CCTV Footage Goes Viral - Asianet Newsable](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQcnJ6S2hUeXBsclItZDVFaW9VOFZKRVlfbHpMa1lhOEY3ODQwMjR5Q1pyN1ozSXduY2hzc2prdW5OOE14QzUzWE9ON056ay0xRWFzZHQ1SGI4R1V2enRkTmJ1djBiSjY3ZndYUjNtY1k4TVJJY1ZDNnlJam8xcG41RGVTTlA0RHZaV2thWTZyZmMxNWpJemZHZmV6cjhZVFFFcVlFajlJb0toazR1eF9tWnJXWnlYZHV1V0VNYWpaZzF1RlN2b3Jma2RFTTV3QzhfN1MtZXU5czhydWhXa05KWHB6RW0yb1dFZnh6dnRadUdnaUEyelVDdjdPSTjSAfwBQVVfeXFMUHJyektoVHlwbHJSLWQ1RWlvVThWSkVZX2x6TGtZYThGNzg0MDI0eUNacjdaM0l3bmNoc3Nqa3VuTjhNeEM1M1hPTjdOemstMUVhc2R0NUhiOEdVdnp0ZE5idXYwYko2N2Z3WFIzbWNZOE1SSWNWQzZ5SWpvMXBuNURlU05QNER2WldrYVk2cmZjMTVqSXpmR2ZlenI4WVRRRXFZRWo5SW9LaGs0dXhfbVpyV1p5WGR1dVdFTWFqWmcxdUZTdm9yZmtkRU01d0M4XzdTLWV1OXM4cnVoV2tOSlhwekVtMm9XRWZ4enZ0WnVHZ2lBMnpVQ3Y3T0k4?oc=5)
+- 05/11 12h40 — Annonces des équipes — [[Decathlon CMA CGM] Route - Tobias Lund Andresen : «Si je devais lancer les sprints d'Olav Kooij… - Cyclism'Actu](https://news.google.com/rss/articles/CBMirAFBVV95cUxPWEpLQkU5cmU1M1QtSmpkUDhDUTlja0kyM3Q4cG9xZ2NYM3hxYUhiOUFLZDdkbExJdVJNN2oyZkVyMWNIRXpzN0NDdGhNQUR3NDV2SkIwenZscUV4cjNYZFBiX0VPZ3lLZGdFUHRCeTNnR0xxT1dDZkdYbk45dUFpNmRXQWVBeDVfb0g5dkZXODRQVThJUmxzY0hweFJyUkNVNkZ3UVJORGhVMjhL?oc=5)
 
 ## 10. Statut technique des sources
 
@@ -116,12 +41,12 @@ _Aucun sujet vélo dans les tendances Google France en ce moment._
 | DirectVelo | https://www.directvelo.com/rss/actualites | 200 OK | 50 |  |
 | Le Gruppetto (Route (pros, mercato, équipes, amateurs)) | https://legruppetto.fr/forum/feed.php?f=12 | 200 OK | 15 |  |
 | Le Gruppetto (Cyclo-cross, piste, VTT) | https://legruppetto.fr/forum/feed.php?f=13 | 200 OK | 15 |  |
-| Ouest-France | https://www.ouest-france.fr/rss/sport | 200 OK | 119 |  |
+| Ouest-France | https://www.ouest-france.fr/rss/sport | 200 OK | 120 |  |
 | Le Télégramme (via Google News) | https://news.google.com/rss/search?q=site%3Aletelegramme.fr+cyclisme+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 5 | 95 écarté(s) par le filtre lexical |
 | Le Progrès | https://www.leprogres.fr/rss | Erreur (ConnectionError) | 0 |  |
 | Sud Ouest | https://www.sudouest.fr/sport/rss.xml | 200 OK | 20 |  |
 | La Voix du Nord (via Google News) | https://news.google.com/rss/search?q=site%3Alavoixdunord.fr+cyclisme+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 5 | 95 écarté(s) par le filtre lexical |
-| PQR complémentaire : NR, La Montagne, L'Est Républicain, DNA, La Dépêche, Midi Libre, La Provence, Nice-Matin (via Google News) | https://news.google.com/rss/search?q=%28site%3Alanouvellerepublique.fr+OR+site%3Alamontagne.fr+OR+site%3Aestrepublicain.fr+OR+site%3Adna.fr+OR+site%3Aladepeche.fr+OR+site%3Amidilibre.fr+OR+site%3Alaprovence.com+OR+site%3Anicematin.com%29+cyclisme+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 7 | 92 écarté(s) par le filtre lexical |
+| PQR complémentaire : NR, La Montagne, L'Est Républicain, DNA, La Dépêche, Midi Libre, La Provence, Nice-Matin (via Google News) | https://news.google.com/rss/search?q=%28site%3Alanouvellerepublique.fr+OR+site%3Alamontagne.fr+OR+site%3Aestrepublicain.fr+OR+site%3Adna.fr+OR+site%3Aladepeche.fr+OR+site%3Amidilibre.fr+OR+site%3Alaprovence.com+OR+site%3Anicematin.com%29+cyclisme+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 6 | 93 écarté(s) par le filtre lexical |
 | Le Dauphiné Libéré | https://www.ledauphine.com/sport/rss | Erreur (ConnectionError) | 0 |  |
 | Le Dauphiné Libéré | https://www.ledauphine.com/rss | Erreur (ConnectionError) | 0 |  |
 | Cyclism'Actu (sitemap) | https://www.cyclismactu.net/sitemap-news.xml | 404 Not Found | 0 | absent ou vide |
@@ -132,99 +57,99 @@ _Aucun sujet vélo dans les tendances Google France en ce moment._
 | Cyclism'Actu (page) | https://www.cyclismactu.net/ | 200 OK | 38 | lecture de la page (heure lue pour les articles du jour) |
 | Velo101 | https://www.velo101.com/feed | 200 OK | 100 |  |
 | WielerFlits | https://www.wielerflits.nl/feed/ | 200 OK | 20 |  |
-| In de Leiderstrui | https://www.indeleiderstrui.nl/sitemap/news.xml | 200 OK | 477 |  |
+| In de Leiderstrui | https://www.indeleiderstrui.nl/sitemap/news.xml | 200 OK | 478 |  |
 | Cyclingnews | https://www.cyclingnews.com/feeds.xml | 200 OK | 50 |  |
 | L'Équipe (via Google News) | https://news.google.com/rss/search?q=site%3Alequipe.fr+cyclisme+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 4 | 96 écarté(s) par le filtre lexical |
-| Bluesky @legruppetto.fr | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=legruppetto.fr | 200 OK | 0 |  |
-| Bluesky @matosvelo.fr | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=matosvelo.fr | 200 OK | 2 |  |
 | Bluesky @directvelo.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=directvelo.bsky.social | 200 OK | 0 |  |
-| Bluesky @chouchoutes.cc | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=chouchoutes.cc | 200 OK | 1 |  |
-| Bluesky @cyclismerevue.be | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclismerevue.be | 200 OK | 0 |  |
-| Bluesky @matthieusrvnt.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=matthieusrvnt.bsky.social | 200 OK | 0 |  |
-| Bluesky @etiennegoursaud.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=etiennegoursaud.bsky.social | 200 OK | 0 |  |
 | Bluesky @gregienco.be | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=gregienco.be | 200 OK | 1 |  |
-| Bluesky @charlesmarsault.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=charlesmarsault.bsky.social | 200 OK | 0 |  |
+| Bluesky @matosvelo.fr | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=matosvelo.fr | 200 OK | 2 |  |
+| Bluesky @etiennegoursaud.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=etiennegoursaud.bsky.social | 200 OK | 0 |  |
+| Bluesky @chouchoutes.cc | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=chouchoutes.cc | 200 OK | 1 |  |
+| Bluesky @legruppetto.fr | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=legruppetto.fr | 200 OK | 0 |  |
+| Bluesky @cyclismerevue.be | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclismerevue.be | 200 OK | 0 |  |
 | Bluesky @cyclisme-dopage.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclisme-dopage.com | 200 OK | 6 |  |
-| Bluesky @afp.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=afp.com | 200 OK | 0 |  |
+| Bluesky @matthieusrvnt.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=matthieusrvnt.bsky.social | 200 OK | 0 |  |
 | Bluesky @stephanemandard.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=stephanemandard.bsky.social | 200 OK | 0 |  |
-| Bluesky @globalpeloton.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=globalpeloton.bsky.social | 200 OK | 0 |  |
+| Bluesky @charlesmarsault.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=charlesmarsault.bsky.social | 200 OK | 0 |  |
+| Bluesky @afp.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=afp.com | 200 OK | 0 |  |
+| Bluesky @dnlbenson.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=dnlbenson.bsky.social | 200 OK | 0 |  |
 | Bluesky @pierrebrt.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=pierrebrt.bsky.social | 200 OK | 0 |  |
 | Bluesky @benjaminpeltier.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=benjaminpeltier.bsky.social | 200 OK | 0 |  |
+| Bluesky @globalpeloton.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=globalpeloton.bsky.social | 200 OK | 0 |  |
 | Bluesky @robynemz.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=robynemz.bsky.social | 200 OK | 0 |  |
 | Bluesky @matildaprice.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=matildaprice.bsky.social | 200 OK | 0 |  |
-| Bluesky @dnlbenson.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=dnlbenson.bsky.social | 200 OK | 0 |  |
 | Bluesky @adambecket.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=adambecket.bsky.social | 200 OK | 1 |  |
 | Bluesky @dbfreelance.co.uk | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=dbfreelance.co.uk | 200 OK | 0 |  |
-| Bluesky @lukascph.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=lukascph.bsky.social | 200 OK | 0 |  |
-| Bluesky @owenrogers382.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=owenrogers382.bsky.social | 200 OK | 0 |  |
-| Bluesky @jeremywhittle.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=jeremywhittle.bsky.social | 200 OK | 0 |  |
 | Bluesky @timbonvilleginn.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=timbonvilleginn.bsky.social | 200 OK | 6 |  |
+| Bluesky @lukascph.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=lukascph.bsky.social | 200 OK | 0 |  |
 | Bluesky @writebikerepeat.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=writebikerepeat.bsky.social | 200 OK | 0 |  |
+| Bluesky @jeremywhittle.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=jeremywhittle.bsky.social | 200 OK | 0 |  |
+| Bluesky @owenrogers382.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=owenrogers382.bsky.social | 200 OK | 0 |  |
 | Bluesky @petercossins.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=petercossins.bsky.social | 200 OK | 0 |  |
-| Bluesky @peterstuart.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=peterstuart.bsky.social | 200 OK | 0 |  |
 | Bluesky @nedboulting.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=nedboulting.bsky.social | 200 OK | 0 |  |
 | Bluesky @kennypryde.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=kennypryde.bsky.social | 200 OK | 2 |  |
-| Bluesky @jacobwhitehead.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=jacobwhitehead.bsky.social | 200 OK | 0 |  |
+| Bluesky @peterstuart.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=peterstuart.bsky.social | 200 OK | 0 |  |
 | Bluesky @duffofbrentford.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=duffofbrentford.bsky.social | 200 OK | 0 |  |
-| Bluesky @frankheinen.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=frankheinen.bsky.social | 200 OK | 1 |  |
-| Bluesky @pflax1.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=pflax1.bsky.social | 200 OK | 0 |  |
-| Bluesky @thijszonneveld.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=thijszonneveld.bsky.social | 200 OK | 0 |  |
+| Bluesky @jacobwhitehead.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=jacobwhitehead.bsky.social | 200 OK | 0 |  |
 | Bluesky @andrewcurry.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=andrewcurry.com | 200 OK | 0 |  |
-| Bluesky @marijndevries.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=marijndevries.bsky.social | 200 OK | 0 |  |
-| Bluesky @timfietst.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=timfietst.bsky.social | 200 OK | 0 |  |
+| Bluesky @thijszonneveld.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=thijszonneveld.bsky.social | 200 OK | 0 |  |
+| Bluesky @pflax1.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=pflax1.bsky.social | 200 OK | 0 |  |
 | Bluesky @josebeentv.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=josebeentv.bsky.social | 200 OK | 1 |  |
+| Bluesky @marijndevries.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=marijndevries.bsky.social | 200 OK | 0 |  |
+| Bluesky @frankheinen.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=frankheinen.bsky.social | 200 OK | 1 |  |
 | Bluesky @thomassijtsma.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=thomassijtsma.bsky.social | 200 OK | 0 |  |
-| Bluesky @jezcox.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=jezcox.bsky.social | 200 OK | 0 |  |
 | Bluesky @jonascreteur.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=jonascreteur.bsky.social | 200 OK | 0 |  |
-| Bluesky @antmccrossan.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=antmccrossan.bsky.social | 200 OK | 0 |  |
 | Bluesky @cyclartist.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclartist.bsky.social | 200 OK | 0 |  |
-| Bluesky @anderiza.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=anderiza.bsky.social | 200 OK | 2 |  |
-| Bluesky @luuksport.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=luuksport.bsky.social | 200 OK | 1 |  |
-| Bluesky @sadhbhos.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sadhbhos.bsky.social | 200 OK | 0 |  |
-| Bluesky @saardr.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=saardr.bsky.social | 200 OK | 0 |  |
+| Bluesky @antmccrossan.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=antmccrossan.bsky.social | 200 OK | 0 |  |
 | Bluesky @sannyr.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sannyr.com | 200 OK | 0 |  |
-| Bluesky @domestiquecycling.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=domestiquecycling.com | 200 OK | 6 |  |
-| Bluesky @cyclingnews.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclingnews.com | 200 OK | 6 |  |
+| Bluesky @jezcox.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=jezcox.bsky.social | 200 OK | 0 |  |
+| Bluesky @timfietst.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=timfietst.bsky.social | 200 OK | 0 |  |
+| Bluesky @sadhbhos.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sadhbhos.bsky.social | 200 OK | 0 |  |
+| Bluesky @luuksport.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=luuksport.bsky.social | 200 OK | 1 |  |
+| Bluesky @anderiza.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=anderiza.bsky.social | 200 OK | 2 |  |
+| Bluesky @saardr.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=saardr.bsky.social | 200 OK | 0 |  |
 | Bluesky @doctorhutch.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=doctorhutch.bsky.social | 200 OK | 0 |  |
 | Bluesky @escapecollective.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=escapecollective.bsky.social | 200 OK | 2 |  |
-| Bluesky @cyclingweekly.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclingweekly.com | 200 OK | 3 |  |
+| Bluesky @domestiquecycling.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=domestiquecycling.com | 200 OK | 6 |  |
+| Bluesky @cyclingnews.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclingnews.com | 200 OK | 6 |  |
+| Bluesky @idlprocycling.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=idlprocycling.bsky.social | 200 OK | 6 |  |
+| Bluesky @cyclingweekly.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclingweekly.com | 200 OK | 2 |  |
+| Bluesky @velo-velo-velo.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=velo-velo-velo.bsky.social | 200 OK | 6 |  |
+| Bluesky @rouleurmagazine.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=rouleurmagazine.bsky.social | 200 OK | 2 |  |
 | Bluesky @cyclist.co.uk | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclist.co.uk | 200 OK | 1 |  |
 | Bluesky @thebritishcontinental.co.uk | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=thebritishcontinental.co.uk | 200 OK | 2 |  |
-| Bluesky @rouleurmagazine.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=rouleurmagazine.bsky.social | 200 OK | 2 |  |
 | Bluesky @wielerflits.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=wielerflits.bsky.social | 200 OK | 6 |  |
-| Bluesky @velo-velo-velo.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=velo-velo-velo.bsky.social | 200 OK | 6 |  |
-| Bluesky @procyclinguk.com.web.brid.gy | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=procyclinguk.com.web.brid.gy | 200 OK | 0 |  |
-| Bluesky @hetiskoers.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=hetiskoers.bsky.social | 200 OK | 3 |  |
-| Bluesky @indeleiderstrui.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=indeleiderstrui.bsky.social | 200 OK | 6 |  |
-| Bluesky @nieuwsblad.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=nieuwsblad.bsky.social | 200 OK | 0 |  |
-| Bluesky @sport.nos.nl | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sport.nos.nl | 200 OK | 0 |  |
+| Bluesky @hetiskoers.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=hetiskoers.bsky.social | 200 OK | 2 |  |
 | Bluesky @sporza.be | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sporza.be | 200 OK | 0 |  |
-| Bluesky @as.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=as.com | 200 OK | 0 |  |
-| Bluesky @idlprocycling.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=idlprocycling.bsky.social | 200 OK | 5 |  |
+| Bluesky @nieuwsblad.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=nieuwsblad.bsky.social | 200 OK | 0 |  |
+| Bluesky @indeleiderstrui.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=indeleiderstrui.bsky.social | 200 OK | 6 |  |
 | Bluesky @spaziociclismo.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=spaziociclismo.bsky.social | 200 OK | 6 |  |
+| Bluesky @procyclinguk.com.web.brid.gy | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=procyclinguk.com.web.brid.gy | 200 OK | 0 |  |
 | Bluesky @mm-gazzetta-sport.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=mm-gazzetta-sport.bsky.social | 200 OK | 0 |  |
+| Bluesky @sport.nos.nl | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sport.nos.nl | 200 OK | 0 |  |
+| Bluesky @esciclismo.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=esciclismo.com | 200 OK | 3 |  |
+| Bluesky @as.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=as.com | 200 OK | 0 |  |
 | Bluesky @marca.com.web.brid.gy | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=marca.com.web.brid.gy | 200 OK | 0 |  |
-| Bluesky @esciclismo.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=esciclismo.com | 200 OK | 1 |  |
-| Bluesky @elsterrato.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=elsterrato.bsky.social | 200 OK | 0 |  |
-| Bluesky @inrng.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=inrng.com | 200 OK | 0 |  |
 | Bluesky @esenciaciclista.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=esenciaciclista.bsky.social | 200 OK | 1 |  |
-| Bluesky @howtheracewaswon.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=howtheracewaswon.com | 200 OK | 1 |  |
-| Bluesky @theathletic.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=theathletic.com | 200 OK | 0 |  |
-| Bluesky @cyclingmagazine.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclingmagazine.bsky.social | 200 OK | 0 |  |
-| Bluesky @ciclismomundial.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=ciclismomundial.bsky.social | 200 OK | 0 |  |
+| Bluesky @elsterrato.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=elsterrato.bsky.social | 200 OK | 0 |  |
 | Bluesky @radsportnews.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=radsportnews.bsky.social | 200 OK | 0 |  |
+| Bluesky @ciclismomundial.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=ciclismomundial.bsky.social | 200 OK | 0 |  |
+| Bluesky @cyclingmagazine.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclingmagazine.bsky.social | 200 OK | 0 |  |
+| Bluesky @theathletic.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=theathletic.com | 200 OK | 0 |  |
+| Bluesky @inrng.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=inrng.com | 200 OK | 0 |  |
+| Bluesky @howtheracewaswon.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=howtheracewaswon.com | 200 OK | 1 |  |
 | Bluesky @cilliankelly.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cilliankelly.bsky.social | 200 OK | 0 |  |
 | Bluesky @cyclingreno.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cyclingreno.bsky.social | 200 OK | 0 |  |
+| Bluesky @ammattipyoraily.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=ammattipyoraily.bsky.social | 200 OK | 0 |  |
 | Bluesky @procyclingstats.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=procyclingstats.com | 200 OK | 0 |  |
 | Bluesky @globalkeirin.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=globalkeirin.com | 200 OK | 0 |  |
-| Bluesky @ammattipyoraily.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=ammattipyoraily.bsky.social | 200 OK | 0 |  |
 | Bluesky @cycologies.com | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=cycologies.com | 200 OK | 2 |  |
-| Bluesky @greenedgecycling.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=greenedgecycling.bsky.social | 200 OK | 0 |  |
 | Bluesky @lavuelta.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=lavuelta.bsky.social | 200 OK | 0 |  |
-| Bluesky @boucles53.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=boucles53.bsky.social | 200 OK | 0 |  |
+| Bluesky @greenedgecycling.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=greenedgecycling.bsky.social | 200 OK | 0 |  |
 | Bluesky @africacycling.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=africacycling.bsky.social | 200 OK | 0 |  |
-| Bluesky @lavueltafem.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=lavueltafem.bsky.social | 200 OK | 0 |  |
+| Bluesky @boucles53.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=boucles53.bsky.social | 200 OK | 0 |  |
 | Bluesky @robincarpenter.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=robincarpenter.bsky.social | 200 OK | 0 |  |
+| Bluesky @lavueltafem.bsky.social | https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=lavueltafem.bsky.social | 200 OK | 0 |  |
 | Bluesky connexion (compte de la veille) | https://bsky.social/xrpc/com.atproto.server.createSession | 200 OK | 1 | session ouverte : recherche par mots-clés active |
 | Bluesky recherche « DirectVelo » | https://bsky.social/xrpc/app.bsky.feed.searchPosts | 200 OK (authentifié) | 1 |  |
 | Bluesky recherche « mercato cyclisme » | https://bsky.social/xrpc/app.bsky.feed.searchPosts | 200 OK (authentifié) | 1 |  |
@@ -239,55 +164,12 @@ _Aucun sujet vélo dans les tendances Google France en ce moment._
 | Bluesky recherche « FFC cyclisme » | https://bsky.social/xrpc/app.bsky.feed.searchPosts | 200 OK (authentifié) | 0 |  |
 | Bluesky recherche « cyclisme féminin » | https://bsky.social/xrpc/app.bsky.feed.searchPosts | 200 OK (authentifié) | 0 |  |
 | Instagram (rotation) | etat/instagram.txt | — | 83 | 48 comptes prioritaires + groupe 5/5 (443 comptes en rotation) ; 85 écartés |
-| Instagram @teamtotalenergies | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @teamcofidis | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @rocketscycling | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @fdj_suez | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @equipegroupamafdj | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @cicprocyclingacademy | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @decathloncmacgmteam | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @mapetiteentreprise_cyclisme | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @vanryselroubaix | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @mayenneprocycling | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @teamnicemetropolecotedazur | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @vendee_u_primeo_energie | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @equipegroupamafdjunitedconti | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @vcrouen76 | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @decathloncmacgm_newgen | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @auber93cyclisme | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @burgosburpelletbh | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @ffcyclisme | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @uci_cycling | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 2 |  |
-| Instagram @lnc_cyclisme | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @letourdefrance | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @letourfemmes | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @tourdelavenir | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @cictourdelaprovence | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @letourdesalpesmaritimes | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @etoile_de_besseges | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @paul.sxs | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @lennymrtz | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @kevin_vql | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @paristourscourse | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @alafpolak | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @valentinmadouas | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @parisnicecourse | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @benoit.cosnefroy | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @_romaingregoire | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @aubin_sparfel | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @marion_bunel | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @cedrine_kerbaol | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @juliettelabous | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @evita_mzc | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @david_gaudu | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @france_peloton | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @paulineferrandprevot | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @lefrenchcyclard | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
-| Instagram @amandinefouquenet | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @cyclismactu1 | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 1 |  |
-| Instagram @danslamusette | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
-| Instagram @legruppetto | https://graph.facebook.com/v27.0/…/business_discovery | 200 OK | 0 |  |
-| Instagram @marion_borras | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
+| Instagram @decathloncmacgmteam | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
+| Instagram @equipegroupamafdjunitedconti | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
+| Instagram @equipegroupamafdj | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
+| Instagram @decathloncmacgm_newgen | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
+| Instagram @teamtotalenergies | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
+| Instagram @teamcofidis | https://graph.facebook.com/v27.0/…/business_discovery | 403 Forbidden | 0 | code 4 : (#4) Application request limit reached |
 | YouTube DirectVelo | https://www.youtube.com/feeds/videos.xml?channel_id=UCUKO69zxNdz2xaCKNEBmEew | 200 OK | 15 |  |
 | YouTube FFC | https://www.youtube.com/feeds/videos.xml?channel_id=UCpDrHFOtG5sE_779j4rkAcQ | 200 OK | 15 |  |
 | YouTube UCI | https://www.youtube.com/feeds/videos.xml?channel_id=UCloqTh1nPpW13LCntQglS-Q | 200 OK | 15 |  |
@@ -313,14 +195,14 @@ _Aucun sujet vélo dans les tendances Google France en ce moment._
 | YouTube Alpecin-Premier Tech | https://www.youtube.com/feeds/videos.xml?channel_id=UCul2imagVKz20u1CKgCcfbw | 200 OK | 15 |  |
 | Reddit r/peloton | https://www.reddit.com/r/peloton/new/.rss | 200 OK | 25 |  |
 | Relais réseaux sociaux (fr, via Google News) | https://news.google.com/rss/search?q=%28cyclisme+OR+cycliste+OR+coureur+OR+coureuse+OR+%C3%A9quipe+OR+club%29+%28%22sur+Instagram%22+OR+%22sur+X%22+OR+%22sur+TikTok%22+OR+%22sur+Facebook%22+OR+%22sur+LinkedIn%22+OR+%22sur+YouTube%22+OR+%22sur+ses+r%C3%A9seaux%22+OR+%22sur+les+r%C3%A9seaux+sociaux%22+OR+%22sur+Twitter%22%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 5 | 30 écarté(s) par le filtre lexical |
-| Relais réseaux sociaux (en, via Google News) | https://news.google.com/rss/search?q=%28cycling+OR+cyclist+OR+%22pro+cycling%22+OR+WorldTour%29+%28%22on+Instagram%22+OR+%22on+social+media%22+OR+%22on+X%22+OR+%22on+TikTok%22+OR+%22on+Twitter%22%29+when%3A1d&hl=en-US&gl=US&ceid=US:en | 200 OK | 7 | 11 écarté(s) par le filtre lexical |
+| Relais réseaux sociaux (en, via Google News) | https://news.google.com/rss/search?q=%28cycling+OR+cyclist+OR+%22pro+cycling%22+OR+WorldTour%29+%28%22on+Instagram%22+OR+%22on+social+media%22+OR+%22on+X%22+OR+%22on+TikTok%22+OR+%22on+Twitter%22%29+when%3A1d&hl=en-US&gl=US&ceid=US:en | 200 OK | 7 | 10 écarté(s) par le filtre lexical |
 | Relais réseaux sociaux (nl, via Google News) | https://news.google.com/rss/search?q=%28wielrenner+OR+wielrennen+OR+veldrijder+OR+renner%29+%28%22op+Instagram%22+OR+%22op+sociale+media%22+OR+%22op+X%22+OR+%22op+Twitter%22%29+when%3A1d&hl=nl&gl=BE&ceid=BE:nl | 200 OK | 3 | 12 écarté(s) par le filtre lexical |
 | FFC Ressources (API WordPress) | https://ffc.fr/wp-json/wp/v2/ressources?per_page=18&orderby=date&order=desc&_fields=id,date,modified,link,title | 200 OK | 20 | 18 ressources |
 | Tuttobiciweb (Italie) | https://www.tuttobiciweb.it/rss | 404 Not Found | 0 |  |
 | Tuttobiciweb (Italie) | https://www.tuttobiciweb.it/rss.xml | 200 OK | 30 |  |
 | La Gazzetta dello Sport, ciclismo (via Google News) | https://news.google.com/rss/search?q=site%3Agazzetta.it+ciclismo+when%3A1d&hl=it&gl=IT&ceid=IT:it | 200 OK | 1 | 99 écarté(s) par le filtre lexical |
 | Ciclo21 (Espagne) | https://www.ciclo21.com/feed/ | 200 OK | 10 |  |
-| Sporza, Het Nieuwsblad, HLN (via Google News) | https://news.google.com/rss/search?q=%28site%3Asporza.be+OR+site%3Anieuwsblad.be+OR+site%3Ahln.be%29+%28koers+OR+veldrijden+OR+transfer%29+when%3A1d&hl=nl&gl=BE&ceid=BE:nl | 200 OK | 6 | 94 écarté(s) par le filtre lexical |
+| Sporza, Het Nieuwsblad, HLN (via Google News) | https://news.google.com/rss/search?q=%28site%3Asporza.be+OR+site%3Anieuwsblad.be+OR+site%3Ahln.be%29+%28koers+OR+veldrijden+OR+transfer%29+when%3A1d&hl=nl&gl=BE&ceid=BE:nl | 200 OK | 7 | 93 écarté(s) par le filtre lexical |
 | Escape Collective | https://escapecollective.com/feed/ | 403 Forbidden | 0 |  |
 | Escape Collective | https://news.google.com/rss/search?q=site%3Aescapecollective.com+when%3A1d&hl=en-US&gl=US&ceid=US:en | 200 OK | 8 | repli Google News |
 | ITA, cyclisme (via Google News) | https://news.google.com/rss/search?q=site%3Aita.sport+cycling+when%3A3d&hl=en-US&gl=US&ceid=US:en | 200 OK | 0 | réponse sans entrées de flux |
@@ -345,20 +227,20 @@ _Aucun sujet vélo dans les tendances Google France en ce moment._
 | Surveillance nominative (LMP-La Roche Vendée …) | https://news.google.com/rss/search?q=%28%22LMP-La+Roche+Vend%C3%A9e%22+OR+%22UC+Haguenau%22+OR+%22VCU+Schwenheim%22+OR+%22Nice+M%C3%A9tropole+C%C3%B4te+d%27Azur%22+OR+%22Van+Rysel-Roubaix%22+OR+%22Tenvels+Le+D%C3%A9voluy%22%29+%28cyclisme+OR+v%C3%A9lo+OR+cycliste+OR+coureur+OR+%C3%A9quipe%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 0 | réponse sans entrées de flux |
 | Surveillance nominative (Team Abadie-Magnan …) | https://news.google.com/rss/search?q=%28%22Team+Abadie-Magnan%22+OR+%22VC+Morteau-Montbeno%C3%AEt%22+OR+%22Team+Buffaz%22+OR+%22Vend%C3%A9e+F%C3%A9minine%22+OR+%22Cofidis+Women%22%29+%28cyclisme+OR+v%C3%A9lo+OR+cycliste+OR+coureur+OR+%C3%A9quipe%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 0 | réponse sans entrées de flux |
 | Équipe : Groupama-FDJ United (via Google News) | https://news.google.com/rss/search?q=%22Groupama-FDJ+United%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 1 |  |
-| Équipe : Decathlon CMA CGM (via Google News) | https://news.google.com/rss/search?q=%22Decathlon+CMA+CGM%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 7 |  |
+| Équipe : Decathlon CMA CGM (via Google News) | https://news.google.com/rss/search?q=%22Decathlon+CMA+CGM%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 6 |  |
 | Équipe : Cofidis (via Google News) | https://news.google.com/rss/search?q=%22Cofidis%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 3 |  |
 | Équipe : TotalEnergies (via Google News) | https://news.google.com/rss/search?q=%22TotalEnergies%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 13 |  |
 | Équipe : Unibet Rose Rockets (via Google News) | https://news.google.com/rss/search?q=%22Unibet+Rose+Rockets%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 4 |  |
 | Équipe : FDJ United-Suez (via Google News) | https://news.google.com/rss/search?q=%22FDJ+United-Suez%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 0 | réponse sans entrées de flux |
 | Équipe : St Michel-Préférence Home-Auber 93 (via Google News) | https://news.google.com/rss/search?q=%22St+Michel-Pr%C3%A9f%C3%A9rence+Home-Auber+93%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 0 | réponse sans entrées de flux |
-| Équipe : Nice Métropole Côte d'Azur (via Google News) | https://news.google.com/rss/search?q=%22Nice+M%C3%A9tropole+C%C3%B4te+d%27Azur%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 1 |  |
+| Équipe : Nice Métropole Côte d'Azur (via Google News) | https://news.google.com/rss/search?q=%22Nice+M%C3%A9tropole+C%C3%B4te+d%27Azur%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 0 | réponse sans entrées de flux |
 | Équipe : CIC Pro Cycling Academy (via Google News) | https://news.google.com/rss/search?q=%22CIC+Pro+Cycling+Academy%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 0 | réponse sans entrées de flux |
 | Équipe : Van Rysel-Roubaix (via Google News) | https://news.google.com/rss/search?q=%22Van+Rysel-Roubaix%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 1 |  |
 | Équipe : Mayenne Monbana My Pie (via Google News) | https://news.google.com/rss/search?q=%22Mayenne+Monbana+My+Pie%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 1 |  |
 | Équipe : Ma Petite Entreprise (via Google News) | https://news.google.com/rss/search?q=%22Ma+Petite+Entreprise%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 1 |  |
 | Équipe : VC Rouen 76 (via Google News) | https://news.google.com/rss/search?q=%22VC+Rouen+76%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 2 |  |
 | Équipe : Burgos Burpellet BH (via Google News) | https://news.google.com/rss/search?q=%22Burgos+Burpellet+BH%22+%28annonce+OR+officialise+OR+signe+OR+recrue+OR+prolonge+OR+%22a+sign%C3%A9%22+OR+effectif+OR+arriv%C3%A9e+OR+d%C3%A9part%29+when%3A1d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 0 | réponse sans entrées de flux |
-| Cyclo-cross : résultats (via Google News, 48 h) | https://news.google.com/rss/search?q=%28cyclo-cross+OR+cyclocross%29+%28classement+OR+r%C3%A9sultats+OR+%22s%27impose%22+OR+victoire+OR+vainqueur%29+when%3A2d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 17 | 2 écarté(s) par le filtre lexical |
-| Courses amateurs et piste : résultats (via Google News, 48 h) | https://news.google.com/rss/search?q=%28cyclisme%29+%28%22Coupe+de+France%22+OR+N1+OR+%22%C3%A9lite+nationale%22+OR+piste+OR+v%C3%A9lodrome%29+%28classement+OR+r%C3%A9sultats+OR+%22s%27impose%22+OR+victoire%29+when%3A2d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 12 | 3 écarté(s) par le filtre lexical |
+| Cyclo-cross : résultats (via Google News, 48 h) | https://news.google.com/rss/search?q=%28cyclo-cross+OR+cyclocross%29+%28classement+OR+r%C3%A9sultats+OR+%22s%27impose%22+OR+victoire+OR+vainqueur%29+when%3A2d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 18 | 2 écarté(s) par le filtre lexical |
+| Courses amateurs et piste : résultats (via Google News, 48 h) | https://news.google.com/rss/search?q=%28cyclisme%29+%28%22Coupe+de+France%22+OR+N1+OR+%22%C3%A9lite+nationale%22+OR+piste+OR+v%C3%A9lodrome%29+%28classement+OR+r%C3%A9sultats+OR+%22s%27impose%22+OR+victoire%29+when%3A2d&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 11 | 3 écarté(s) par le filtre lexical |
 | Médias grand public « capteurs Discover » (via Google News, 12 h) | https://news.google.com/rss/search?q=%28site%3Ale10sport.com+OR+site%3Armcsport.bfmtv.com+OR+site%3Adicodusport.fr+OR+site%3Asports.fr+OR+site%3Aeurosport.fr%29+cyclisme+when%3A12h&hl=fr&gl=FR&ceid=FR:fr | 200 OK | 6 | 94 écarté(s) par le filtre lexical |
 | Google Trends France | https://trends.google.com/trending/rss?geo=FR | 200 OK | 10 | 0 sujet(s) vélo |
