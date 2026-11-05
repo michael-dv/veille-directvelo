@@ -1,7 +1,7 @@
 # Comptes Instagram lus par la veille (API Graph de Meta, comptes professionnels uniquement).
 # Une ligne par compte : « identifiant » ou « identifiant | velo » (compte généraliste : on ne garde que ses publications
 # qui parlent de cyclisme). 4 publications au plus par compte et par génération.
-# Meta limite l'application à environ 200 appels par heure : les comptes AVANT la ligne « # --- ROTATION » sont lus à
+# Meta limite l'application à environ 200 appels par heure : les comptes placés avant la ligne de rotation (plus bas) sont lus à
 # chaque génération (en garder une cinquantaine au plus) ; ceux d'après sont lus à tour de rôle, par groupes.
 # Les comptes introuvables ou non professionnels sont écartés d'eux-mêmes (etat/instagram_invalides.json, retestés après 30 jours).
 
