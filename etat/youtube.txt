@@ -1,0 +1,26 @@
+# Chaînes YouTube suivies (une par ligne) : ID de chaîne | nom affiché | velo (facultatif : chaîne généraliste,
+# on ne garde que les vidéos dont le titre parle de cyclisme). Vérifiées le 05/11/2026.
+# Pour ajouter une chaîne : ouvrir la chaîne, « Partager la chaîne » > « Copier l'ID de la chaîne » (commence par UC).
+UCUKO69zxNdz2xaCKNEBmEew | DirectVelo
+UCpDrHFOtG5sE_779j4rkAcQ | FFC
+UCloqTh1nPpW13LCntQglS-Q | UCI
+UCSpycUnuU0IVF7gGIhGojhg | Tour de France (ASO)
+UCV7Kg31z9NB5r50l5EEzk4A | Groupama-FDJ United
+UC3Vk9aIjOl96KKk7TiNBx4A | FDJ United-Suez
+UCYygbkCUJAdsaRfH3L1y98w | Decathlon CMA CGM
+UCRKuYSZExqqFp6mYkxqTiUw | Cofidis
+UC2fDRrhZe0cg_ugurpiRjgQ | TotalEnergies
+UC0k1SRsGd6THnCvsMulf2YA | Unibet Rose Rockets
+UCrvchNUtQNCarZhXtORKO1g | St Michel-Préférence Home-Auber 93
+UCSWbrWpcqiLuOOmD_IdXxLw | Le Gruppetto
+UCu7phdCr-raU7OaJfEpHZww | GCN Racing
+UC77UtoyivVHkpApL0wGfH5w | Lanterne Rouge
+UCfDfvvMARk4TKcC62ALi6eA | TNT Sports Cycling
+UCozt5iXNqmhU1I7tcjJ0UFQ | Eurosport France | velo
+UC2Mtwp-tKH7CQXyfi6gb9xQ | Lidl-Trek
+UCXvTRxB0fMHTm9NKdOGOBOg | UAE Team Emirates
+UCYzPindMiPA7J1OuyX3pCdg | Visma-Lease a Bike
+UC8rlqRMt762GzKCQl0CwBwg | Red Bull-Bora-hansgrohe
+UCaq9glaC5kI626cMCBAwc3Q | Soudal Quick-Step
+UCaXxanOHeArdOMmhNaXE67Q | Netcompany Ineos
+UCul2imagVKz20u1CKgCcfbw | Alpecin-Premier Tech
