@@ -68,7 +68,14 @@ BLUESKY_MAX = 200         # posts Bluesky au plus dans le flux
 # Chaînes YouTube suivies : liste éditable dans etat/youtube.txt (« ID de chaîne | nom | velo » ;
 # « velo » = chaîne généraliste, on ne garde que les vidéos dont le titre parle de cyclisme).
 YOUTUBE_FILE = f"{ETAT}/youtube.txt"
-YOUTUBE_HOURS = 48  # les vidéos sont plus rares que les articles : fenêtre de 48 h
+YOUTUBE_HOURS = 48
+# Instagram : comptes professionnels lus par l'API Graph de Meta (business_discovery), avec les secrets IG_USER_ID et
+# IG_ACCESS_TOKEN (jeton de page DirectVelo). Liste éditable dans etat/instagram.txt (« identifiant » ou
+# « identifiant | velo » pour un compte généraliste dont on ne garde que les publications sur le cyclisme).
+INSTAGRAM_FILE = f"{ETAT}/instagram.txt"
+INSTAGRAM_GRAPH = "https://graph.facebook.com/v27.0"
+INSTAGRAM_PER_ACCOUNT = 4
+IG_ALERT = []  # message d'alerte si Meta refuse l'accès (jeton expiré, accord à renouveler)  # les vidéos sont plus rares que les articles : fenêtre de 48 h
 # Relais des réseaux sociaux : articles qui reprennent une annonce faite sur X, Instagram, TikTok, Facebook, LinkedIn ou YouTube
 SOCIAL_RELAY_QUERIES = [
     ('(cyclisme OR cycliste OR coureur OR coureuse OR équipe OR club) ("sur Instagram" OR "sur X" OR "sur TikTok" OR '
@@ -733,6 +740,65 @@ def section_youtube():
     return out[:MAX_ITEMS]
 
 
+def section_instagram():
+    """Publications Instagram des dernières 24 h des comptes de etat/instagram.txt."""
+    uid, tok = (os.getenv("IG_USER_ID") or "").strip(), (os.getenv("IG_ACCESS_TOKEN") or "").strip()
+    if not uid or not tok:
+        return []
+    lines_ = load_list(INSTAGRAM_FILE, [])
+    stop = {"v": False}
+
+    def one(line):
+        parts = [p.strip() for p in line.split("|")]
+        user, filtre = parts[0].lstrip("@"), len(parts) > 1 and parts[1] == "velo"
+        if stop["v"]:
+            return []
+        fields = (f"business_discovery.username({user}){{username,media.limit(8)"
+                  f"{{caption,timestamp,permalink,media_type}}}}")
+        url = f"{INSTAGRAM_GRAPH}/{uid}"
+        try:
+            r = requests.get(url, params={"fields": fields, "access_token": tok}, timeout=TIMEOUT)
+            d = r.json()
+            code = f"{r.status_code} {'OK' if r.ok else r.reason}"
+        except (requests.RequestException, ValueError) as e:
+            record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", f"Erreur ({type(e).__name__})", 0)
+            return []
+        if "error" in d:
+            err = d["error"]
+            msg = f"code {err.get('code')} : {(err.get('message') or '')[:140]}"
+            record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", code, 0, msg)
+            if err.get("code") in (190, 10, 200, 102):  # jeton invalide ou accord expiré
+                stop["v"] = True
+                IG_ALERT.append(f"accès refusé par Meta ({msg}). Renouveler l'accord dans l'Explorateur de l'API Graph "
+                                f"(Generate Access Token, configuration « Veille ») ou refaire le jeton de page.")
+            elif err.get("code") in (4, 17, 32, 613):  # limite de débit : on arrête pour cette génération
+                stop["v"] = True
+            return []
+        media = (d.get("business_discovery", {}).get("media") or {}).get("data", [])
+        out = []
+        for m in media:
+            try:
+                dt = datetime.fromisoformat(m.get("timestamp", "").replace("+0000", "+00:00"))
+            except ValueError:
+                dt = None
+            if dt is None or dt < SINCE:
+                continue
+            cap = re.sub(r"\s+", " ", m.get("caption") or "(sans légende)")[:200]
+            if filtre and not gn_ok(cap, "strict"):
+                continue
+            out.append((dt, f"@{user} : {cap}", m.get("permalink", "")))
+        record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", code, min(len(out), INSTAGRAM_PER_ACCOUNT))
+        return out[:INSTAGRAM_PER_ACCOUNT]
+
+    from concurrent.futures import ThreadPoolExecutor
+    res = []
+    with ThreadPoolExecutor(6) as ex:
+        for items in ex.map(one, lines_):
+            res += items
+    res.sort(key=lambda x: x[0] or NOW, reverse=True)
+    return res[:150]
+
+
 def section_relais_sociaux():
     """Articles de presse qui reprennent une annonce faite sur un réseau non lisible automatiquement."""
     out = []
@@ -979,13 +1045,14 @@ def main():
     for name, items in section_medias():
         block(body, name, items)
 
-    body += ["## 5. Réseaux sociaux (Bluesky, YouTube, Reddit, relais des réseaux non lisibles)", "", "### Bluesky", ""]
+    body += ["## 5. Réseaux sociaux (Bluesky, Instagram, YouTube, Reddit, relais des réseaux non lisibles)", "", "### Bluesky", ""]
     bsky = section_bluesky()
     track("Bluesky", bsky)
     if bsky:
         body += [f"- {fmt_time(dt)} — [{q}] [{text}]({link})" for dt, text, link, q in bsky] + [""]
     else:
         body += lines([])
+    block(body, "Instagram : publications des 24 dernières heures (etat/instagram.txt)", section_instagram(), "Instagram")
     block(body, "YouTube : vidéos des 48 dernières heures (etat/youtube.txt)", section_youtube(), "YouTube")
     block(body, "Reddit r/peloton", section_reddit())
     block(body, "Relais des réseaux sociaux : annonces faites sur X, Instagram, TikTok, Facebook, LinkedIn (via Google News)",
@@ -1070,6 +1137,8 @@ def main():
         fresh.sort(key=lambda x: x[0] or NOW, reverse=True)
         if ffc_new:
             nouv += [f"- 🆕 **ALERTE FFC — nouveau document** : [{t}]({u})" for t, u in ffc_new]
+        if IG_ALERT:
+            nouv.append(f"- ⚠️ **ALERTE INSTAGRAM** : {IG_ALERT[0]}")
         nouv += [f"- {fmt_time(dt)} — {src} — [{t}]({l})" for dt, src, t, l in fresh[:120]] or \
                 ["_Aucune publication nouvelle depuis la génération précédente._"]
         if len(fresh) > 120:
