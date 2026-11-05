@@ -1,397 +1,380 @@
 {
  "Groupama-FDJ United équipe cycliste": [
-  "groupama_fdj"
- ],
- "Decathlon CMA CGM Team cyclisme": [
-  "decathloncmacgmteam",
-  "decathloncmacgm_newgen",
-  "decathloncma_cgmteam",
-  "decathlon_cma_cgm_team",
-  "decathlon_ag2r_la_mondiale"
- ],
- "Team Cofidis cyclisme": [
-  "teamcofidis"
- ],
- "Team TotalEnergies cyclisme": [
-  "teamtotalenergies"
+  "groupama_fdj_united",
+  "groupamafdjunited",
+  "fdj_united_cycling",
+  "groupama_fdj_cycling"
  ],
  "Unibet Rose Rockets cycling": [
-  "unibet_rose_rockets",
-  "unibet_roserockets"
- ],
- "FDJ United SUEZ équipe féminine": [
-  "fdj_suez",
-  "fdjunitedsuez"
+  "unibet_rose_rockets_cycling",
+  "unibet.roserockets",
+  "unibet_roserockets_cycling",
+  "rose_rockets_cycling"
  ],
  "St Michel Préférence Home Auber 93": [
-  "stmichel_auber93",
-  "aubervilliers93"
- ],
- "CIC Pro Cycling Academy": [
-  "cicprocyclingacademy"
- ],
- "Van Rysel Roubaix Lille Métropole": [
-  "teamroubaixlillemetropole",
-  "vanryselroubaix"
- ],
- "Fédération Française de Cyclisme FFC": [
-  "ffcyclisme"
- ],
- "UCI cycling": [
-  "uci_cycling"
- ],
- "Tour de France": [
-  "letourdefrance"
+  "stmichel_pref_home93",
+  "stmichael_auber93",
+  "auber93_cycling",
+  "st_michel_auber_93"
  ],
  "Paris-Roubaix": [
-  "parisroubaix"
- ],
- "Paris-Nice course": [
-  "parisnicecourse"
- ],
- "La Vuelta": [
-  "lavuelta"
- ],
- "Giro d'Italia": [
-  "giroditalia"
- ],
- "Critérium du Dauphiné Tour Auvergne-Rhône-Alpes": [
-  "criteriumdudauphine",
-  "tourauvergnerhonealpes"
- ],
- "Tour de France Femmes": [
-  "letourfemmes"
- ],
- "UAE Team Emirates XRG": [
-  "uae_team_emirates",
-  "uaeteamemirates"
+  "paris_roubaix",
+  "parisroubaix_officiel",
+  "paris_roubaix_officiel",
+  "parisroubaixcycling"
  ],
  "Team Visma Lease a Bike": [
-  "teamvismaleaseabike"
- ],
- "Lidl-Trek": [
-  "lidltrek"
+  "team_visma_leaseabike",
+  "visma_lease_a_bike",
+  "vismaleaseabike_cycling",
+  "team_visma_cycling"
  ],
  "Soudal Quick-Step": [
-  "soudalquickstep"
+  "soudal_quickstep_cycling",
+  "soudalquickstepcycling",
+  "team_soudal_quickstep",
+  "soudal_quick_step"
  ],
  "Netcompany Ineos": [
-  "ineosgrenadiers"
- ],
- "Red Bull Bora hansgrohe": [
-  "redbullborahansgrohe"
- ],
- "EF Education EasyPost": [
-  "efprocycling"
- ],
- "Movistar Team": [
-  "movistar_team"
- ],
- "Bahrain Victorious": [
-  "teambahrainvictorious",
-  "bahrainvictorious"
+  "netcompany_ineos",
+  "netcompanyineosgrenadiers",
+  "ineos_netcompany_cycling",
+  "team_ineos_netcompany"
  ],
  "Alpecin Premier Tech": [
-  "alpecin_premiertech",
-  "alpecin_deceuninck"
- ],
- "Team Jayco AlUla": [
-  "greenedgecycling"
+  "alpecin_premier_tech",
+  "alpecin.premiertech",
+  "team_alpecin_premiertech",
+  "alpecin_pt_cycling"
  ],
  "Lotto Intermarché": [
-  "lotto_intermarche",
-  "lotto_cycling"
- ],
- "XDS Astana Team": [
-  "xds_astana_team",
-  "astanapremiertech"
- ],
- "Uno-X Mobility": [
-  "unoxmobility",
-  "unoxnorge",
-  "unoxteam"
- ],
- "Team Picnic PostNL": [
-  "teampicnicpostnl",
-  "teamdsmfirmenichpostnl"
- ],
- "Tudor Pro Cycling": [
-  "tudorprocycling"
+  "lotto_intermarche_cycling",
+  "lotto.intermarche",
+  "team_lotto_intermarche",
+  "lotto_intermarche_team"
  ],
  "Pinarello Q36.5": [
-  "q36_5procyclingteam",
-  "q36.5procyclingteam"
+  "pinarello_q36_5",
+  "pinarello.q365",
+  "q365procycling",
+  "q36_5_team"
  ],
  "SD Worx Protime": [
-  "teamsdworx"
+  "sdworx_protime",
+  "sd_worx_protime",
+  "team_sdworxprotime",
+  "sdworxprotime_cycling"
  ],
  "Canyon SRAM": [
-  "canyon_sram_racing"
+  "canyon_sram_racing_team",
+  "canyon.sram.racing",
+  "canyon_sram_cycling",
+  "canyon_sram_women"
  ],
  "Paul Seixas cycliste": [
-  "paulseixas"
- ],
- "Julian Alaphilippe": [
-  "alafpolak"
+  "paul_seixas",
+  "paul.seixas",
+  "seixas_paul",
+  "paulseixas_cycling"
  ],
  "Romain Grégoire cycliste": [
-  "romaingregoire"
+  "romain_gregoire",
+  "romain.gregoire",
+  "gregoire_romain",
+  "romain_gregoire_cycling"
  ],
  "Lenny Martinez cycliste": [
-  "lenny_martinez",
-  "lennymartinez"
+  "lenny.martinez",
+  "martinez_lenny",
+  "lenny_martinez_cycling",
+  "lenny_martinez_officiel"
  ],
  "Kévin Vauquelin": [
-  "kevinvauquelin"
+  "kevin_vauquelin",
+  "vauquelin_kevin",
+  "kevin.vauquelin",
+  "kevinvauquelin_cycling"
  ],
  "Paul Magnier cycliste": [
-  "paulmagnier"
- ],
- "David Gaudu": [
-  "david_gaudu",
-  "davidgaudu"
- ],
- "Valentin Madouas": [
-  "valentinmadouas"
- ],
- "Pauline Ferrand-Prévot": [
-  "paulineferrandprevot"
- ],
- "Tadej Pogačar": [
-  "tadejpogacar"
- ],
- "Jonas Vingegaard": [
-  "jonasvingegaard"
- ],
- "Mathieu van der Poel": [
-  "mathieuvanderpoel"
- ],
- "Remco Evenepoel": [
-  "remco.ev"
- ],
- "Wout van Aert": [
-  "woutvanaert"
- ],
- "Juliette Labous": [
-  "juliettelabous"
+  "paul_magnier",
+  "paul.magnier",
+  "magnier_paul",
+  "paulmagnier_cycling"
  ],
  "Évita Muzic": [
-  "evitamuzic"
+  "evita_muzic",
+  "evita.muzic",
+  "muzic_evita",
+  "evita_muzic_cycling"
  ],
  "Cédrine Kerbaol": [
-  "cedrinekerbaol"
+  "cedrine_kerbaol",
+  "cedrine.kerbaol",
+  "kerbaol_cedrine",
+  "cedrine_kerbaol_cycling"
  ],
  "Aubin Sparfel cyclo-cross": [
-  "aubinsparfel"
+  "aubin_sparfel",
+  "aubin.sparfel",
+  "sparfel_aubin",
+  "aubin_sparfel_cycling"
  ],
  "Marion Bunel": [
-  "marionbunel"
- ],
- "Thibau Nys": [
-  "thibau_nys"
- ],
- "Le Gruppetto cyclisme": [
-  "legruppetto",
-  "le_gruppetto"
- ],
- "Cyclism'Actu": [
-  "cyclismactu1",
-  "cyclismactu"
- ],
- "L'Équipe cyclisme": [
-  "lequipe"
- ],
- "Eurosport cyclisme France": [
-  "eurosportfr"
+  "marion_bunel",
+  "marion.bunel",
+  "bunel_marion",
+  "marion_bunel_cycling"
  ],
  "Vélo Magazine": [
-  "velomagazine"
- ],
- "Velo101": [
-  "velo101_officiel",
-  "velo101"
+  "velo_magazine",
+  "velo_magazine_fr",
+  "velomagazine_officiel",
+  "velo.magazine.fr"
  ],
  "Chronique du vélo": [
-  "chroniqueduvelo"
+  "chronique_du_velo",
+  "chronique.velo",
+  "chronique_du_cyclisme",
+  "chroniqueduvelo_fr"
  ],
  "Lanterne Rouge cyclisme": [
-  "lanternerougecycling"
- ],
- "Dans la Musette cyclisme": [
-  "danslamusette"
+  "lanterne_rouge_cycling",
+  "lanterne.rouge.cycling",
+  "lanternerouge_fr",
+  "lanterne_rouge_podcast"
  ],
  "Arkéa B&B Hotels": [
-  "teamarkea",
-  "teamarkea_samsic"
+  "arkea_bb_hotels",
+  "arkea_bbh_cycling",
+  "team_arkea_bbh",
+  "arkea_cycling_team"
  ],
  "Nice Métropole Côte d'Azur cyclisme": [
-  "nicemetropolecoteazur"
+  "nice_metropole_cyclisme",
+  "nice_metropole_cote_azur",
+  "nmca_cycling",
+  "nice_metropole_cycling"
  ],
  "Mayenne Monbana My Pie": [
-  "mayennemonbanamypie"
+  "mayenne_monbana_my_pie",
+  "mayenne_monbana",
+  "monbana_my_pie_cycling",
+  "team_mayenne_monbana"
  ],
  "Ma Petite Entreprise cyclisme": [
-  "mapetiteentreprise"
- ],
- "VC Rouen 76": [
-  "vcrouen76"
- ],
- "Burgos Burpellet BH": [
-  "burgosburpelletbh"
+  "ma_petite_entreprise_cycling",
+  "mapetiteentreprise_cycling",
+  "mape_cycling_team",
+  "ma_petite_entreprise_team"
  ],
  "Vendée U cyclisme": [
-  "vendee_u"
+  "vendee_u_cycling",
+  "vendeu_cycling",
+  "vendee_u_team",
+  "vendee_u_pays_de_la_loire"
  ],
  "Groupama-FDJ United Conti": [
-  "groupama_fdj_conti"
+  "groupama_fdj_united_conti",
+  "fdj_united_conti",
+  "fdj_united_development",
+  "groupama_fdj_continental"
  ],
  "AG2R / Decathlon Development team": [
-  "decathlon_cma_cgm_development_team",
-  "decathlon_ag2r_la_mondiale_development"
+  "decathlon_cma_cgm_development",
+  "decathlon_cma_cgm_u23",
+  "decathlon_ag2r_development",
+  "decathlon_cma_cgm_conti"
  ],
  "Cofidis Women Team": [
-  "teamcofidis",
-  "teamcofidiswomen"
+  "cofidis_women",
+  "cofidis_women_cycling",
+  "team_cofidis_feminin",
+  "cofidis_femmes"
  ],
  "Arkéa B&B Hotels Women": [
-  "teamarkea",
-  "teamarkea_samsic"
+  "arkea_bbh_femmes",
+  "arkea_bbh_women",
+  "team_arkea_bbh_women",
+  "arkea_cycling_feminin"
  ],
  "St Michel Mavic Auber 93 féminine": [
-  "stmichel_auber93"
+  "stmichel_mavic_auber93",
+  "auber93_feminin",
+  "st_michel_auber93_femmes",
+  "team_auber93_women"
  ],
  "Lidl-Trek women": [
-  "lidltrek"
+  "lidl_trek_women",
+  "lidltrek_women_team",
+  "trek_lidl_women",
+  "team_lidl_trek_women"
  ],
  "Coupe de France de cyclo-cross": [
-  "coupedefrancecyclocross",
-  "ffcyclisme"
+  "coupe_de_france_cyclocross",
+  "coupefrancecyclocross",
+  "coupe_france_cyclo_cross",
+  "cyclocross_france_cup"
  ],
  "Bretagne Classic Ouest-France": [
-  "bretagneclassic"
+  "bretagne_classic",
+  "bretagneclassic_officiel",
+  "bretagne_classic_ouestfrance",
+  "gp_plouay_bretagneclassic"
  ],
  "Tour de Bretagne cycliste": [
-  "tourdebretagnecycliste"
+  "tour_de_bretagne_cycliste",
+  "tourbretagnecycliste",
+  "tour_de_bretagne_cycling",
+  "tour_bretagne_officiel"
  ],
  "Boucles de la Mayenne": [
-  "bouclesdelamayenne"
+  "boucles_de_la_mayenne",
+  "boucles_mayenne",
+  "bouclesdelamayenne_officiel",
+  "tour_de_la_mayenne_cycling"
  ],
  "Grand Prix de Plouay": [
-  "gpplouay"
- ],
- "Étoile de Bessèges": [
-  "etoiledebesseges",
-  "etoile_de_besseges"
+  "grand_prix_de_plouay",
+  "gp_plouay_cyclisme",
+  "gpplouay_officiel",
+  "plouay_cycling"
  ],
  "Tour de la Provence": [
-  "tourdelaprovence"
+  "tour_de_la_provence",
+  "tourprovence_cycling",
+  "tour_provence_officiel",
+  "tourdelaprovence_officiel"
  ],
  "Tour des Alpes-Maritimes": [
-  "tourdesalpesmaritimes"
- ],
- "Le Tour de l'Avenir": [
-  "tourdelavenir"
+  "tour_des_alpes_maritimes",
+  "tour_alpes_maritimes",
+  "alpesmaritimes_cycling",
+  "tam_cyclisme"
  ],
  "Cyclingnews": [
-  "cyclingnews"
- ],
- "Escape Collective": [
-  "escapecollective"
- ],
- "WielerFlits": [
-  "wielerflits"
+  "cyclingnews_official",
+  "cyclingnews_com",
+  "cyclingnews.cycling",
+  "cyclingnews_global"
  ],
  "Sporza wielrennen": [
-  "sporza_wielrennen",
-  "sporza"
+  "sporza_cycling",
+  "sporza_cyclisme",
+  "sporza_wielrennen_official",
+  "sporza.be_wielrennen"
  ],
  "GCN Racing": [
-  "gcnracing"
- ],
- "ProCyclingStats": [
-  "procyclingstats"
+  "gcn_racing",
+  "gcn.racing",
+  "globalcyclingnetwork_racing",
+  "gcn_cycling_racing"
  ],
  "Daniel Benson cycling journalist": [
-  "dnlbenson",
-  "danielbensoncycling"
+  "daniel_benson_cycling",
+  "danielbenson_journalist",
+  "daniel_benson_cycling_news",
+  "dbenson_cycling"
  ],
  "José Been": [
-  "josebeen"
+  "jose_been",
+  "jose.been.cycling",
+  "josebeen_cycling",
+  "josebeen_commentary"
  ],
  "Marion Rousse": [
-  "marionrousse"
+  "marion_rousse",
+  "marion.rousse",
+  "marionrousse_officiel",
+  "marion_rousse_cycling"
  ],
  "Thomas Voeckler": [
-  "thomasvoeckler"
+  "thomas_voeckler",
+  "thomas.voeckler",
+  "thomasvoeckler_officiel",
+  "voeckler_thomas"
  ],
  "Eurosport France": [
-  "eurosportfr"
- ],
- "France tv sport": [
-  "francetvsport"
+  "eurosport_france",
+  "eurosport.france",
+  "eurosportfr_officiel",
+  "eurosport_cyclisme"
  ],
  "RMC Sport": [
-  "rmcsport"
+  "rmc_sport",
+  "rmc.sport",
+  "rmcsport_cyclisme",
+  "rmc_sport_officiel"
  ],
  "L'Équipe": [
-  "lequipe"
- ],
- "Ouest-France sport": [
-  "ouestfrance"
- ],
- "Le Télégramme sport": [
-  "letelegramme"
+  "lequipe_fr",
+  "lequipe.cyclisme",
+  "lequipe_sport",
+  "lequipe_officiel"
  ],
  "Benoît Cosnefroy": [
-  "benoitcosnefroy"
+  "benoit_cosnefroy",
+  "benoit.cosnefroy",
+  "cosnefroy_benoit",
+  "benoitcosnefroy_cycling"
  ],
  "Clément Champoussin": [
-  "clementchampoussin"
+  "clement_champoussin",
+  "clement.champoussin",
+  "champoussin_clement",
+  "clementchampoussin_cycling"
  ],
  "Guillaume Martin cycliste": [
-  "guillaumemartin",
-  "guillaume_martin_cyclisme"
+  "guillaume_martin",
+  "guillaume.martin.cyclisme",
+  "martin_guillaume_cycling",
+  "guillaumemartin_officiel"
  ],
  "Christophe Laporte": [
-  "christophelaporte"
+  "christophe_laporte",
+  "christophe.laporte",
+  "laporte_christophe",
+  "christophelaporte_cycling"
  ],
  "Arnaud Démare": [
-  "arnauddemare"
- ],
- "Bryan Coquard": [
-  "bryancoquard"
+  "arnaud_demare",
+  "arnaud.demare",
+  "demare_arnaud",
+  "arnauddemare_cycling"
  ],
  "Axel Laurance": [
-  "axellaurance"
+  "axel_laurance",
+  "axel.laurance",
+  "laurance_axel",
+  "axellaurance_cycling"
  ],
  "Clément Berthet": [
-  "clementberthet"
- ],
- "Mathis Le Berre": [
-  "mathisleberre"
+  "clement_berthet",
+  "clement.berthet",
+  "berthet_clement",
+  "clementberthet_cycling"
  ],
  "Dorian Godon": [
-  "doriangodon"
+  "dorian_godon",
+  "dorian.godon",
+  "godon_dorian",
+  "doriangodon_cycling"
  ],
  "Victor Lafay": [
-  "victorlafay"
+  "victor_lafay",
+  "victor.lafay",
+  "lafay_victor",
+  "victorlafay_cycling"
  ],
  "Kevin Vermaerke": [
-  "kevinvermaerke"
- ],
- "Demi Vollering": [
-  "demivollering"
- ],
- "Lotte Kopecky": [
-  "lottekopecky"
+  "kevin_vermaerke",
+  "kevin.vermaerke",
+  "vermaerke_kevin",
+  "kevinvermaerke_cycling"
  ],
  "Marianne Vos": [
-  "marianne_vos"
- ],
- "Lorena Wiebes": [
-  "lorenawiebes"
- ],
- "Pidcock Tom": [
-  "tompidcock"
+  "marianne.vos",
+  "vos_marianne",
+  "mariannevos_official",
+  "marianne_vos_cycling"
  ]
 }
