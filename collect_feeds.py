@@ -75,6 +75,11 @@ YOUTUBE_HOURS = 48
 INSTAGRAM_FILE = f"{ETAT}/instagram.txt"
 INSTAGRAM_GRAPH = "https://graph.facebook.com/v27.0"
 INSTAGRAM_PER_ACCOUNT = 4
+# Meta limite l'application à environ 200 appels par heure. Les comptes situés avant la ligne « # --- ROTATION »
+# de etat/instagram.txt sont lus à chaque génération ; les suivants sont répartis en groupes lus à tour de rôle,
+# pour rester sous INSTAGRAM_BUDGET appels par génération (la fenêtre de 24 h garantit qu'aucune publication n'est perdue).
+INSTAGRAM_BUDGET = 150
+INSTAGRAM_INVALIDES = f"{ETAT}/instagram_invalides.json"  # comptes introuvables ou non professionnels, retestés après 30 jours
 IG_ALERT = []  # message d'alerte si Meta refuse l'accès (jeton expiré, accord à renouveler)  # les vidéos sont plus rares que les articles : fenêtre de 48 h
 # Relais des réseaux sociaux : articles qui reprennent une annonce faite sur X, Instagram, TikTok, Facebook, LinkedIn ou YouTube
 SOCIAL_RELAY_QUERIES = [
@@ -745,8 +750,26 @@ def section_instagram():
     uid, tok = (os.getenv("IG_USER_ID") or "").strip(), (os.getenv("IG_ACCESS_TOKEN") or "").strip()
     if not uid or not tok:
         return []
-    lines_ = load_list(INSTAGRAM_FILE, [])
+    try:
+        with open(INSTAGRAM_FILE, encoding="utf-8") as f:
+            raw = f.read()
+    except OSError:
+        return []
+    head, _, tail = raw.partition("# --- ROTATION")
+    clean = lambda txt: [l.split("#", 1)[0].strip() for l in txt.splitlines() if l.split("#", 1)[0].strip()]
+    invalides = load_json(INSTAGRAM_INVALIDES, {})
+    limite = (NOW - timedelta(days=30)).isoformat(timespec="minutes")
+    invalides = {k: v for k, v in invalides.items() if v >= limite}
+    ok = lambda l: l.split("|")[0].strip().lstrip("@").lower() not in invalides
+    prio, rot = [l for l in clean(head) if ok(l)], [l for l in clean(tail) if ok(l)]
+    place = max(INSTAGRAM_BUDGET - len(prio), 1)
+    groupes = max(1, -(-len(rot) // place))
+    g = int(NOW.timestamp() // 3600) % groupes
+    lines_ = prio + rot[g * place:(g + 1) * place]
+    record("Instagram (rotation)", INSTAGRAM_FILE, "—", len(lines_),
+           f"{len(prio)} comptes prioritaires + groupe {g + 1}/{groupes} ({len(rot)} comptes en rotation) ; {len(invalides)} écartés")
     stop = {"v": False}
+    nouveaux_invalides = {}
 
     def one(line):
         parts = [p.strip() for p in line.split("|")]
@@ -767,7 +790,9 @@ def section_instagram():
             err = d["error"]
             msg = f"code {err.get('code')} : {(err.get('message') or '')[:140]}"
             record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", code, 0, msg)
-            if err.get("code") in (190, 10, 200, 102):  # jeton invalide ou accord expiré
+            if err.get("code") == 110 or err.get("error_subcode") == 2207013:  # compte introuvable ou non professionnel
+                nouveaux_invalides[user.lower()] = NOW.isoformat(timespec="minutes")
+            elif err.get("code") in (190, 10, 200, 102):  # jeton invalide ou accord expiré
                 stop["v"] = True
                 IG_ALERT.append(f"accès refusé par Meta ({msg}). Renouveler l'accord dans l'Explorateur de l'API Graph "
                                 f"(Generate Access Token, configuration « Veille ») ou refaire le jeton de page.")
@@ -795,6 +820,9 @@ def section_instagram():
     with ThreadPoolExecutor(6) as ex:
         for items in ex.map(one, lines_):
             res += items
+    if nouveaux_invalides:
+        invalides.update(nouveaux_invalides)
+        save_json(INSTAGRAM_INVALIDES, invalides)
     res.sort(key=lambda x: x[0] or NOW, reverse=True)
     return res[:150]
 
