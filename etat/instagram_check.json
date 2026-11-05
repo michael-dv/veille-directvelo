@@ -1,1795 +1,931 @@
 {
- "verifie_le": "2026-11-05 06:29 UTC",
+ "verifie_le": "2026-11-05 07:04 UTC",
  "resultats": {
-  "groupama_fdj_united": {
-   "entite": "Groupama-FDJ United équipe cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "groupamafdjunited": {
-   "entite": "Groupama-FDJ United équipe cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "fdj_united_cycling": {
-   "entite": "Groupama-FDJ United équipe cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "groupama_fdj_cycling": {
-   "entite": "Groupama-FDJ United équipe cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "unibet_rose_rockets_cycling": {
-   "entite": "Unibet Rose Rockets cycling",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "unibet.roserockets": {
-   "entite": "Unibet Rose Rockets cycling",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "unibet_roserockets_cycling": {
-   "entite": "Unibet Rose Rockets cycling",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "rose_rockets_cycling": {
-   "entite": "Unibet Rose Rockets cycling",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "stmichel_pref_home93": {
-   "entite": "St Michel Préférence Home Auber 93",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "stmichael_auber93": {
-   "entite": "St Michel Préférence Home Auber 93",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "auber93_cycling": {
-   "entite": "St Michel Préférence Home Auber 93",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "st_michel_auber_93": {
-   "entite": "St Michel Préférence Home Auber 93",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paris_roubaix": {
-   "entite": "Paris-Roubaix",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "parisroubaix_officiel": {
-   "entite": "Paris-Roubaix",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paris_roubaix_officiel": {
-   "entite": "Paris-Roubaix",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "parisroubaixcycling": {
-   "entite": "Paris-Roubaix",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_visma_leaseabike": {
-   "entite": "Team Visma Lease a Bike",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "visma_lease_a_bike": {
-   "entite": "Team Visma Lease a Bike",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "vismaleaseabike_cycling": {
-   "entite": "Team Visma Lease a Bike",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_visma_cycling": {
-   "entite": "Team Visma Lease a Bike",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "soudal_quickstep_cycling": {
-   "entite": "Soudal Quick-Step",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "soudalquickstepcycling": {
-   "entite": "Soudal Quick-Step",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_soudal_quickstep": {
-   "entite": "Soudal Quick-Step",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "soudal_quick_step": {
-   "entite": "Soudal Quick-Step",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "netcompany_ineos": {
-   "entite": "Netcompany Ineos",
+  "arthur_pouchet": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "netcompany_ineos",
-   "nom": "Netcompany INEOS Cycling Team",
-   "abonnes": 1113129,
-   "publications": 9582,
-   "dernier": "2026-11-04T15:05:30+0000"
+   "username": "arthur_pouchet",
+   "nom": "Arthur Pouchet - Photographe",
+   "abonnes": 1851,
+   "bio": "Sport photographer & videographer.\nCYCLING - RUNNING\nArdèche, France.",
+   "publications": 682,
+   "dernier": "2026-11-01T20:16:39+0000"
   },
-  "netcompanyineosgrenadiers": {
-   "entite": "Netcompany Ineos",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "ineos_netcompany_cycling": {
-   "entite": "Netcompany Ineos",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_ineos_netcompany": {
-   "entite": "Netcompany Ineos",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "alpecin_premier_tech": {
-   "entite": "Alpecin Premier Tech",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "alpecin.premiertech": {
-   "entite": "Alpecin Premier Tech",
+  "jotdownmagazine": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "alpecin.premiertech",
-   "nom": "Alpecin-Premier Tech",
-   "abonnes": 373991,
-   "publications": 4246,
-   "dernier": "2026-11-04T18:49:12+0000"
+   "username": "jotdownmagazine",
+   "nom": "Jot Down Magazine",
+   "abonnes": 53059,
+   "bio": "Croquetismo y barbarie.",
+   "publications": 6560,
+   "dernier": "2026-11-04T16:13:45+0000"
   },
-  "team_alpecin_premiertech": {
-   "entite": "Alpecin Premier Tech",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "alpecin_pt_cycling": {
-   "entite": "Alpecin Premier Tech",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lotto_intermarche_cycling": {
-   "entite": "Lotto Intermarché",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lotto.intermarche": {
-   "entite": "Lotto Intermarché",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_lotto_intermarche": {
-   "entite": "Lotto Intermarché",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lotto_intermarche_team": {
-   "entite": "Lotto Intermarché",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "pinarello_q36_5": {
-   "entite": "Pinarello Q36.5",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "pinarello.q365": {
-   "entite": "Pinarello Q36.5",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "q365procycling": {
-   "entite": "Pinarello Q36.5",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "q36_5_team": {
-   "entite": "Pinarello Q36.5",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sdworx_protime": {
-   "entite": "SD Worx Protime",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sd_worx_protime": {
-   "entite": "SD Worx Protime",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_sdworxprotime": {
-   "entite": "SD Worx Protime",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sdworxprotime_cycling": {
-   "entite": "SD Worx Protime",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "canyon_sram_racing_team": {
-   "entite": "Canyon SRAM",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "canyon.sram.racing": {
-   "entite": "Canyon SRAM",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "canyon_sram_cycling": {
-   "entite": "Canyon SRAM",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "canyon_sram_women": {
-   "entite": "Canyon SRAM",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paul_seixas": {
-   "entite": "Paul Seixas cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paul.seixas": {
-   "entite": "Paul Seixas cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "seixas_paul": {
-   "entite": "Paul Seixas cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paulseixas_cycling": {
-   "entite": "Paul Seixas cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "romain_gregoire": {
-   "entite": "Romain Grégoire cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "romain.gregoire": {
-   "entite": "Romain Grégoire cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "gregoire_romain": {
-   "entite": "Romain Grégoire cycliste",
+  "mapetiteentreprise_cyclisme": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "gregoire_romain",
-   "nom": "Grégoire Romain",
-   "abonnes": 87,
-   "publications": 45,
-   "dernier": "2025-03-18T14:50:24+0000"
-  },
-  "romain_gregoire_cycling": {
-   "entite": "Romain Grégoire cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lenny.martinez": {
-   "entite": "Lenny Martinez cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "martinez_lenny": {
-   "entite": "Lenny Martinez cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lenny_martinez_cycling": {
-   "entite": "Lenny Martinez cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lenny_martinez_officiel": {
-   "entite": "Lenny Martinez cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "kevin_vauquelin": {
-   "entite": "Kévin Vauquelin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "vauquelin_kevin": {
-   "entite": "Kévin Vauquelin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "kevin.vauquelin": {
-   "entite": "Kévin Vauquelin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "kevinvauquelin_cycling": {
-   "entite": "Kévin Vauquelin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paul_magnier": {
-   "entite": "Paul Magnier cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paul.magnier": {
-   "entite": "Paul Magnier cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "magnier_paul": {
-   "entite": "Paul Magnier cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "paulmagnier_cycling": {
-   "entite": "Paul Magnier cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "evita_muzic": {
-   "entite": "Évita Muzic",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "evita.muzic": {
-   "entite": "Évita Muzic",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "muzic_evita": {
-   "entite": "Évita Muzic",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "evita_muzic_cycling": {
-   "entite": "Évita Muzic",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cedrine_kerbaol": {
-   "entite": "Cédrine Kerbaol",
-   "ok": true,
-   "username": "cedrine_kerbaol",
-   "nom": "Cédrine",
-   "abonnes": 32090,
+   "username": "mapetiteentreprise_cyclisme",
+   "nom": "Ma Petite Entreprise - Équipe Cycliste",
+   "abonnes": 11518,
+   "bio": "La première équipe cycliste professionnelle au service d’une cause : l’entrepreneuriat français\n#cyclisme #entrepreneurs #tpe #pme #indépendants",
    "publications": 328,
-   "dernier": "2026-10-27T14:11:11+0000"
+   "dernier": "2026-11-01T16:08:32+0000"
   },
-  "cedrine.kerbaol": {
-   "entite": "Cédrine Kerbaol",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "kerbaol_cedrine": {
-   "entite": "Cédrine Kerbaol",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cedrine_kerbaol_cycling": {
-   "entite": "Cédrine Kerbaol",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "aubin_sparfel": {
-   "entite": "Aubin Sparfel cyclo-cross",
+  "ashleygruber": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "aubin_sparfel",
-   "nom": "Aubin Sparfel",
-   "abonnes": 10709,
-   "publications": 71,
-   "dernier": "2026-11-02T17:25:20+0000"
+   "username": "ashleygruber",
+   "nom": "Ashley Norris Gruber",
+   "abonnes": 104245,
+   "bio": "Nikon Europe Ambassador.",
+   "publications": 913,
+   "dernier": "2026-07-05T17:41:22+0000"
   },
-  "aubin.sparfel": {
-   "entite": "Aubin Sparfel cyclo-cross",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sparfel_aubin": {
-   "entite": "Aubin Sparfel cyclo-cross",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "aubin_sparfel_cycling": {
-   "entite": "Aubin Sparfel cyclo-cross",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "marion_bunel": {
-   "entite": "Marion Bunel",
+  "jeredgruber": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "marion_bunel",
-   "nom": "Marion Bunel",
-   "abonnes": 15480,
-   "publications": 154,
-   "dernier": "2026-10-19T14:43:35+0000"
-  },
-  "marion.bunel": {
-   "entite": "Marion Bunel",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "bunel_marion": {
-   "entite": "Marion Bunel",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "marion_bunel_cycling": {
-   "entite": "Marion Bunel",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "velo_magazine": {
-   "entite": "Vélo Magazine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "velo_magazine_fr": {
-   "entite": "Vélo Magazine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "velomagazine_officiel": {
-   "entite": "Vélo Magazine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "velo.magazine.fr": {
-   "entite": "Vélo Magazine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "chronique_du_velo": {
-   "entite": "Chronique du vélo",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "chronique.velo": {
-   "entite": "Chronique du vélo",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "chronique_du_cyclisme": {
-   "entite": "Chronique du vélo",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "chroniqueduvelo_fr": {
-   "entite": "Chronique du vélo",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lanterne_rouge_cycling": {
-   "entite": "Lanterne Rouge cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lanterne.rouge.cycling": {
-   "entite": "Lanterne Rouge cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lanternerouge_fr": {
-   "entite": "Lanterne Rouge cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lanterne_rouge_podcast": {
-   "entite": "Lanterne Rouge cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arkea_bb_hotels": {
-   "entite": "Arkéa B&B Hotels",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arkea_bbh_cycling": {
-   "entite": "Arkéa B&B Hotels",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_arkea_bbh": {
-   "entite": "Arkéa B&B Hotels",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arkea_cycling_team": {
-   "entite": "Arkéa B&B Hotels",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "nice_metropole_cyclisme": {
-   "entite": "Nice Métropole Côte d'Azur cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "nice_metropole_cote_azur": {
-   "entite": "Nice Métropole Côte d'Azur cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "nmca_cycling": {
-   "entite": "Nice Métropole Côte d'Azur cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "nice_metropole_cycling": {
-   "entite": "Nice Métropole Côte d'Azur cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "mayenne_monbana_my_pie": {
-   "entite": "Mayenne Monbana My Pie",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "mayenne_monbana": {
-   "entite": "Mayenne Monbana My Pie",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "monbana_my_pie_cycling": {
-   "entite": "Mayenne Monbana My Pie",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_mayenne_monbana": {
-   "entite": "Mayenne Monbana My Pie",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "ma_petite_entreprise_cycling": {
-   "entite": "Ma Petite Entreprise cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "mapetiteentreprise_cycling": {
-   "entite": "Ma Petite Entreprise cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "mape_cycling_team": {
-   "entite": "Ma Petite Entreprise cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "ma_petite_entreprise_team": {
-   "entite": "Ma Petite Entreprise cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "vendee_u_cycling": {
-   "entite": "Vendée U cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "vendeu_cycling": {
-   "entite": "Vendée U cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "vendee_u_team": {
-   "entite": "Vendée U cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "vendee_u_pays_de_la_loire": {
-   "entite": "Vendée U cyclisme",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "groupama_fdj_united_conti": {
-   "entite": "Groupama-FDJ United Conti",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "fdj_united_conti": {
-   "entite": "Groupama-FDJ United Conti",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "fdj_united_development": {
-   "entite": "Groupama-FDJ United Conti",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "groupama_fdj_continental": {
-   "entite": "Groupama-FDJ United Conti",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "decathlon_cma_cgm_development": {
-   "entite": "AG2R / Decathlon Development team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "decathlon_cma_cgm_u23": {
-   "entite": "AG2R / Decathlon Development team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "decathlon_ag2r_development": {
-   "entite": "AG2R / Decathlon Development team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "decathlon_cma_cgm_conti": {
-   "entite": "AG2R / Decathlon Development team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cofidis_women": {
-   "entite": "Cofidis Women Team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cofidis_women_cycling": {
-   "entite": "Cofidis Women Team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_cofidis_feminin": {
-   "entite": "Cofidis Women Team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cofidis_femmes": {
-   "entite": "Cofidis Women Team",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arkea_bbh_femmes": {
-   "entite": "Arkéa B&B Hotels Women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arkea_bbh_women": {
-   "entite": "Arkéa B&B Hotels Women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_arkea_bbh_women": {
-   "entite": "Arkéa B&B Hotels Women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arkea_cycling_feminin": {
-   "entite": "Arkéa B&B Hotels Women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "stmichel_mavic_auber93": {
-   "entite": "St Michel Mavic Auber 93 féminine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "auber93_feminin": {
-   "entite": "St Michel Mavic Auber 93 féminine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "st_michel_auber93_femmes": {
-   "entite": "St Michel Mavic Auber 93 féminine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_auber93_women": {
-   "entite": "St Michel Mavic Auber 93 féminine",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lidl_trek_women": {
-   "entite": "Lidl-Trek women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lidltrek_women_team": {
-   "entite": "Lidl-Trek women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "trek_lidl_women": {
-   "entite": "Lidl-Trek women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "team_lidl_trek_women": {
-   "entite": "Lidl-Trek women",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "coupe_de_france_cyclocross": {
-   "entite": "Coupe de France de cyclo-cross",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "coupefrancecyclocross": {
-   "entite": "Coupe de France de cyclo-cross",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "coupe_france_cyclo_cross": {
-   "entite": "Coupe de France de cyclo-cross",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cyclocross_france_cup": {
-   "entite": "Coupe de France de cyclo-cross",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "bretagne_classic": {
-   "entite": "Bretagne Classic Ouest-France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "bretagneclassic_officiel": {
-   "entite": "Bretagne Classic Ouest-France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "bretagne_classic_ouestfrance": {
-   "entite": "Bretagne Classic Ouest-France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "gp_plouay_bretagneclassic": {
-   "entite": "Bretagne Classic Ouest-France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_de_bretagne_cycliste": {
-   "entite": "Tour de Bretagne cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tourbretagnecycliste": {
-   "entite": "Tour de Bretagne cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_de_bretagne_cycling": {
-   "entite": "Tour de Bretagne cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_bretagne_officiel": {
-   "entite": "Tour de Bretagne cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "boucles_de_la_mayenne": {
-   "entite": "Boucles de la Mayenne",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "boucles_mayenne": {
-   "entite": "Boucles de la Mayenne",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "bouclesdelamayenne_officiel": {
-   "entite": "Boucles de la Mayenne",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_de_la_mayenne_cycling": {
-   "entite": "Boucles de la Mayenne",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "grand_prix_de_plouay": {
-   "entite": "Grand Prix de Plouay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "gp_plouay_cyclisme": {
-   "entite": "Grand Prix de Plouay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "gpplouay_officiel": {
-   "entite": "Grand Prix de Plouay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "plouay_cycling": {
-   "entite": "Grand Prix de Plouay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_de_la_provence": {
-   "entite": "Tour de la Provence",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tourprovence_cycling": {
-   "entite": "Tour de la Provence",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_provence_officiel": {
-   "entite": "Tour de la Provence",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tourdelaprovence_officiel": {
-   "entite": "Tour de la Provence",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_des_alpes_maritimes": {
-   "entite": "Tour des Alpes-Maritimes",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tour_alpes_maritimes": {
-   "entite": "Tour des Alpes-Maritimes",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "alpesmaritimes_cycling": {
-   "entite": "Tour des Alpes-Maritimes",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "tam_cyclisme": {
-   "entite": "Tour des Alpes-Maritimes",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cyclingnews_official": {
-   "entite": "Cyclingnews",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cyclingnews_com": {
-   "entite": "Cyclingnews",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cyclingnews.cycling": {
-   "entite": "Cyclingnews",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "cyclingnews_global": {
-   "entite": "Cyclingnews",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sporza_cycling": {
-   "entite": "Sporza wielrennen",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sporza_cyclisme": {
-   "entite": "Sporza wielrennen",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sporza_wielrennen_official": {
-   "entite": "Sporza wielrennen",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "sporza.be_wielrennen": {
-   "entite": "Sporza wielrennen",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "gcn_racing": {
-   "entite": "GCN Racing",
+   "username": "jeredgruber",
+   "nom": "Jered Gruber",
+   "abonnes": 183963,
+   "bio": "Riding bikes and taking pictures.\nNikon Europe Ambassador.",
+   "publications": 2318,
+   "dernier": "2026-08-10T17:51:49+0000"
+  },
+  "matisse_vankerckhove": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "gcn_racing",
-   "nom": "GCN Racing",
-   "abonnes": 152632,
-   "publications": 2064,
-   "dernier": "2026-11-02T17:55:17+0000"
+   "username": "matisse_vankerckhove",
+   "nom": "Matisse Van Kerckhove",
+   "abonnes": 7584,
+   "bio": "U23 @teamvisma_leaseabike_devo 🐝\n🇧🇪\nContact: Info@sportsflow.be",
+   "publications": 172,
+   "dernier": "2026-10-17T15:59:26+0000"
   },
-  "gcn.racing": {
-   "entite": "GCN Racing",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "globalcyclingnetwork_racing": {
-   "entite": "GCN Racing",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "gcn_cycling_racing": {
-   "entite": "GCN Racing",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "daniel_benson_cycling": {
-   "entite": "Daniel Benson cycling journalist",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "danielbenson_journalist": {
-   "entite": "Daniel Benson cycling journalist",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "daniel_benson_cycling_news": {
-   "entite": "Daniel Benson cycling journalist",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "dbenson_cycling": {
-   "entite": "Daniel Benson cycling journalist",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "jose_been": {
-   "entite": "José Been",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "jose.been.cycling": {
-   "entite": "José Been",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "josebeen_cycling": {
-   "entite": "José Been",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "josebeen_commentary": {
-   "entite": "José Been",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "marion_rousse": {
-   "entite": "Marion Rousse",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "marion.rousse": {
-   "entite": "Marion Rousse",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "marionrousse_officiel": {
-   "entite": "Marion Rousse",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "marion_rousse_cycling": {
-   "entite": "Marion Rousse",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "thomas_voeckler": {
-   "entite": "Thomas Voeckler",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "thomas.voeckler": {
-   "entite": "Thomas Voeckler",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "thomasvoeckler_officiel": {
-   "entite": "Thomas Voeckler",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "voeckler_thomas": {
-   "entite": "Thomas Voeckler",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "eurosport_france": {
-   "entite": "Eurosport France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "eurosport.france": {
-   "entite": "Eurosport France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "eurosportfr_officiel": {
-   "entite": "Eurosport France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "eurosport_cyclisme": {
-   "entite": "Eurosport France",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "rmc_sport": {
-   "entite": "RMC Sport",
+  "gironextgen": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "rmc_sport",
-   "nom": "RMC Sport",
-   "abonnes": 993397,
-   "publications": 17043,
-   "dernier": "2026-11-04T22:59:57+0000"
+   "username": "gironextgen",
+   "nom": "Giro Next Gen",
+   "abonnes": 16032,
+   "bio": "2026 👑 @finnlorenzo \nChase the dream 🚴🏼‍♂️\n🗓️ 13-20/06/2027",
+   "publications": 742,
+   "dernier": "2026-09-21T19:02:02+0000"
   },
-  "rmc.sport": {
-   "entite": "RMC Sport",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "rmcsport_cyclisme": {
-   "entite": "RMC Sport",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "rmc_sport_officiel": {
-   "entite": "RMC Sport",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lequipe_fr": {
-   "entite": "L'Équipe",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lequipe.cyclisme": {
-   "entite": "L'Équipe",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "lequipe_sport": {
-   "entite": "L'Équipe",
+  "lefrenchcyclard": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "lequipe_sport",
+   "username": "lefrenchcyclard",
+   "nom": "LFCC  ( French Cyclard )",
+   "abonnes": 31797,
+   "bio": "🚀🎨Créé ta tenue club. Plus de 900 projets custom. sponsor de 4 Équipes UCI 🤟🏼 4 DN1 / 1 DN2 / 3DN3 et 25 triathletes professionnels IRONMAN.",
+   "publications": 1516,
+   "dernier": "2026-11-04T17:54:20+0000"
+  },
+  "flcrbnn": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "flcrbnn",
    "nom": null,
-   "abonnes": 13,
+   "abonnes": 341,
+   "bio": "Fabien Lenfant / Direct Vélo\n📸🚴‍♂️",
+   "publications": 115,
+   "dernier": "2026-10-12T20:19:09+0000"
+  },
+  "alejandvalverde": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "alejandvalverde",
+   "nom": "Alejandro Valverde Belmonte",
+   "abonnes": 339745,
+   "bio": "Ex ciclista profesional",
+   "publications": 669,
+   "dernier": "2026-09-17T09:07:11+0000"
+  },
+  "jordanjegat_": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "jordanjegat_",
+   "nom": "Jordan Jegat",
+   "abonnes": 23459,
+   "bio": "Cycliste professionnel @teamtotalenergies \nContact: @aej_allsports \n🏠 Nice",
+   "publications": 219,
+   "dernier": "2026-10-22T17:12:20+0000"
+  },
+  "legend_wheels": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "legend_wheels",
+   "nom": "𝙇𝙀𝙂𝙀𝙉𝘿 𝙒𝙃𝙀𝙀𝙇𝙎 🇨🇵",
+   "abonnes": 43213,
+   "bio": "Roues carbone montées à la main en France\nRoute · Gravel · CLM · Cyclo-cross\nAtelier et showroom à Nègrepelisse (82)\nChoisir sa roue ↓",
+   "publications": 1957,
+   "dernier": "2026-11-04T11:40:11+0000"
+  },
+  "teampoltivisitmalta": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teampoltivisitmalta",
+   "nom": "Team Polti VisitMalta",
+   "abonnes": 67524,
+   "bio": "🇮🇹 UCI Pro Team\n#BornFromPassion #DrivenByTeam",
+   "publications": 2889,
+   "dernier": "2026-11-04T09:00:13+0000"
+  },
+  "chris_lap": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "chris_lap",
+   "nom": "Christophe Laporte",
+   "abonnes": 74298,
+   "bio": "🇫🇷 Coureur cycliste professionnel \n🟡⚫️  Team Visma | Lease a bike \n❤️ Marion 👦🏼 Marlo 👶🏼 Billy \n📍 Var",
+   "publications": 217,
+   "dernier": "2026-07-29T09:24:55+0000"
+  },
+  "labrossejordan": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "labrossejordan",
+   "nom": "Jordan Labrosse",
+   "abonnes": 7782,
+   "bio": "📌Chambéry \n@decathloncmacgmteam 🚴🏼‍♂️",
+   "publications": 178,
+   "dernier": "2026-10-11T15:39:01+0000"
+  },
+  "tropheemadiot": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "tropheemadiot",
+   "nom": "Trophee Madiot 2026",
+   "abonnes": 7434,
+   "bio": "Trophée Madiot-Crédit Mutuel : 23e édition",
+   "publications": 2504,
+   "dernier": "2026-11-04T17:52:55+0000"
+  },
+  "vloulergue": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "vloulergue",
+   "nom": "Victor Loulergue",
+   "abonnes": 2649,
+   "bio": "Espoir 4 👴\n🚴‍♂️ @equipegroupamafdjunitedconti \n📍Chambéry",
+   "publications": 110,
+   "dernier": "2026-10-16T13:30:44+0000"
+  },
+  "pierre_carrey": {
+   "entite": "abonnements DirectVelo",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "paristourscourse": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "paristourscourse",
+   "nom": "ParisTours",
+   "abonnes": 10346,
+   "bio": "Compte officiel de Paris-Tours. La dernière classique de l'année. 🍇\n🏆 Vainqueur 2026 : @perhagenes03 🇳🇴",
+   "publications": 343,
+   "dernier": "2026-10-11T19:46:18+0000"
+  },
+  "le_ratagaz": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "le_ratagaz",
+   "nom": "𝗥𝗮𝘁𝗮𝗴𝗮𝘇 🚲",
+   "abonnes": 15472,
+   "bio": "🚴‍♂️ Ratagaz, parler de vélo avec un accent toulousain ! \n📩 Contact & collab : leratagaz@gmail.com",
+   "publications": 1007,
+   "dernier": "2026-11-04T17:19:34+0000"
+  },
+  "volkerwesselscyclingteam_men": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "volkerwesselscyclingteam_men",
+   "nom": "VolkerWessels Men Cycling Team",
+   "abonnes": 5027,
+   "bio": "🚴 Bij VolkerWessels Cycling Team strijden we gezamenlijk naar de winst op UCI Continentaal niveau. Samen zijn wij #detoekomstmakers\nBekijk onze docu⬇️",
+   "publications": 1001,
+   "dernier": "2026-10-19T15:31:59+0000"
+  },
+  "team_avesnois": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "team_avesnois",
+   "nom": "TEAM AVESNOIS",
+   "abonnes": 1997,
+   "bio": "🚀 Équipe cycliste « Formation / Développement »\n🚴🏼‍♂️ U19 - U17 - U15 | 🚴‍♀️ N1 Fém. - U17 - U15\n👶 École de Vélo  | 📍Hauts de France",
+   "publications": 357,
+   "dernier": "2026-11-01T17:00:08+0000"
+  },
+  "xavier.pereyron": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "xavier.pereyron",
+   "nom": "Xavier Pereyron",
+   "abonnes": 3999,
+   "bio": "French Sports Photographer\nMostly between France & Belgium\nChasing the action, living the moment",
+   "publications": 454,
+   "dernier": "2026-10-11T08:28:14+0000"
+  },
+  "argenteuilvaldeseinecyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "argenteuilvaldeseinecyclisme",
+   "nom": "ARGENTEUIL VAL DE SEINE CYCLISME",
+   "abonnes": 611,
+   "bio": "Former 🎓 Partager 🚲 Briller 🏆\n@argenteuil_cyclisme_u19",
+   "publications": 586,
+   "dernier": "2026-11-04T10:40:36+0000"
+  },
+  "gpbousquet_essorbreton": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "gpbousquet_essorbreton",
+   "nom": "GP Bousquet & Essor Breton",
+   "abonnes": 628,
+   "bio": "🚴‍♂️Élites Nationale - Révélatrices de talents !\n🏆Grand Prix Gilbert-Bousquet 2026 @louka_lesueur\n🤍Essor Breton 2026 : @leo_d.v.d",
+   "publications": 107,
+   "dernier": "2026-05-29T12:32:25+0000"
+  },
+  "edf_militaire_cyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "e.houcou": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "e.houcou",
+   "nom": "Emmanuel Houcou",
+   "abonnes": 3756,
+   "bio": "@pinarello_q36.5procycling \n📍Aix / Mtq",
+   "publications": 94,
+   "dernier": "2026-11-02T18:56:59+0000"
+  },
+  "simon_visual_": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "simon_visual_",
+   "nom": "ꜱ ɪ ᴍ ᴏ ɴ",
+   "abonnes": 915,
+   "bio": "____\nPhotographe freelance\nsimonphotographie53400@gmail.com",
+   "publications": 30,
+   "dernier": "2026-10-25T14:21:45+0000"
+  },
+  "tourdugevaudanoccitanie": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "tourdugevaudanoccitanie",
+   "nom": "Tour du Gévaudan Occitanie",
+   "abonnes": 343,
+   "bio": "Compte officiel du Tour du Gévaudan Occitanie 🚴🏽🚴🏼‍♀️",
+   "publications": 42,
+   "dernier": "2026-10-22T20:11:11+0000"
+  },
+  "dinansportcycling": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "dinansportcycling",
+   "nom": "Dinan Sport Cycling",
+   "abonnes": 626,
+   "bio": "Équipe Cycliste Nationale 1 🔴🟡\n📍DINAN - BRETAGNE",
+   "publications": 335,
+   "dernier": "2025-10-25T16:00:17+0000"
+  },
+  "agencepancarte": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "agencepancarte",
+   "nom": "Pancarte",
+   "abonnes": 386,
+   "bio": "Agence créative experte vélo 🪧\n📹 Stratégie - Contenus - Influence",
+   "publications": 29,
+   "dernier": "2026-10-15T15:16:28+0000"
+  },
+  "teamsolutiontechnipporali": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teamsolutiontechnipporali",
+   "nom": "Team Solution Tech - NIPPO - Rali",
+   "abonnes": 13002,
+   "bio": "🇮🇹 UCI Pro Team\n🚩 Montecatini Terme",
+   "publications": 1297,
+   "dernier": "2026-11-02T12:11:49+0000"
+  },
+  "ecthaon.team": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "ecthaon.team",
+   "nom": "Entente Cycliste Thaonnaise",
+   "abonnes": 2040,
+   "bio": "• Entente cycliste Thaonnaise \n• Équipe Nationale 1 route femme 🇫🇷\n• www.ecthaon.team",
+   "publications": 320,
+   "dernier": "2026-11-04T19:28:10+0000"
+  },
+  "lanesterwomenmorbihan": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "lanesterwomenmorbihan",
+   "nom": "Lanester Women Morbihan",
+   "abonnes": 2159,
+   "bio": "𝗪𝗘 𝗔𝗥𝗘 𝗟𝗔𝗡𝗘𝗦𝗧𝗘𝗥\n 𝓜𝓪𝓴𝓲𝓷𝓰 𝓓𝓻𝓮𝓪𝓶𝓼 𝓒𝓸𝓶𝓮 𝓣𝓻𝓾𝓮\nEquipe Cycliste Féminine N1🇨🇵",
+   "publications": 581,
+   "dernier": "2026-10-14T16:54:55+0000"
+  },
+  "hexagone.cc": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "hexagone.cc",
+   "nom": "Hexagone Cycling",
+   "abonnes": 7710,
+   "bio": "Équipe labellisé Team Fédéral U19 \n🟠 Ambition - Respect - Plaisir ⚫️",
+   "publications": 375,
+   "dernier": "2026-10-24T14:27:08+0000"
+  },
+  "velo_club_luceen": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "velo_club_luceen",
+   "nom": "Vélo Club Lucéen",
+   "abonnes": 732,
+   "bio": "Club de cyclisme & Équipe Nationale 3\n📍Centre Val de Loire📍\nSuivez notre page Instagram 📸\n#LetsgoGarennes 🔴⚫️🟢",
+   "publications": 63,
+   "dernier": "2026-09-25T06:23:19+0000"
+  },
+  "velo_club_avranchinais": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "velo_club_avranchinais",
+   "nom": "V.C.A",
+   "abonnes": 851,
+   "bio": "Suivez l’actualité du  Vélo Club Avranchinais, club  évoluant en National 3 🇯🇲",
+   "publications": 184,
+   "dernier": "2026-11-03T10:43:27+0000"
+  },
+  "vca.saintquentin": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "vca.saintquentin",
+   "nom": "VCA Saint-Quentin • Nationale 3",
+   "abonnes": 359,
+   "bio": "• Club cycliste basé à Saint-Quentin\n• Courses, résultats & actualités\n• Page dédiée à l’équipe N3\n• #danslaroueduvcasqn3",
+   "publications": 7,
+   "dernier": "2026-10-27T20:50:33+0000"
+  },
+  "us_saint_herblain": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "us_saint_herblain",
+   "nom": "Union Sportive Saint Herblain",
+   "abonnes": 964,
+   "bio": "⚫️🟡 Team ÉliteOrga US Saint Herblain \nÉquipe Cycliste Nationale 2\nFacebook : USSH Cyclisme",
+   "publications": 861,
+   "dernier": "2026-11-02T14:21:35+0000"
+  },
+  "u1923.cycling.project": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "u1923.cycling.project",
+   "nom": "U19/23 Cycling Project",
+   "abonnes": 956,
+   "bio": "🚴‍♂️ Velo route haut niveau\nEquipe U19 : Junior Devo UCI\nEquipe U23 : DN3 FFC route\norganisations :\nTour du Centre Alsace Junior",
+   "publications": 312,
+   "dernier": "2026-11-03T13:32:48+0000"
+  },
+  "teamsportbreizhaxelarmorlux": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teamsportbreizhaxelarmorlux",
+   "nom": "Team Sportbreizh Axel Armor-lux",
+   "abonnes": 1464,
+   "bio": "🔵🟠 Team Sportbreizh - Axel - Armor-Lux\n🚴‍♂️ Équipe cycliste Finistérienne\n🏁 National 2 • Evo \n📍 Plougastel-Daoulas\n🔗 sportbreizh.com",
+   "publications": 301,
+   "dernier": "2026-10-20T15:59:35+0000"
+  },
+  "sportbreizh_axel_armorlux": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "sportbreizh_axel_armorlux",
+   "nom": "Sportbreizh Axel Armor-lux",
+   "abonnes": 649,
+   "bio": "𝑬́𝑸𝑼𝑰𝑷𝑬 𝑪𝒀𝑪𝑳𝑰𝑺𝑻𝑬 𝑵𝑨𝑻𝑰𝑶𝑵𝑨𝑳 2\n𝐑𝐞𝐣𝐨𝐢𝐧𝐬 𝐧𝐨𝐮𝐬 𝐬𝐮𝐫 𝐓𝐢𝐤𝐭𝐨𝐤 : @𝐭𝐞𝐚𝐦.𝐬𝐩𝐨𝐫𝐭𝐛𝐫𝐞𝐢𝐳𝐡 📽️🤩",
+   "publications": 75,
+   "dernier": "2025-08-11T13:03:07+0000"
+  },
+  "teamcotedegranitrose": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teamcotedegranitrose",
+   "nom": "Team Côte de Granit Rose",
+   "abonnes": 603,
+   "bio": "Club de cyclisme de compétition affilié à la FFC\nFormation et structure N3 🧡🩷\n« 𝑷𝒍𝒖𝒔 𝒒𝒖’𝒖𝒏𝒆 𝒆𝒒𝒖𝒊𝒑𝒆, 𝒖𝒏𝒆 𝒇𝒂𝒎𝒊𝒍𝒍𝒆 ✨ »\n📍 @villedeperrosguirec\n#tcgr #bzh",
+   "publications": 165,
+   "dernier": "2026-10-30T16:35:47+0000"
+  },
+  "team_correze_suchet_na": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "team_correze_suchet_na",
+   "nom": "Team Corrèze Suchet Nouvelle Aquitaine",
+   "abonnes": 511,
+   "bio": "Équipe cycliste corrézienne Nationale 3 FFC // Équipe U19",
+   "publications": 116,
+   "dernier": "2026-07-12T21:39:36+0000"
+  },
+  "team_74_hautesavoie": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "team_74_hautesavoie",
+   "nom": "Team 74 - Haute Savoie",
+   "abonnes": 2526,
+   "bio": "Vainqueur de la CDF National 3 - 2026 🏆🇫🇷\nÉquipe cycliste de National 2 du comité cycliste de Haute-Savoie",
+   "publications": 73,
+   "dernier": "2026-10-30T13:13:42+0000"
+  },
+  "ssc.cyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "ssc.cyclisme",
+   "nom": "Sablé Sarthe Cyclisme",
+   "abonnes": 209,
+   "bio": "Nouveau compte officiel du SSC ! 🟠🔵\n• Ville de Sablé-sur-Sarthe @payssabolien\n• Division Nationale 3\n• Route / Piste / Cyclo-Cross / Ecole de vélo",
+   "publications": 39,
+   "dernier": "2026-06-10T16:53:04+0000"
+  },
+  "orbea": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "orbea",
+   "nom": "Orbea",
+   "abonnes": 467397,
+   "bio": "Proud to ride with those who dare to dream, stay true to their values, and leave a mark worth remembering. You inspire us to #DrawTheLine.",
+   "publications": 6889,
+   "dernier": "2026-11-04T15:01:38+0000"
+  },
+  "occ_antibes": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "occ_antibes",
+   "nom": "N3 Antibes Alpes-Maritimes",
+   "abonnes": 469,
+   "bio": "🚴🏻‍♂️Équipe Cycliste Division Nationale 3\nOCC Antibes Alpes-Maritimes \n📍Antibes \nNous contacter :\noccantibes06@gmail.com",
+   "publications": 53,
+   "dernier": "2026-09-26T20:14:41+0000"
+  },
+  "morlaix_cp": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "morlaix_cp",
+   "nom": "Morlaix Cyclisme Performance",
+   "abonnes": 461,
+   "bio": "📍 Morlaix (29)\n🚴🏻‍♂️ Équipe de Division Nationale 3\n🏆Coupe de France N3 2025\n🎖Club formateur et labellisé FFC\n📢 \"S'ils te mordent, mords les\"",
+   "publications": 215,
+   "dernier": "2026-10-26T18:22:49+0000"
+  },
+  "martiguessc": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "martiguessc",
+   "nom": "Martigues SC-Payden&Rygel",
+   "abonnes": 661,
+   "bio": "Compte officiel  \nMartigues SC–Payden & Rygel  \nNationale 3 🇫🇷",
+   "publications": 137,
+   "dernier": "2026-11-02T09:16:48+0000"
+  },
+  "lescar.vs": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "lescar.vs",
+   "nom": "Lescar Vélo Sprint",
+   "abonnes": 334,
+   "bio": "𝗘𝗤𝗨𝗜𝗣𝗘 𝗖𝗬𝗖𝗟𝗜𝗦𝗧𝗘 𝗡𝗔𝗧𝗜𝗢𝗡𝗔𝗟𝗘 𝟯\n📍Lescar, Pyrénées-Atlantiques",
+   "publications": 42,
+   "dernier": "2026-07-24T10:17:53+0000"
+  },
+  "istres_sport_cyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "istres_sport_cyclisme",
+   "nom": "Istres Sport Cyclisme",
+   "abonnes": 791,
+   "bio": "🚴‍♀️ Équipe Féminine N2  \n🚴‍♂️ Équipe Masculine N3  \n📍 Club de cyclisme basé à Istres  \n💪 Passion, performance & esprit d’équipe",
+   "publications": 59,
+   "dernier": "2026-05-27T15:18:36+0000"
+  },
+  "issoirecyclisme_n3": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "issoirecyclisme_n3",
+   "nom": "Issoire Cyclisme National 3",
+   "abonnes": 1069,
+   "bio": "🔵🟡 Issoire Cyclisme 🟡🔵\nÉquipe cycliste de Division Nationale 3 \ndepuis 2013",
+   "publications": 301,
+   "dernier": "2026-09-06T14:10:53+0000"
+  },
+  "gmc38ef": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "gmc38ef",
+   "nom": "Grenoble Métropole Cyclisme 38 (Eybens Formation)",
+   "abonnes": 8799,
+   "bio": "📸 Bienvenue sur le compte du G.M.C. 38 - EF !\n🏆 Club de Division Nationale 3",
+   "publications": 1363,
+   "dernier": "2026-11-04T17:45:18+0000"
+  },
+  "asptt_nancy_cyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "asptt_nancy_cyclisme",
+   "nom": "ASPTT Nancy ~ Cyclisme",
+   "abonnes": 316,
+   "bio": "❌ Compte inactif ❌\n🚴‍♂️ ASPTT Nancy Cyclisme N3 🚴‍♂️\nIl a été géré en 2024 par Julien Pierrat, puis jusqu’en septembre 2025 par Lucas Brémont.",
    "publications": 0,
-   "dernier": null
+   "dernier": "2025-02-23T18:03:23+0000"
   },
-  "lequipe_officiel": {
-   "entite": "L'Équipe",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "benoit_cosnefroy": {
-   "entite": "Benoît Cosnefroy",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "benoit.cosnefroy": {
-   "entite": "Benoît Cosnefroy",
+  "cycloclubperigueuxdordogne": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "benoit.cosnefroy",
-   "nom": "Benoit Cosnefroy",
-   "abonnes": 60564,
-   "publications": 797,
-   "dernier": "2026-09-01T08:28:52+0000"
+   "username": "cycloclubperigueuxdordogne",
+   "nom": "Cyclo Club Périgueux Dordogne",
+   "abonnes": 867,
+   "bio": "Equipe Cycliste N3",
+   "publications": 78,
+   "dernier": "2026-10-30T17:54:54+0000"
   },
-  "cosnefroy_benoit": {
-   "entite": "Benoît Cosnefroy",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "benoitcosnefroy_cycling": {
-   "entite": "Benoît Cosnefroy",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "clement_champoussin": {
-   "entite": "Clément Champoussin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "clement.champoussin": {
-   "entite": "Clément Champoussin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "champoussin_clement": {
-   "entite": "Clément Champoussin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "clementchampoussin_cycling": {
-   "entite": "Clément Champoussin",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "guillaume_martin": {
-   "entite": "Guillaume Martin cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "guillaume.martin.cyclisme": {
-   "entite": "Guillaume Martin cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "martin_guillaume_cycling": {
-   "entite": "Guillaume Martin cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "guillaumemartin_officiel": {
-   "entite": "Guillaume Martin cycliste",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "christophe_laporte": {
-   "entite": "Christophe Laporte",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "christophe.laporte": {
-   "entite": "Christophe Laporte",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "laporte_christophe": {
-   "entite": "Christophe Laporte",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "christophelaporte_cycling": {
-   "entite": "Christophe Laporte",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arnaud_demare": {
-   "entite": "Arnaud Démare",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arnaud.demare": {
-   "entite": "Arnaud Démare",
+  "unioncyclistepelussin": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "arnaud.demare",
-   "nom": "Arnaud Démare",
-   "abonnes": 89132,
-   "publications": 573,
-   "dernier": "2026-10-30T17:13:23+0000"
+   "username": "unioncyclistepelussin",
+   "nom": "Union Cycliste Pélussin Loire Pilat",
+   "abonnes": 1136,
+   "bio": "Union Cycliste Pélussin Loire Pilat 🚴‍♂️\nLA GREEN TEAM 🔥\nNationale 2\n📍42410 Pélussin\nFacebook : Union Cycliste Pélussin",
+   "publications": 923,
+   "dernier": "2026-11-03T20:21:04+0000"
   },
-  "demare_arnaud": {
-   "entite": "Arnaud Démare",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "arnauddemare_cycling": {
-   "entite": "Arnaud Démare",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "axel_laurance": {
-   "entite": "Axel Laurance",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "axel.laurance": {
-   "entite": "Axel Laurance",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "laurance_axel": {
-   "entite": "Axel Laurance",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "axellaurance_cycling": {
-   "entite": "Axel Laurance",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "clement_berthet": {
-   "entite": "Clément Berthet",
+  "vcdolois": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "clement_berthet",
-   "nom": "Clément Berthet",
-   "abonnes": 9888,
-   "publications": 423,
-   "dernier": "2026-10-19T13:58:01+0000"
+   "username": "vcdolois",
+   "nom": "Vélo Club Dolois",
+   "abonnes": 838,
+   "bio": "Club Cycliste Jurassien 🔴⚫️\n🚵‍♀️Team VTT ➡️ @team_vtt_vcdolois \n🚴Team Route ➡️ @team_route_vcdolois \n🔬Cyclosportive Louis Pasteur ➡️ @la_louis_pasteur",
+   "publications": 373,
+   "dernier": "2026-11-04T09:40:20+0000"
   },
-  "clement.berthet": {
-   "entite": "Clément Berthet",
+  "teamu_lh": {
+   "entite": "abonnements DirectVelo",
    "ok": true,
-   "username": "clement.berthet",
-   "nom": "Clément Berthet",
-   "abonnes": 3664,
-   "publications": 1299,
-   "dernier": "2026-11-03T20:18:19+0000"
+   "username": "teamu_lh",
+   "nom": "Team U - LH",
+   "abonnes": 1781,
+   "bio": "• TEAM U-LH 🔴🔵 •\n🚲 Club cycliste\n🚴‍♂️ U19 Hommes\n🚴‍♀️ U17/U19 Femmes & N2",
+   "publications": 494,
+   "dernier": "2026-11-04T19:00:12+0000"
   },
-  "berthet_clement": {
-   "entite": "Clément Berthet",
+  "teamvittelnside": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teamvittelnside",
+   "nom": "Team Vittel N’side",
+   "abonnes": 2345,
+   "bio": "𝗧𝗘𝗔𝗠 𝗖𝗬𝗖𝗟𝗜𝗦𝗧𝗘 𝗡𝗔𝗧𝗜𝗢𝗡𝗔𝗟 𝟭\nBasé à Vittel (Vosges) 🇫🇷\nVivez la course de l’intérieur !\n#bnside",
+   "publications": 589,
+   "dernier": "2026-10-28T12:09:10+0000"
+  },
+  "team.lmp": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "team.lmp",
+   "nom": "Team LMP ⚫️🟢🔴",
+   "abonnes": 1424,
+   "bio": "@rvc_officiel \nTeam LMP - La Roche Vendée Cyclisme 🚴🏼‍♂️\nNational 2 route\nChampion N2 2022-2023🏆",
+   "publications": 582,
+   "dernier": "2026-10-29T15:52:05+0000"
+  },
+  "top16cyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "top16cyclisme",
+   "nom": "TOP 16 Cyclisme",
+   "abonnes": 1430,
+   "bio": "Club de Nationale 1 🇫🇷\nCyclisme🚴🏻‍♂️ \nCharente/Nouvelle-Aquitaine @poli_wear, @veloland_cognac, @leclercruffec, @lapierrebikes",
+   "publications": 230,
+   "dernier": "2026-10-14T16:26:27+0000"
+  },
+  "moyon_percy_vc": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "moyon_percy_vc",
+   "nom": "Moyon Percy Vélo Club",
+   "abonnes": 1863,
+   "bio": "⚫🟡 Club cycliste dans la Manche (50) 🟡⚫\n➡️ National 1 \n➡️ Equipe Juniors UCI🌈 @guerinenergie_l2aagencementu19\n➡️ Ecole Française de Cyclisme",
+   "publications": 921,
+   "dernier": "2026-11-03T16:40:17+0000"
+  },
+  "esegdouai": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "esegdouai",
+   "nom": "ESEG Douai",
+   "abonnes": 745,
+   "bio": "🚴🏻‍♂️ | Équipe cycliste basée à Douai (Nord)\n👥 | ESEG Douai\n🐣 | « Les Douai de la route »",
+   "publications": 181,
+   "dernier": "2026-05-15T06:00:28+0000"
+  },
+  "es_torigni": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "es_torigni",
+   "nom": "ES TORIGNI",
+   "abonnes": 871,
+   "bio": "Équipe Cycliste de Division Nationale 2 🔵⚪️\n↪️lien de notre page Facebook",
+   "publications": 87,
+   "dernier": "2024-09-02T15:52:56+0000"
+  },
+  "teamlacrepedebroceliande": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teamlacrepedebroceliande",
+   "nom": "Team La Crêpe de Brocéliande",
+   "abonnes": 2260,
+   "bio": "TEAM LA CRÊPE DE BROCÉLIANDE\n⚔️ Équipe cycliste Nationale 2\n📍 Bretagne",
+   "publications": 837,
+   "dernier": "2026-10-20T14:25:39+0000"
+  },
+  "cchartrescyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "cchartrescyclisme",
+   "nom": "C'Chartres Cyclisme",
+   "abonnes": 1196,
+   "bio": "Club Cyclisme de Nationale 2 - Ecole de cyclisme labellisée",
+   "publications": 319,
+   "dernier": "2026-11-03T18:22:39+0000"
+  },
+  "montluconcyclisme": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "montluconcyclisme",
+   "nom": "Montluçon Cyclisme",
+   "abonnes": 442,
+   "bio": "Équipe Nationale 1",
+   "publications": 16,
+   "dernier": "2025-07-29T08:02:33+0000"
+  },
+  "guidon_chalettois": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "guidon_chalettois",
+   "nom": "Guidon Chalettois",
+   "abonnes": 1472,
+   "bio": "Cycling team - National 1 - FFC #RégionCentre#N1",
+   "publications": 574,
+   "dernier": "2026-11-04T13:10:11+0000"
+  },
+  "cictourdelaprovence": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "cictourdelaprovence",
+   "nom": "CIC Tour de La Provence",
+   "abonnes": 11058,
+   "bio": "🚴‍♂️Compte officiel du CIC Tour de La Provence\n🆕 12 - 14 février 2027",
+   "publications": 415,
+   "dernier": "2026-10-26T16:00:03+0000"
+  },
+  "titouan_margueritat": {
+   "entite": "abonnements DirectVelo",
    "ok": false,
    "code": 110,
    "sous_code": 2207013,
    "erreur": "Invalid user id"
   },
-  "clementberthet_cycling": {
-   "entite": "Clément Berthet",
+  "mnstry.nutrition": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "mnstry.nutrition",
+   "nom": "MNSTRY",
+   "abonnes": 50261,
+   "bio": "Sports nutrition designed differently. \nNo artificial flavourings. No sweeteners. No gut drama. \nScience-backed. Performance-proven.",
+   "publications": 366,
+   "dernier": "2026-11-02T15:30:20+0000"
+  },
+  "france_peloton": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "france_peloton",
+   "nom": null,
+   "abonnes": 9017,
+   "bio": "👀 Suivez l'actualité du cyclisme sur Route/Cyclocross/Piste/Gravel\nChampionnats de 🇫🇷\nCoupe de 🇫🇷\nChampionnats d'🇪🇺 et 🌈\nÉquipe de France @ffcyclisme",
+   "publications": 931,
+   "dernier": "2026-10-29T19:18:05+0000"
+  },
+  "letourdesalpesmaritimes": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "letourdesalpesmaritimes",
+   "nom": "Tour des Alpes-Maritimes",
+   "abonnes": 5983,
+   "bio": "🚴‍♂️ Tour des Alpes-Maritimes\n🏆 Course pro · 21/02/2027\n🎥 Actu & coulisses de l'événement\n🏁Un événement sportif national porté par @groupenicematin",
+   "publications": 470,
+   "dernier": "2026-10-22T18:41:15+0000"
+  },
+  "rocketscycling": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "rocketscycling",
+   "nom": "Unibet Rose Rockets",
+   "abonnes": 246340,
+   "bio": "We are the Unibet Rose Rockets. To the Tour and beyond! ✨",
+   "publications": 2653,
+   "dernier": "2026-11-04T18:37:23+0000"
+  },
+  "wahoo_france": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "wahoo_france",
+   "nom": "Wahoo France",
+   "abonnes": 7997,
+   "bio": "Marque de home-trainers et compteurs connectés, pour t’aider à atteindre tes objectifs les plus fous.",
+   "publications": 380,
+   "dernier": "2026-10-29T17:15:48+0000"
+  },
+  "rolandcyclingteam": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "rolandcyclingteam",
+   "nom": "Roland Cogeas\nCycling Team",
+   "abonnes": 6801,
+   "bio": "Official Instagram account of UCI Women’s WorldTour team Roland Cycling Team.",
+   "publications": 292,
+   "dernier": "2026-01-27T21:23:10+0000"
+  },
+  "lrg_cyclingteam": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "lrg_cyclingteam",
+   "nom": "LRG-Cycling Team",
+   "abonnes": 842,
+   "bio": "",
+   "publications": 375,
+   "dernier": "2026-11-04T16:54:16+0000"
+  },
+  "mem_yct_vmh_u23el2": {
+   "entite": "abonnements DirectVelo",
    "ok": false,
    "code": 110,
    "sous_code": 2207013,
    "erreur": "Invalid user id"
   },
-  "dorian_godon": {
-   "entite": "Dorian Godon",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "atom6_cycleurdeluxe_autostroo": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "atom6_cycleurdeluxe_autostroo",
+   "nom": "Atom 6 Bikes - Cycleur de Luxe - Auto Stroo Continental Team",
+   "abonnes": 2455,
+   "bio": "Australian/Belgian UCI Continental Team 🇭🇲 🇧🇪\n● Focused on development\n● Data-driven training & strong teamwork\n● 10 different nationalities",
+   "publications": 145,
+   "dernier": "2026-11-03T13:51:21+0000"
   },
-  "dorian.godon": {
-   "entite": "Dorian Godon",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "vdm_trawobo_cyclingteam": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "vdm_trawobo_cyclingteam",
+   "nom": "VDM Trawobo CT",
+   "abonnes": 579,
+   "bio": "Belgian cycling team for U23 and Elite2\n#vdmtrawoboct",
+   "publications": 101,
+   "dernier": "2026-10-04T08:25:47+0000"
   },
-  "godon_dorian": {
-   "entite": "Dorian Godon",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "quentinphotographiebecycling": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "quentinphotographiebecycling",
+   "nom": "Quentinphotographiebe Cycling",
+   "abonnes": 84,
+   "bio": "Account pictures cycling",
+   "publications": 49,
+   "dernier": "2025-05-05T13:55:21+0000"
   },
-  "doriangodon_cycling": {
-   "entite": "Dorian Godon",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "belgian_cycling": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "belgian_cycling",
+   "nom": "Belgian Cycling",
+   "abonnes": 45872,
+   "bio": "Official Instagram account of Belgian Cycling 🇧🇪🚴‍♂",
+   "publications": 1496,
+   "dernier": "2026-11-03T08:56:23+0000"
   },
-  "victor_lafay": {
-   "entite": "Victor Lafay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "baloise.poetsbureaulions": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "baloise.poetsbureaulions",
+   "nom": "Baloise verzekeringen - Het Poetsbureau Lions",
+   "abonnes": 35036,
+   "bio": "Official Instagram page of the cyclocross team Baloise verzekeringen - Het Poetsbureau Lions 🦁",
+   "publications": 1552,
+   "dernier": "2026-11-03T09:20:25+0000"
   },
-  "victor.lafay": {
-   "entite": "Victor Lafay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "uc_briochine": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "uc_briochine",
+   "nom": "UC BRIOCHINE",
+   "abonnes": 1617,
+   "bio": "Club cycliste amateur",
+   "publications": 362,
+   "dernier": "2026-11-04T20:00:04+0000"
   },
-  "lafay_victor": {
-   "entite": "Victor Lafay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "equipebmcbeziers": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "equipebmcbeziers",
+   "nom": "BMC Béziers Nationale 2",
+   "abonnes": 784,
+   "bio": "Béziers Méditerrané Cyclisme - BMC\nPerformance · Formation \nRoute – VTT – École cycliste\n📍 Béziers",
+   "publications": 310,
+   "dernier": "2026-11-04T17:00:02+0000"
   },
-  "victorlafay_cycling": {
-   "entite": "Victor Lafay",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "apoge.cycliste": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "apoge.cycliste",
+   "nom": "Apogé Cycliste Burie Matériaux",
+   "abonnes": 1444,
+   "bio": "TEAM U19 FÉDÉRALE ⚫️🔴",
+   "publications": 625,
+   "dernier": "2026-10-20T13:26:42+0000"
   },
-  "kevin_vermaerke": {
-   "entite": "Kevin Vermaerke",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "teambricquebeccotentin": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teambricquebeccotentin",
+   "nom": "Team Bricquebec Cotentin",
+   "abonnes": 2375,
+   "bio": "🚴 Équipe Cycliste Nationale 1\n🏆 Vainqueur Coupe de France N2 2023\n🏆 Vainqueur Coupe de France N3 2019",
+   "publications": 767,
+   "dernier": "2026-11-03T16:53:46+0000"
   },
-  "kevin.vermaerke": {
-   "entite": "Kevin Vermaerke",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "desrouesenelles": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "desrouesenelles",
+   "nom": "Des roues en elles",
+   "abonnes": 200,
+   "bio": "Vélo Club Turripinois 🔵⚪️\nÉquipe DN2 féminin \nLa Tour du Pin 📍",
+   "publications": 93,
+   "dernier": "2025-03-14T14:49:51+0000"
   },
-  "vermaerke_kevin": {
-   "entite": "Kevin Vermaerke",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "donnonsdesellesauvelo": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "donnonsdesellesauvelo",
+   "nom": "Donnons Des Elles Au Velo",
+   "abonnes": 7262,
+   "bio": "Donnons des elles au vélo - Evry-Courcouronnes\nRejoignez la communauté pour porter les valeurs d’un cyclisme inclusif\n🇫🇷 J-1 Founder 🚴🏻‍♀️ @ddeavj_1",
+   "publications": 820,
+   "dernier": "2026-10-28T15:00:05+0000"
   },
-  "kevinvermaerke_cycling": {
-   "entite": "Kevin Vermaerke",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "vcesqy.team.voussert": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "vcesqy.team.voussert",
+   "nom": "VCESQY Team Voussert",
+   "abonnes": 1105,
+   "bio": "🏁 Piste | VTT | Route – DN2 Femmes\n🎓 Formation & école de cyclisme\n💪Engagé : handisport\n📍Basé à Elancourt\n🚲Compétition, vie de club & partage",
+   "publications": 355,
+   "dernier": "2026-11-04T18:23:25+0000"
   },
-  "marianne.vos": {
-   "entite": "Marianne Vos",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "teamstamina.cycling": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "teamstamina.cycling",
+   "nom": "Team Stamina",
+   "abonnes": 769,
+   "bio": "•Fédération française de cyclisme (FFC)🚴🏼‍♀️ @velo_club_islois \n•Vaucluse, région Sud PACA ☀️",
+   "publications": 168,
+   "dernier": "2026-09-09T16:42:40+0000"
   },
-  "vos_marianne": {
-   "entite": "Marianne Vos",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+  "dn_feminin_hdf": {
+   "entite": "abonnements DirectVelo",
+   "ok": true,
+   "username": "dn_feminin_hdf",
+   "nom": "TEAM FEMININ HAUTS-DE-FRANCE",
+   "abonnes": 672,
+   "bio": "Équipe N2 Féminine du comité Hauts-de-France 💙🤍",
+   "publications": 118,
+   "dernier": "2025-04-14T16:51:45+0000"
   },
-  "mariannevos_official": {
-   "entite": "Marianne Vos",
+  "sprinteur_club_feminin": {
+   "entite": "abonnements DirectVelo",
    "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
-  },
-  "marianne_vos_cycling": {
-   "entite": "Marianne Vos",
-   "ok": false,
-   "code": 110,
-   "sous_code": 2207013,
-   "erreur": "Invalid user id"
+   "code": 4,
+   "sous_code": null,
+   "erreur": "(#4) Application request limit reached"
   }
- }
+ },
+ "arret": "code 4 : (#4) Application request limit reached"
 }
