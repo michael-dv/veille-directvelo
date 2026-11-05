@@ -1,0 +1,83 @@
+# Comptes Instagram lus à chaque génération du flux (API Graph de Meta, comptes professionnels uniquement).
+# Une ligne par compte : « identifiant » ou « identifiant | velo » (compte généraliste : on ne garde que ses publications
+# qui parlent de cyclisme). 4 publications au plus par compte et par génération. Vérifiés le 05/11/2026.
+# Les comptes personnels (non professionnels) ne sont pas lisibles : l'API renvoie « Invalid user id ».
+# Pour en ajouter un, écrire son identifiant exact (celui de l'adresse instagram.com/identifiant).
+
+# --- Équipes françaises et structures
+decathloncmacgmteam
+decathloncmacgm_newgen
+teamcofidis
+teamtotalenergies
+fdj_suez
+cicprocyclingacademy
+vanryselroubaix
+burgosburpelletbh
+vcrouen76
+
+# --- Instances et courses
+ffcyclisme
+uci_cycling
+letourdefrance
+letourfemmes
+giroditalia
+lavuelta
+parisnicecourse
+criteriumdudauphine
+tourdelavenir
+etoile_de_besseges
+
+# --- Équipes étrangères
+uae_team_emirates
+lidltrek
+redbullborahansgrohe
+efprocycling
+movistar_team
+teambahrainvictorious
+greenedgecycling
+xds_astana_team
+unoxteam
+teampicnicpostnl
+tudorprocycling
+netcompany_ineos
+alpecin.premiertech
+
+# --- Coureurs et coureuses
+alafpolak
+david_gaudu
+valentinmadouas
+benoit.cosnefroy
+arnaud.demare
+bryancoquard
+clement_berthet
+aubin_sparfel
+paulineferrandprevot
+juliettelabous
+cedrine_kerbaol
+marion_bunel
+tadejpogacar
+jonasvingegaard
+mathieuvanderpoel
+remco.ev
+woutvanaert
+thibau_nys
+tompidcock
+demivollering
+lottekopecky
+lorenawiebes
+
+# --- Médias
+legruppetto
+cyclismactu1
+velo101_officiel
+danslamusette
+escapecollective
+wielerflits
+gcn_racing
+procyclingstats
+lequipe | velo
+eurosportfr | velo
+francetvsport | velo
+rmc_sport | velo
+ouestfrance | velo
+letelegramme | velo
