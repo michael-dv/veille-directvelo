@@ -1,25 +1,107 @@
-# Comptes Bluesky lus à chaque génération du flux (un identifiant par ligne, # = commentaire).
-# Vérifiés le 05/11/2026 : comptes actifs dans le mois. Les reposts et les réponses sont ignorés.
-# Notre compte
+# Comptes Bluesky lus à chaque génération du flux : un identifiant par ligne, # = commentaire.
+# « identifiant | velo » = compte généraliste : on ne garde que ses posts qui parlent de cyclisme.
+# Posts propres uniquement (ni réponses ni reposts), 6 au plus par compte et par génération.
+# Liste établie le 05/11/2026 : comptes actifs (au moins 2 posts en 14 jours), repérés dans les « starter packs »
+# cyclisme de Bluesky, les abonnements des journalistes de référence et une recherche par nom.
+
+# --- Notre compte
 directvelo.bsky.social
-# Journalistes et mercato
-dnlbenson.bsky.social        # Daniel Benson (mercato, Substack)
-gregienco.be                 # Grégory Ienco, Belga / CyclismeRevue
-globalpeloton.bsky.social    # Dan Challis, Escape Collective
-robynemz.bsky.social         # Robyn, journaliste cyclisme
-matildaprice.bsky.social     # Tilda Price, Cyclingnews (cyclisme féminin)
-timbonvilleginn.bsky.social  # Tim Bonville-Ginn, journaliste indépendant
-writebikerepeat.bsky.social  # Katy M, journaliste indépendante
-sadhbhos.bsky.social         # Sadhbh O'Shea, attachée de presse Jayco AlUla
-matthieusrvnt.bsky.social    # Matthieu, Le Gruppetto
-# Médias, blogs, forums
+
+# --- Médias et journalistes francophones
 legruppetto.fr
-inrng.com                    # The Inner Ring
+matthieusrvnt.bsky.social        # Le Gruppetto
+cyclismerevue.be
+gregienco.be                     # Grégory Ienco, Belga / CyclismeRevue
+etiennegoursaud.bsky.social      # Dicodusport
+matosvelo.fr                     # matériel
+chouchoutes.cc                   # podcast cyclisme féminin
+cyclisme-dopage.com              # discipline, dopage (beaucoup d'anniversaires « il y a N ans »)
+charlesmarsault.bsky.social      # arbitre club FFC
+afp.com | velo                   # AFP, posts cyclisme seulement
+stephanemandard.bsky.social | velo   # Le Monde (dopage)
+benjaminpeltier.bsky.social | velo
+pierrebrt.bsky.social | velo     # Le Monde, Décodeurs (données Tour)
+
+# --- Journalistes mercato et pros (international)
+dnlbenson.bsky.social            # Daniel Benson (mercato)
+globalpeloton.bsky.social        # Dan Challis
+robynemz.bsky.social
+matildaprice.bsky.social         # Cyclingnews (féminines)
+lukascph.bsky.social             # Cyclingnews, Women's WorldTour
+adambecket.bsky.social           # Cycling Weekly
+dbfreelance.co.uk                # Cycling Weekly
+owenrogers382.bsky.social
+timbonvilleginn.bsky.social
+writebikerepeat.bsky.social
+jeremywhittle.bsky.social        # The Guardian
+kennypryde.bsky.social
+nedboulting.bsky.social
+petercossins.bsky.social
+peterstuart.bsky.social          # Velora
+jacobwhitehead.bsky.social | velo    # The Athletic
+duffofbrentford.bsky.social | velo   # Alex Duff (économie du Tour)
+andrewcurry.com | velo
+pflax1.bsky.social | velo        # Peter Flax
+josebeentv.bsky.social           # José Been
+thijszonneveld.bsky.social       # AD
+marijndevries.bsky.social
+frankheinen.bsky.social
+thomassijtsma.bsky.social
+timfietst.bsky.social            # Eurosport NL, WielerFlits
+jonascreteur.bsky.social         # Knack
+anderiza.bsky.social             # Ander Izagirre
+cyclartist.bsky.social           # piste
+jezcox.bsky.social               # commentateur
+antmccrossan.bsky.social         # commentateur
+sannyr.com | velo                # Sky Sports
+sadhbhos.bsky.social             # attachée de presse Jayco AlUla
+luuksport.bsky.social            # ex-attaché de presse Picnic PostNL
+saardr.bsky.social               # She Rides Podcast
+doctorhutch.bsky.social          # Michael Hutchinson
+
+# --- Médias internationaux
+cyclingnews.com
 escapecollective.bsky.social
 domestiquecycling.com
-cyclismerevue.be
+idlprocycling.bsky.social
+cyclingweekly.com
+velo-velo-velo.bsky.social
+cyclist.co.uk
+rouleurmagazine.bsky.social
+thebritishcontinental.co.uk      # cyclisme britannique (Continentales)
+procyclinguk.com.web.brid.gy     # cyclisme féminin
+wielerflits.bsky.social
+indeleiderstrui.bsky.social
 hetiskoers.bsky.social
-chouchoutes.cc               # podcast cyclisme féminin
+nieuwsblad.bsky.social | velo
+sporza.be | velo
+sport.nos.nl | velo
+spaziociclismo.bsky.social       # mercato italien
+mm-gazzetta-sport.bsky.social | velo
+esciclismo.com
+as.com | velo
+marca.com.web.brid.gy | velo
+elsterrato.bsky.social           # cyclisme féminin espagnol
+esenciaciclista.bsky.social      # cyclisme féminin
+ciclismomundial.bsky.social      # Portugal
+radsportnews.bsky.social         # Allemagne
+cyclingmagazine.bsky.social      # Allemagne
+theathletic.com | velo
+
+# --- Blogs, analyse, données, piste
+inrng.com                        # The Inner Ring
+cycologies.com
+howtheracewaswon.com
+cilliankelly.bsky.social
+cyclingreno.bsky.social
+ammattipyoraily.bsky.social      # stats
 procyclingstats.com
-# Équipes
-greenedgecycling.bsky.social # Jayco AlUla
+globalkeirin.com                 # piste, keirin
+
+# --- Équipes, courses, instances, coureurs
+greenedgecycling.bsky.social     # Jayco AlUla
+lavuelta.bsky.social
+lavueltafem.bsky.social
+boucles53.bsky.social            # Boucles de la Mayenne
+africacycling.bsky.social
+robincarpenter.bsky.social       # coureur pro
