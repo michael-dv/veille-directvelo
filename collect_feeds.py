@@ -2,7 +2,8 @@
 """Collecte des flux de veille DirectVelo -> flux_2h.md
 
 Récupère les publications des dernières 24 heures (DirectVelo, Le Gruppetto, PQR,
-médias spécialisés, Bluesky, Reddit, FFC Ressources, presse internationale,
+médias spécialisés, Bluesky, YouTube, Reddit, relais Google News des réseaux
+non lisibles (X, Instagram, TikTok, Facebook, LinkedIn), FFC Ressources, presse internationale,
 sources officielles et antidopage, bases de transferts et cyclo-cross), ajoute en
 tête un radar « Tendances & signaux Google Discover » (Google Trends France,
 médias sportifs grand public, sujets cités par 3 sources ou plus) et écrit
@@ -57,8 +58,21 @@ PQR_KEYWORDS = ["cyclisme", "vélo", "velo", "peloton", "coureur", "n1", "n2", "
                 "mercato", "cyclo-cross", "cyclocross"]
 GRUPPETTO_TOPICS = ["transfert", "équipe", "equipe", "amateur", "cyclo-cross", "cyclocross"]
 BLUESKY_QUERIES = ["DirectVelo", "TotalEnergies", "Mercato cyclisme"]  # recherche : seulement si les secrets Bluesky existent
-# Comptes Bluesky lus sans authentification (getAuthorFeed est public). Ajoutez-en si besoin.
+# Comptes Bluesky lus sans authentification (getAuthorFeed est public) : liste éditable dans etat/bluesky.txt
+# (un identifiant par ligne, # = commentaire). Repli si le fichier manque :
+BLUESKY_FILE = f"{ETAT}/bluesky.txt"
 BLUESKY_ACTORS = ["directvelo.bsky.social"]
+# Chaînes YouTube suivies : liste éditable dans etat/youtube.txt (« ID de chaîne | nom | velo » ;
+# « velo » = chaîne généraliste, on ne garde que les vidéos dont le titre parle de cyclisme).
+YOUTUBE_FILE = f"{ETAT}/youtube.txt"
+YOUTUBE_HOURS = 48  # les vidéos sont plus rares que les articles : fenêtre de 48 h
+# Relais des réseaux sociaux : articles qui reprennent une annonce faite sur X, Instagram, TikTok, Facebook, LinkedIn ou YouTube
+SOCIAL_RELAY_QUERIES = [
+    ('(cyclisme OR cycliste OR coureur OR coureuse OR équipe OR club) ("sur Instagram" OR "sur X" OR "sur TikTok" OR '
+     '"sur Facebook" OR "sur LinkedIn" OR "sur YouTube" OR "sur ses réseaux" OR "sur les réseaux sociaux" OR "sur Twitter")', "fr"),
+    ('(cycling OR cyclist OR "pro cycling" OR WorldTour) ("on Instagram" OR "on social media" OR "on X" OR "on TikTok" OR "on Twitter")', "en"),
+    ('(wielrenner OR wielrennen OR veldrijder OR renner) ("op Instagram" OR "op sociale media" OR "op X" OR "op Twitter")', "nl"),
+]
 
 
 GN_EDITIONS = {
@@ -533,26 +547,41 @@ def bluesky_post(p, label):
             f"https://bsky.app/profile/{handle}/post/{rkey}", label)
 
 
+def load_list(path, default):
+    """Lit une liste éditable de etat/ (une valeur par ligne, # = commentaire)."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            vals = [l.split("#", 1)[0].strip() for l in f]
+        vals = [v for v in vals if v]
+        return vals or default
+    except OSError:
+        return default
+
+
 def section_bluesky():
     out = []
 
-    # 1. Comptes suivis, sans authentification (endpoint public getAuthorFeed)
-    for actor in BLUESKY_ACTORS:
-        url = f"https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor={quote_plus(actor)}&limit=10"
+    # 1. Comptes suivis, sans authentification (endpoint public getAuthorFeed) : posts propres, hors réponses et reposts
+    for actor in load_list(BLUESKY_FILE, BLUESKY_ACTORS):
+        url = (f"https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor={quote_plus(actor)}"
+               f"&limit=30&filter=posts_no_replies")
         r, code = get(url)
-        feed = r.json().get("feed", []) if r is not None and r.ok else []
-        record(f"Bluesky @{actor}", url.split("&")[0], code, len(feed))
+        try:
+            feed = r.json().get("feed", []) if r is not None and r.ok else []
+        except ValueError:
+            feed = []
+        kept = 0
         for item in feed:
+            if item.get("reason"):  # repost : on ne garde que ce que le compte publie lui-même
+                continue
             post = bluesky_post(item.get("post", {}), f"@{actor}")
             if post[0] is None or post[0] >= SINCE:
                 out.append(post)
+                kept += 1
+        record(f"Bluesky @{actor}", url.split("&")[0], code, kept, "" if feed else "aucun post renvoyé")
 
-    # 2. Posts Bluesky indexés par Google News (sans compte)
-    gn = {"name": "Bluesky (via Google News)", "feeds": [google_news('site:bsky.app "cyclisme"')]}
-    for dt, title, link in recent(fetch_feed(gn)):
-        out.append((dt, title, link, "Google News"))
-
-    # 3. Recherche par mots-clés : seulement si les secrets BSKY_HANDLE / BSKY_APP_PASSWORD sont définis
+    # 2. Recherche par mots-clés : seulement si les secrets BSKY_HANDLE / BSKY_APP_PASSWORD sont définis
+    #    (la recherche publique sans compte renvoie 403 depuis 2025 : ce n'est pas une panne).
     token = bluesky_token()
     if token:
         for q in BLUESKY_QUERIES:
@@ -570,8 +599,107 @@ def section_bluesky():
                 if post[0] is None or post[0] >= SINCE:
                     out.append(post)
 
+    seen, res = set(), []
+    for p in sorted(out, key=lambda x: x[0] or NOW, reverse=True):
+        if p[2] not in seen:
+            seen.add(p[2])
+            res.append(p)
+    return res[:MAX_ITEMS]
+
+
+YT_HEADERS = {**HEADERS, "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                                      "Chrome/124.0 Safari/537.36", "Accept-Language": "en-US,en;q=0.9"}
+YT_COOKIES = {"CONSENT": "YES+cb", "SOCS": "CAI"}  # évite la page de consentement
+YT_UNITS = {"second": 1, "minute": 60, "hour": 3600, "day": 86400, "week": 604800, "month": 2592000, "year": 31536000}
+
+
+def load_youtube():
+    chans = []
+    for line in load_list(YOUTUBE_FILE, []):
+        parts = [p.strip() for p in line.split("|")]
+        if parts and parts[0].startswith("UC"):
+            chans.append((parts[0], parts[1] if len(parts) > 1 else parts[0], len(parts) > 2 and parts[2] == "velo"))
+    return chans
+
+
+def youtube_videos(cid, name):
+    """Vidéos récentes d'une chaîne : flux RSS officiel, sinon page /videos (date approximative « il y a N h/j »)."""
+    rss = f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}"
+    r, code = get(rss)
+    if r is not None and r.ok:
+        parsed = feedparser.parse(r.content)
+        if parsed.entries:
+            record(f"YouTube {name}", rss, code, len(parsed.entries))
+            return [(entry_datetime(e), e.get("title", "(sans titre)").strip(), e.get("link", "")) for e in parsed.entries]
+    page = f"https://www.youtube.com/channel/{cid}/videos?hl=en&gl=FR"
+    try:
+        r = requests.get(page, headers=YT_HEADERS, cookies=YT_COOKIES, timeout=TIMEOUT)
+        pcode = f"{r.status_code} {'OK' if r.ok else r.reason}"
+    except requests.RequestException as e:
+        record(f"YouTube {name}", page, f"Erreur ({type(e).__name__})", 0, f"RSS : {code}")
+        return []
+    m = re.search(r"var ytInitialData = (\{.*?\});</script>", r.text, re.S) if r.ok else None
+    if not m:
+        record(f"YouTube {name}", page, pcode, 0, f"RSS : {code} ; page sans données vidéo")
+        return []
+    try:
+        data = json.loads(m.group(1))
+    except ValueError:
+        record(f"YouTube {name}", page, pcode, 0, f"RSS : {code} ; données illisibles")
+        return []
+    lockups = []
+
+    def walk(o):
+        if isinstance(o, dict):
+            if "lockupViewModel" in o:
+                lockups.append(o["lockupViewModel"])
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+    walk(data)
+    vids = []
+    for x in lockups[:15]:
+        vid = x.get("contentId")
+        md = x.get("metadata", {}).get("lockupMetadataViewModel", {})
+        title = (md.get("title") or {}).get("content", "(sans titre)")
+        dt = None
+        mm = re.search(r'"accessibilityLabel": "(\d+) (second|minute|hour|day|week|month|year)s? ago"', json.dumps(md))
+        if mm:
+            dt = NOW - timedelta(seconds=int(mm.group(1)) * YT_UNITS[mm.group(2)])
+        if vid:
+            vids.append((dt, title, f"https://www.youtube.com/watch?v={vid}"))
+    record(f"YouTube {name}", page, pcode, len(vids), f"repli page /videos (RSS : {code}), heure approximative")
+    return vids
+
+
+def section_youtube():
+    since = NOW - timedelta(hours=YOUTUBE_HOURS)
+    out = []
+    for cid, name, filtre in load_youtube():
+        for dt, title, link in youtube_videos(cid, name):
+            if dt is None or dt < since:
+                continue
+            if filtre and not gn_ok(title, "strict"):
+                continue
+            out.append((dt, f"[{name}] {title}", link))
     out.sort(key=lambda x: x[0] or NOW, reverse=True)
     return out[:MAX_ITEMS]
+
+
+def section_relais_sociaux():
+    """Articles de presse qui reprennent une annonce faite sur un réseau non lisible automatiquement."""
+    out = []
+    for q, lang in SOCIAL_RELAY_QUERIES:
+        out += recent(fetch_feed({"name": f"Relais réseaux sociaux ({lang}, via Google News)",
+                                  "feeds": [google_news(q, lang, 1)], "gn_filter": "strict"}))
+    seen, res = set(), []
+    for it in sorted(out, key=lambda x: x[0] or NOW, reverse=True):
+        if url_key(it[2]) not in seen:
+            seen.add(url_key(it[2]))
+            res.append(it)
+    return res[:MAX_ITEMS]
 
 
 def section_list(key):
@@ -806,14 +934,17 @@ def main():
     for name, items in section_medias():
         block(body, name, items)
 
-    body += ["## 5. Réseaux sociaux", "", "### Bluesky", ""]
+    body += ["## 5. Réseaux sociaux (Bluesky, YouTube, Reddit, relais des réseaux non lisibles)", "", "### Bluesky", ""]
     bsky = section_bluesky()
     track("Bluesky", bsky)
     if bsky:
         body += [f"- {fmt_time(dt)} — [{q}] [{text}]({link})" for dt, text, link, q in bsky] + [""]
     else:
         body += lines([])
+    block(body, "YouTube : vidéos des 48 dernières heures (etat/youtube.txt)", section_youtube(), "YouTube")
     block(body, "Reddit r/peloton", section_reddit())
+    block(body, "Relais des réseaux sociaux : annonces faites sur X, Instagram, TikTok, Facebook, LinkedIn (via Google News)",
+          section_relais_sociaux(), "Relais réseaux sociaux")
 
     body += ["## 6. Sources primaires : FFC Ressources (page 1)", ""]
     ffc = section_ffc()
