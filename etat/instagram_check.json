@@ -1,0 +1,1140 @@
+{
+ "verifie_le": "2026-11-05 06:25 UTC",
+ "resultats": {
+  "groupama_fdj": {
+   "entite": "Groupama-FDJ United équipe cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "decathloncmacgmteam": {
+   "entite": "Decathlon CMA CGM Team cyclisme",
+   "ok": true,
+   "username": "decathloncmacgmteam",
+   "nom": "DECATHLON CMA CGM TEAM",
+   "abonnes": 340208,
+   "publications": 8255,
+   "dernier": "2026-11-02T08:12:27+0000"
+  },
+  "decathloncmacgm_newgen": {
+   "entite": "Decathlon CMA CGM Team cyclisme",
+   "ok": true,
+   "username": "decathloncmacgm_newgen",
+   "nom": "DECATHLON CMA CGM NEWGEN",
+   "abonnes": 54113,
+   "publications": 2201,
+   "dernier": "2026-11-02T08:39:09+0000"
+  },
+  "decathloncma_cgmteam": {
+   "entite": "Decathlon CMA CGM Team cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "decathlon_cma_cgm_team": {
+   "entite": "Decathlon CMA CGM Team cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "decathlon_ag2r_la_mondiale": {
+   "entite": "Decathlon CMA CGM Team cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "teamcofidis": {
+   "entite": "Team Cofidis cyclisme",
+   "ok": true,
+   "username": "teamcofidis",
+   "nom": "Team Cofidis Équipe Cycliste",
+   "abonnes": 136261,
+   "publications": 6845,
+   "dernier": "2026-11-04T16:00:33+0000"
+  },
+  "teamtotalenergies": {
+   "entite": "Team TotalEnergies cyclisme",
+   "ok": true,
+   "username": "teamtotalenergies",
+   "nom": "Team TotalEnergies",
+   "abonnes": 142154,
+   "publications": 3695,
+   "dernier": "2026-10-31T11:13:38+0000"
+  },
+  "unibet_rose_rockets": {
+   "entite": "Unibet Rose Rockets cycling",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "unibet_roserockets": {
+   "entite": "Unibet Rose Rockets cycling",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "fdj_suez": {
+   "entite": "FDJ United SUEZ équipe féminine",
+   "ok": true,
+   "username": "fdj_suez",
+   "nom": "FDJ UNITED - SUEZ",
+   "abonnes": 87532,
+   "publications": 3448,
+   "dernier": "2026-11-04T17:03:47+0000"
+  },
+  "fdjunitedsuez": {
+   "entite": "FDJ United SUEZ équipe féminine",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "stmichel_auber93": {
+   "entite": "St Michel Préférence Home Auber 93",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "aubervilliers93": {
+   "entite": "St Michel Préférence Home Auber 93",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "cicprocyclingacademy": {
+   "entite": "CIC Pro Cycling Academy",
+   "ok": true,
+   "username": "cicprocyclingacademy",
+   "nom": "CIC Pro Cycling Academy",
+   "abonnes": 18683,
+   "publications": 1780,
+   "dernier": "2026-11-04T17:15:42+0000"
+  },
+  "teamroubaixlillemetropole": {
+   "entite": "Van Rysel Roubaix Lille Métropole",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "vanryselroubaix": {
+   "entite": "Van Rysel Roubaix Lille Métropole",
+   "ok": true,
+   "username": "vanryselroubaix",
+   "nom": "Equipe cycliste Van Rysel-Roubaix",
+   "abonnes": 32571,
+   "publications": 1292,
+   "dernier": "2026-11-04T08:44:10+0000"
+  },
+  "ffcyclisme": {
+   "entite": "Fédération Française de Cyclisme FFC",
+   "ok": true,
+   "username": "ffcyclisme",
+   "nom": "Fédération 🇫🇷 de Cyclisme",
+   "abonnes": 75781,
+   "publications": 2799,
+   "dernier": "2026-11-01T15:05:13+0000"
+  },
+  "uci_cycling": {
+   "entite": "UCI cycling",
+   "ok": true,
+   "username": "uci_cycling",
+   "nom": "UCI",
+   "abonnes": 1295141,
+   "publications": 6875,
+   "dernier": "2026-11-04T15:02:26+0000"
+  },
+  "letourdefrance": {
+   "entite": "Tour de France",
+   "ok": true,
+   "username": "letourdefrance",
+   "nom": "Tour de France™",
+   "abonnes": 3254044,
+   "publications": 10771,
+   "dernier": "2026-11-02T11:28:51+0000"
+  },
+  "parisroubaix": {
+   "entite": "Paris-Roubaix",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "parisnicecourse": {
+   "entite": "Paris-Nice course",
+   "ok": true,
+   "username": "parisnicecourse",
+   "nom": "Paris-Nice",
+   "abonnes": 76224,
+   "publications": 1740,
+   "dernier": "2026-10-28T14:00:27+0000"
+  },
+  "lavuelta": {
+   "entite": "La Vuelta",
+   "ok": true,
+   "username": "lavuelta",
+   "nom": "La Vuelta",
+   "abonnes": 769267,
+   "publications": 7203,
+   "dernier": "2026-11-04T10:34:00+0000"
+  },
+  "giroditalia": {
+   "entite": "Giro d'Italia",
+   "ok": true,
+   "username": "giroditalia",
+   "nom": "Giro d'Italia",
+   "abonnes": 1413504,
+   "publications": 8793,
+   "dernier": "2026-11-03T20:26:58+0000"
+  },
+  "criteriumdudauphine": {
+   "entite": "Critérium du Dauphiné Tour Auvergne-Rhône-Alpes",
+   "ok": true,
+   "username": "criteriumdudauphine",
+   "nom": "Tour Auvergne-Rhône-Alpes",
+   "abonnes": 102966,
+   "publications": 1613,
+   "dernier": "2026-06-15T05:00:02+0000"
+  },
+  "tourauvergnerhonealpes": {
+   "entite": "Critérium du Dauphiné Tour Auvergne-Rhône-Alpes",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "letourfemmes": {
+   "entite": "Tour de France Femmes",
+   "ok": true,
+   "username": "letourfemmes",
+   "nom": "Le Tour de France Femmes avec Zwift",
+   "abonnes": 499968,
+   "publications": 3231,
+   "dernier": "2026-11-04T09:57:44+0000"
+  },
+  "uae_team_emirates": {
+   "entite": "UAE Team Emirates XRG",
+   "ok": true,
+   "username": "uae_team_emirates",
+   "nom": "UAE Team Emirates🇦🇪",
+   "abonnes": 1026077,
+   "publications": 9434,
+   "dernier": "2026-11-04T15:12:20+0000"
+  },
+  "uaeteamemirates": {
+   "entite": "UAE Team Emirates XRG",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "teamvismaleaseabike": {
+   "entite": "Team Visma Lease a Bike",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "lidltrek": {
+   "entite": "Lidl-Trek",
+   "ok": true,
+   "username": "lidltrek",
+   "nom": "Lidl-Trek",
+   "abonnes": 678696,
+   "publications": 7228,
+   "dernier": "2026-11-02T18:43:07+0000"
+  },
+  "soudalquickstep": {
+   "entite": "Soudal Quick-Step",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "ineosgrenadiers": {
+   "entite": "Netcompany Ineos",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "redbullborahansgrohe": {
+   "entite": "Red Bull Bora hansgrohe",
+   "ok": true,
+   "username": "redbullborahansgrohe",
+   "nom": "Red Bull - BORA - hansgrohe",
+   "abonnes": 662010,
+   "publications": 6123,
+   "dernier": "2026-11-03T13:44:28+0000"
+  },
+  "efprocycling": {
+   "entite": "EF Education EasyPost",
+   "ok": true,
+   "username": "efprocycling",
+   "nom": "EF Education–EasyPost",
+   "abonnes": 606397,
+   "publications": 7531,
+   "dernier": "2026-11-04T21:06:22+0000"
+  },
+  "movistar_team": {
+   "entite": "Movistar Team",
+   "ok": true,
+   "username": "movistar_team",
+   "nom": "Movistar Team",
+   "abonnes": 756461,
+   "publications": 8532,
+   "dernier": "2026-11-04T10:55:37+0000"
+  },
+  "teambahrainvictorious": {
+   "entite": "Bahrain Victorious",
+   "ok": true,
+   "username": "teambahrainvictorious",
+   "nom": "Team Bahrain Victorious",
+   "abonnes": 214864,
+   "publications": 6397,
+   "dernier": "2026-11-03T08:02:46+0000"
+  },
+  "bahrainvictorious": {
+   "entite": "Bahrain Victorious",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "alpecin_premiertech": {
+   "entite": "Alpecin Premier Tech",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "alpecin_deceuninck": {
+   "entite": "Alpecin Premier Tech",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "greenedgecycling": {
+   "entite": "Team Jayco AlUla",
+   "ok": true,
+   "username": "greenedgecycling",
+   "nom": "GreenEDGE Cycling",
+   "abonnes": 353152,
+   "publications": 10797,
+   "dernier": "2026-11-04T09:38:43+0000"
+  },
+  "lotto_intermarche": {
+   "entite": "Lotto Intermarché",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "lotto_cycling": {
+   "entite": "Lotto Intermarché",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "xds_astana_team": {
+   "entite": "XDS Astana Team",
+   "ok": true,
+   "username": "xds_astana_team",
+   "nom": "XDS Astana Team",
+   "abonnes": 399639,
+   "publications": 8921,
+   "dernier": "2026-11-02T14:18:59+0000"
+  },
+  "astanapremiertech": {
+   "entite": "XDS Astana Team",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "unoxmobility": {
+   "entite": "Uno-X Mobility",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "unoxnorge": {
+   "entite": "Uno-X Mobility",
+   "ok": true,
+   "username": "unoxnorge",
+   "nom": "Uno-X Mobility Norge",
+   "abonnes": 3839,
+   "publications": 158,
+   "dernier": "2026-11-02T16:00:05+0000"
+  },
+  "unoxteam": {
+   "entite": "Uno-X Mobility",
+   "ok": true,
+   "username": "unoxteam",
+   "nom": "Uno-X Mobility Cycling",
+   "abonnes": 123670,
+   "publications": 2747,
+   "dernier": "2026-10-29T09:53:23+0000"
+  },
+  "teampicnicpostnl": {
+   "entite": "Team Picnic PostNL",
+   "ok": true,
+   "username": "teampicnicpostnl",
+   "nom": "Team Picnic PostNL",
+   "abonnes": 309632,
+   "publications": 8207,
+   "dernier": "2026-10-21T12:49:47+0000"
+  },
+  "teamdsmfirmenichpostnl": {
+   "entite": "Team Picnic PostNL",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "tudorprocycling": {
+   "entite": "Tudor Pro Cycling",
+   "ok": true,
+   "username": "tudorprocycling",
+   "nom": "Tudor Pro Cycling Team",
+   "abonnes": 108291,
+   "publications": 1581,
+   "dernier": "2026-10-31T17:35:27+0000"
+  },
+  "q36_5procyclingteam": {
+   "entite": "Pinarello Q36.5",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "q36.5procyclingteam": {
+   "entite": "Pinarello Q36.5",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "teamsdworx": {
+   "entite": "SD Worx Protime",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "canyon_sram_racing": {
+   "entite": "Canyon SRAM",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "paulseixas": {
+   "entite": "Paul Seixas cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "alafpolak": {
+   "entite": "Julian Alaphilippe",
+   "ok": true,
+   "username": "alafpolak",
+   "nom": "Julian Alaphilippe",
+   "abonnes": 860598,
+   "publications": 593,
+   "dernier": "2026-08-21T17:00:07+0000"
+  },
+  "romaingregoire": {
+   "entite": "Romain Grégoire cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "lenny_martinez": {
+   "entite": "Lenny Martinez cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "lennymartinez": {
+   "entite": "Lenny Martinez cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "kevinvauquelin": {
+   "entite": "Kévin Vauquelin",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "paulmagnier": {
+   "entite": "Paul Magnier cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "david_gaudu": {
+   "entite": "David Gaudu",
+   "ok": true,
+   "username": "david_gaudu",
+   "nom": "David Gaudu",
+   "abonnes": 99025,
+   "publications": 370,
+   "dernier": "2026-06-23T16:52:07+0000"
+  },
+  "davidgaudu": {
+   "entite": "David Gaudu",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "valentinmadouas": {
+   "entite": "Valentin Madouas",
+   "ok": true,
+   "username": "valentinmadouas",
+   "nom": "Valentin Madouas",
+   "abonnes": 49437,
+   "publications": 470,
+   "dernier": "2026-10-03T13:40:58+0000"
+  },
+  "paulineferrandprevot": {
+   "entite": "Pauline Ferrand-Prévot",
+   "ok": true,
+   "username": "paulineferrandprevot",
+   "nom": "Pauline FERRAND-PREVOT",
+   "abonnes": 781508,
+   "publications": 2393,
+   "dernier": "2026-10-31T10:16:55+0000"
+  },
+  "tadejpogacar": {
+   "entite": "Tadej Pogačar",
+   "ok": true,
+   "username": "tadejpogacar",
+   "nom": "Tadej Pogačar",
+   "abonnes": 3140359,
+   "publications": 749,
+   "dernier": "2026-10-30T19:12:07+0000"
+  },
+  "jonasvingegaard": {
+   "entite": "Jonas Vingegaard",
+   "ok": true,
+   "username": "jonasvingegaard",
+   "nom": "Jonas Vingegaard",
+   "abonnes": 1003725,
+   "publications": 240,
+   "dernier": "2026-05-05T12:24:14+0000"
+  },
+  "mathieuvanderpoel": {
+   "entite": "Mathieu van der Poel",
+   "ok": true,
+   "username": "mathieuvanderpoel",
+   "nom": "MVDP",
+   "abonnes": 1678100,
+   "publications": 473,
+   "dernier": "2026-10-28T16:18:00+0000"
+  },
+  "remco.ev": {
+   "entite": "Remco Evenepoel",
+   "ok": true,
+   "username": "remco.ev",
+   "nom": "Remco Evenepoel",
+   "abonnes": 1282138,
+   "publications": 951,
+   "dernier": "2026-10-31T13:02:55+0000"
+  },
+  "woutvanaert": {
+   "entite": "Wout van Aert",
+   "ok": true,
+   "username": "woutvanaert",
+   "nom": "Wout van Aert",
+   "abonnes": 1445708,
+   "publications": 551,
+   "dernier": "2026-09-07T12:26:34+0000"
+  },
+  "juliettelabous": {
+   "entite": "Juliette Labous",
+   "ok": true,
+   "username": "juliettelabous",
+   "nom": "Juliette Berthet",
+   "abonnes": 43803,
+   "publications": 773,
+   "dernier": "2026-10-25T08:00:07+0000"
+  },
+  "evitamuzic": {
+   "entite": "Évita Muzic",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "cedrinekerbaol": {
+   "entite": "Cédrine Kerbaol",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "aubinsparfel": {
+   "entite": "Aubin Sparfel cyclo-cross",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "marionbunel": {
+   "entite": "Marion Bunel",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "thibau_nys": {
+   "entite": "Thibau Nys",
+   "ok": true,
+   "username": "thibau_nys",
+   "nom": "Thibau Nys",
+   "abonnes": 164847,
+   "publications": 344,
+   "dernier": "2026-11-01T19:07:05+0000"
+  },
+  "legruppetto": {
+   "entite": "Le Gruppetto cyclisme",
+   "ok": true,
+   "username": "legruppetto",
+   "nom": "Le Gruppetto",
+   "abonnes": 16897,
+   "publications": 1505,
+   "dernier": "2026-10-31T13:42:01+0000"
+  },
+  "le_gruppetto": {
+   "entite": "Le Gruppetto cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "cyclismactu1": {
+   "entite": "Cyclism'Actu",
+   "ok": true,
+   "username": "cyclismactu1",
+   "nom": "Cyclism'Actu",
+   "abonnes": 15212,
+   "publications": 1582,
+   "dernier": "2026-11-04T17:58:18+0000"
+  },
+  "cyclismactu": {
+   "entite": "Cyclism'Actu",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "lequipe": {
+   "entite": "L'Équipe cyclisme",
+   "ok": true,
+   "username": "lequipe",
+   "nom": "L'Équipe",
+   "abonnes": 3612698,
+   "publications": 35044,
+   "dernier": "2026-11-04T23:49:21+0000"
+  },
+  "eurosportfr": {
+   "entite": "Eurosport cyclisme France",
+   "ok": true,
+   "username": "eurosportfr",
+   "nom": "Eurosport France",
+   "abonnes": 737023,
+   "publications": 13694,
+   "dernier": "2026-11-04T22:31:38+0000"
+  },
+  "velomagazine": {
+   "entite": "Vélo Magazine",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "velo101_officiel": {
+   "entite": "Velo101",
+   "ok": true,
+   "username": "velo101_officiel",
+   "nom": "Vélo 101",
+   "abonnes": 2696,
+   "publications": 3051,
+   "dernier": "2026-11-04T16:23:49+0000"
+  },
+  "velo101": {
+   "entite": "Velo101",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "chroniqueduvelo": {
+   "entite": "Chronique du vélo",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "lanternerougecycling": {
+   "entite": "Lanterne Rouge cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "danslamusette": {
+   "entite": "Dans la Musette cyclisme",
+   "ok": true,
+   "username": "danslamusette",
+   "nom": "Dans la Musette",
+   "abonnes": 114251,
+   "publications": 2792,
+   "dernier": "2026-10-22T13:41:13+0000"
+  },
+  "teamarkea": {
+   "entite": "Arkéa B&B Hotels",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "teamarkea_samsic": {
+   "entite": "Arkéa B&B Hotels",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "nicemetropolecoteazur": {
+   "entite": "Nice Métropole Côte d'Azur cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "mayennemonbanamypie": {
+   "entite": "Mayenne Monbana My Pie",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "mapetiteentreprise": {
+   "entite": "Ma Petite Entreprise cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "vcrouen76": {
+   "entite": "VC Rouen 76",
+   "ok": true,
+   "username": "vcrouen76",
+   "nom": "VC Rouen 76",
+   "abonnes": 3728,
+   "publications": 1302,
+   "dernier": "2026-10-24T08:24:01+0000"
+  },
+  "burgosburpelletbh": {
+   "entite": "Burgos Burpellet BH",
+   "ok": true,
+   "username": "burgosburpelletbh",
+   "nom": "Burgos Burpellet BH",
+   "abonnes": 61030,
+   "publications": 2096,
+   "dernier": "2026-10-28T10:12:13+0000"
+  },
+  "vendee_u": {
+   "entite": "Vendée U cyclisme",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "groupama_fdj_conti": {
+   "entite": "Groupama-FDJ United Conti",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "decathlon_cma_cgm_development_team": {
+   "entite": "AG2R / Decathlon Development team",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "decathlon_ag2r_la_mondiale_development": {
+   "entite": "AG2R / Decathlon Development team",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "teamcofidiswomen": {
+   "entite": "Cofidis Women Team",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "coupedefrancecyclocross": {
+   "entite": "Coupe de France de cyclo-cross",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "bretagneclassic": {
+   "entite": "Bretagne Classic Ouest-France",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "tourdebretagnecycliste": {
+   "entite": "Tour de Bretagne cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "bouclesdelamayenne": {
+   "entite": "Boucles de la Mayenne",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "gpplouay": {
+   "entite": "Grand Prix de Plouay",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "etoiledebesseges": {
+   "entite": "Étoile de Bessèges",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "etoile_de_besseges": {
+   "entite": "Étoile de Bessèges",
+   "ok": true,
+   "username": "etoile_de_besseges",
+   "nom": "Etoile de Bessèges - Tour du Gard",
+   "abonnes": 3241,
+   "publications": 32,
+   "dernier": "2026-10-05T16:30:05+0000"
+  },
+  "tourdelaprovence": {
+   "entite": "Tour de la Provence",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "tourdesalpesmaritimes": {
+   "entite": "Tour des Alpes-Maritimes",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "tourdelavenir": {
+   "entite": "Le Tour de l'Avenir",
+   "ok": true,
+   "username": "tourdelavenir",
+   "nom": "Tour de l'Avenir",
+   "abonnes": 29713,
+   "publications": 804,
+   "dernier": "2026-10-27T16:00:03+0000"
+  },
+  "cyclingnews": {
+   "entite": "Cyclingnews",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "escapecollective": {
+   "entite": "Escape Collective",
+   "ok": true,
+   "username": "escapecollective",
+   "nom": "Escape Collective",
+   "abonnes": 53604,
+   "publications": 1305,
+   "dernier": "2026-11-05T01:30:35+0000"
+  },
+  "wielerflits": {
+   "entite": "WielerFlits",
+   "ok": true,
+   "username": "wielerflits",
+   "nom": "Wielerflits",
+   "abonnes": 70953,
+   "publications": 7842,
+   "dernier": "2026-11-04T16:53:29+0000"
+  },
+  "sporza_wielrennen": {
+   "entite": "Sporza wielrennen",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "sporza": {
+   "entite": "Sporza wielrennen",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "gcnracing": {
+   "entite": "GCN Racing",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "procyclingstats": {
+   "entite": "ProCyclingStats",
+   "ok": true,
+   "username": "procyclingstats",
+   "nom": "Pro Cycling Stats",
+   "abonnes": 27728,
+   "publications": 186,
+   "dernier": "2026-10-16T09:39:17+0000"
+  },
+  "dnlbenson": {
+   "entite": "Daniel Benson cycling journalist",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "danielbensoncycling": {
+   "entite": "Daniel Benson cycling journalist",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "josebeen": {
+   "entite": "José Been",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "marionrousse": {
+   "entite": "Marion Rousse",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "thomasvoeckler": {
+   "entite": "Thomas Voeckler",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "francetvsport": {
+   "entite": "France tv sport",
+   "ok": true,
+   "username": "francetvsport",
+   "nom": "France tv sport",
+   "abonnes": 875575,
+   "publications": 22056,
+   "dernier": "2026-11-04T23:33:14+0000"
+  },
+  "rmcsport": {
+   "entite": "RMC Sport",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "ouestfrance": {
+   "entite": "Ouest-France sport",
+   "ok": true,
+   "username": "ouestfrance",
+   "nom": "Ouest-France",
+   "abonnes": 388178,
+   "publications": 7022,
+   "dernier": "2026-11-04T19:02:04+0000"
+  },
+  "letelegramme": {
+   "entite": "Le Télégramme sport",
+   "ok": true,
+   "username": "letelegramme",
+   "nom": "Le Télégramme",
+   "abonnes": 93642,
+   "publications": 3199,
+   "dernier": "2026-11-04T18:56:16+0000"
+  },
+  "benoitcosnefroy": {
+   "entite": "Benoît Cosnefroy",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "clementchampoussin": {
+   "entite": "Clément Champoussin",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "guillaumemartin": {
+   "entite": "Guillaume Martin cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "guillaume_martin_cyclisme": {
+   "entite": "Guillaume Martin cycliste",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "christophelaporte": {
+   "entite": "Christophe Laporte",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "arnauddemare": {
+   "entite": "Arnaud Démare",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "bryancoquard": {
+   "entite": "Bryan Coquard",
+   "ok": true,
+   "username": "bryancoquard",
+   "nom": "Le Coq 🐔",
+   "abonnes": 39156,
+   "publications": 680,
+   "dernier": "2025-07-09T07:03:27+0000"
+  },
+  "axellaurance": {
+   "entite": "Axel Laurance",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "clementberthet": {
+   "entite": "Clément Berthet",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "mathisleberre": {
+   "entite": "Mathis Le Berre",
+   "ok": true,
+   "username": "mathisleberre",
+   "nom": "Mathis Le Berre",
+   "abonnes": 764,
+   "publications": 9,
+   "dernier": "2026-08-20T15:54:08+0000"
+  },
+  "doriangodon": {
+   "entite": "Dorian Godon",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "victorlafay": {
+   "entite": "Victor Lafay",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "kevinvermaerke": {
+   "entite": "Kevin Vermaerke",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "demivollering": {
+   "entite": "Demi Vollering",
+   "ok": true,
+   "username": "demivollering",
+   "nom": "Demi Vollering",
+   "abonnes": 576369,
+   "publications": 1883,
+   "dernier": "2026-11-04T14:28:59+0000"
+  },
+  "lottekopecky": {
+   "entite": "Lotte Kopecky",
+   "ok": true,
+   "username": "lottekopecky",
+   "nom": "Lotte Kopecky",
+   "abonnes": 262500,
+   "publications": 651,
+   "dernier": "2026-10-29T16:15:02+0000"
+  },
+  "marianne_vos": {
+   "entite": "Marianne Vos",
+   "ok": false,
+   "code": 110,
+   "sous_code": 2207013,
+   "erreur": "Invalid user id"
+  },
+  "lorenawiebes": {
+   "entite": "Lorena Wiebes",
+   "ok": true,
+   "username": "lorenawiebes",
+   "nom": "Lorena Wiebes",
+   "abonnes": 98549,
+   "publications": 894,
+   "dernier": "2026-10-17T05:38:52+0000"
+  },
+  "tompidcock": {
+   "entite": "Pidcock Tom",
+   "ok": true,
+   "username": "tompidcock",
+   "nom": "ᵀᴼᴹ ᴾᴵᴰᶜᴼᶜᴷ",
+   "abonnes": 705412,
+   "publications": 1042,
+   "dernier": "2026-10-18T18:33:22+0000"
+  }
+ }
+}
