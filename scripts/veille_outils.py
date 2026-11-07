@@ -192,4 +192,43 @@ def audience(jour):
         return None
 
 
-print("veille_outils chargé : lire_flux, section, lire_traites, ajouter_traites, lire_vus, audience")
+print("veille_outils chargé : lire_flux, section, lire_traites, ajouter_traites, lire_vus, audience, pousser_visuels, nettoyer_visuels")
+
+
+# ---------------------------------------------------------------- visuels Instagram (ajouté le 07/11/2026)
+def pousser_visuels(urls, edition, max_px=700):
+    """Télécharge les visuels Instagram (URL « VISUEL À LIRE »), les réduit et les dépose dans visuels/ du dépôt.
+    Renvoie [(url_cdn, url_raw ou None, erreur)] ; l'agent lit ensuite chaque url_raw en local (curl + Read)."""
+    import io, base64, requests
+    from PIL import Image
+    out = []
+    for i, u in enumerate(urls[:10], 1):
+        try:
+            r = requests.get(u, timeout=20)
+            r.raise_for_status()
+            im = Image.open(io.BytesIO(r.content)).convert("RGB")
+            im.thumbnail((max_px, max_px))
+            b = io.BytesIO(); im.save(b, "JPEG", quality=70)
+            chemin = f"visuels/{edition}_{i}.jpg"
+            res, err = proxy_execute("PUT", f"/repos/michael-dv/veille-directvelo/contents/{chemin}", "github",
+                                     body={"message": f"visuel {edition} {i}", "branch": "main",
+                                           "content": base64.b64encode(b.getvalue()).decode()})
+            if err:
+                out.append((u, None, str(err)[:120])); continue
+            out.append((u, f"https://raw.githubusercontent.com/michael-dv/veille-directvelo/main/{chemin}", None))
+        except Exception as e:
+            out.append((u, None, f"{type(e).__name__}: {str(e)[:100]}"))
+    return out
+
+
+def nettoyer_visuels():
+    """Supprime tous les fichiers du dossier visuels/ du dépôt (à appeler en fin d'édition)."""
+    res, err = proxy_execute("GET", "/repos/michael-dv/veille-directvelo/contents/visuels", "github", query_params={"ref": "main"})
+    if err or not isinstance(res, list):
+        return 0
+    n = 0
+    for f in res:
+        _, e = proxy_execute("DELETE", f"/repos/michael-dv/veille-directvelo/contents/{f['path']}", "github",
+                             body={"message": "nettoyage visuels", "sha": f["sha"], "branch": "main"})
+        n += 0 if e else 1
+    return n
