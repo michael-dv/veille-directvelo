@@ -1,6 +1,6 @@
 # Indice de qualité des comptes Instagram
 
-Mis à jour le 07/11/2026 à 11h41 (heure de Paris).
+Mis à jour le 07/11/2026 à 12h42 (heure de Paris).
 
 Indice sur 100 : pertinence (publications retenues par la veille sur 30 jours, 50 points), annonces (recrues, prolongations, effectifs… sur 30 jours, 30 points) et régularité (publications sur 30 jours, 20 points).
 
@@ -11,7 +11,7 @@ Indice sur 100 : pertinence (publications retenues par la veille sur 30 jours, 5
 | C | toutes les 6 h | 24 |
 | D | une fois par jour | 366 |
 
-Charge théorique : 48 lectures par heure (budget 150). Ce run : 0 comptes lus, dont 150 arrivés à échéance.
+Charge théorique : 48 lectures par heure (budget 150). Ce run : 150 comptes lus, dont 150 arrivés à échéance.
 
 ## Les 40 comptes les mieux notés
 
