@@ -79,6 +79,7 @@ INSTAGRAM_PER_ACCOUNT = 4
 # de etat/instagram.txt sont lus à chaque génération ; les suivants sont répartis en groupes lus à tour de rôle,
 # pour rester sous INSTAGRAM_BUDGET appels par génération (la fenêtre de 24 h garantit qu'aucune publication n'est perdue).
 INSTAGRAM_BUDGET = 150
+VISUEL_RE = re.compile(r"bienvenue|welcome|recrue|rejoint|signe|prolong|effectif|arriv|nouve|officiel|transfert|2027|merci|au revoir|d[ée]part|annonce", re.I)
 INSTAGRAM_INVALIDES = f"{ETAT}/instagram_invalides.json"  # comptes introuvables ou non professionnels, retestés après 30 jours
 IG_ALERT = []  # message d'alerte si Meta refuse l'accès (jeton expiré, accord à renouveler)  # les vidéos sont plus rares que les articles : fenêtre de 48 h
 # Relais des réseaux sociaux : articles qui reprennent une annonce faite sur X, Instagram, TikTok, Facebook, LinkedIn ou YouTube
@@ -777,7 +778,7 @@ def section_instagram():
         if stop["v"]:
             return []
         fields = (f"business_discovery.username({user}){{username,media.limit(8)"
-                  f"{{caption,timestamp,permalink,media_type}}}}")
+                  f"{{caption,timestamp,permalink,media_type,media_url}}}}")
         url = f"{INSTAGRAM_GRAPH}/{uid}"
         try:
             r = requests.get(url, params={"fields": fields, "access_token": tok}, timeout=TIMEOUT)
@@ -811,7 +812,12 @@ def section_instagram():
             cap = re.sub(r"\s+", " ", m.get("caption") or "(sans légende)")[:200]
             if filtre and not gn_ok(cap, "strict"):
                 continue
-            out.append((dt, f"@{user} : {cap}", m.get("permalink", "")))
+            # Légende pauvre ou annonce probable : on joint l'image pour que l'agent la lise (OCR)
+            mu, mt = m.get("media_url"), m.get("media_type")
+            vis = ""
+            if mu and mt in ("IMAGE", "CAROUSEL_ALBUM") and (len(cap) < 120 or VISUEL_RE.search(cap)):
+                vis = f" 🖼️ VISUEL À LIRE : {mu}"
+            out.append((dt, f"@{user} : {cap}{vis}", m.get("permalink", "")))
         record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", code, min(len(out), INSTAGRAM_PER_ACCOUNT))
         return out[:INSTAGRAM_PER_ACCOUNT]
 
