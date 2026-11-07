@@ -46,11 +46,11 @@
 "_romaingregoire": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -121,11 +121,11 @@
 "alafpolak": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -135,6 +135,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -277,11 +279,11 @@
 "amandinefouquenet": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -393,6 +395,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -415,6 +419,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -447,11 +453,11 @@
 "auber93cyclisme": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfzyjnkmm4g": {
@@ -465,11 +471,11 @@
 "aubin_sparfel": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -577,9 +583,13 @@
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
-"publications_30j": 2,
+"palier": "C",
+"publications_30j": 3,
 "pubs": {
+"instagram.com/p/dfb0r3drwtp": {
+"annonce": false,
+"t": "2026-11-07T09:10+00:00"
+},
 "instagram.com/p/dfzob_wibkp": {
 "annonce": false,
 "t": "2026-11-06T08:55+00:00"
@@ -590,7 +600,7 @@
 }
 },
 "retenues_30j": 0,
-"score": 3
+"score": 5
 },
 "baptiste.bgillet": {
 "ajout": "2000-01-01T00:00+00:00",
@@ -679,11 +689,11 @@
 "benoit.cosnefroy": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -747,11 +757,11 @@
 "bourgaincyclisme": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 2,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 2,
 "pubs": {
 "instagram.com/p/dfamq80f1l0": {
@@ -781,6 +791,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -791,11 +803,11 @@
 "burgosburpelletbh": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -815,7 +827,7 @@
 "cchartrescyclisme": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
@@ -848,11 +860,11 @@
 "cedrine_kerbaol": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -906,6 +918,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -945,11 +959,11 @@
 "cicprocyclingacademy": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 2,
 "pubs": {
 "instagram.com/p/dfu90kvm1xm": {
@@ -1025,6 +1039,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -1101,11 +1117,11 @@
 "cr4croanne": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1125,11 +1141,11 @@
 "creuseoxygene": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1173,11 +1189,11 @@
 "cyclismactu1": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 3,
 "pubs": {
 "instagram.com/p/dfx-lv8r5vm": {
@@ -1199,7 +1215,7 @@
 "cycloclubperigueuxdordogne": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
@@ -1292,11 +1308,11 @@
 "david_gaudu": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1305,11 +1321,11 @@
 "decathloncmacgm_newgen": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1318,11 +1334,11 @@
 "decathloncmacgmteam": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfwv9osjsb7": {
@@ -1373,11 +1389,11 @@
 "dinansportcycling": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1386,11 +1402,11 @@
 "dn_feminin_hdf": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1443,11 +1459,11 @@
 "dunkerquegrandlittoral": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1478,9 +1494,9 @@
 "ecthaon.team": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 3,
-"epingle": false,
-"lectures": 1,
-"lu": "2026-11-07T09:41+00:00",
+"epingle": true,
+"lectures": 2,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "A",
 "publications_30j": 3,
@@ -1655,7 +1671,7 @@
 "equipebmcbeziers": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 2,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
@@ -1677,11 +1693,11 @@
 "equipegroupamafdj": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfxstohclb6": {
@@ -1695,11 +1711,11 @@
 "equipegroupamafdjunitedconti": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1720,8 +1736,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
 "epingle": false,
-"lectures": 1,
-"lu": "2026-11-07T09:41+00:00",
+"lectures": 2,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "A",
 "publications_30j": 8,
@@ -1818,11 +1834,11 @@
 "evita_mzc": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -1853,11 +1869,11 @@
 "fdj_suez": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 2,
 "pubs": {
 "instagram.com/p/dfu8xmkjac6": {
@@ -1875,11 +1891,11 @@
 "ffcyclisme": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfxhricijr7": {
@@ -1927,6 +1943,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -2084,6 +2102,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -2130,6 +2150,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -2264,11 +2286,11 @@
 "gscblagnacvs31": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -2502,6 +2524,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -2546,6 +2570,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -2557,6 +2583,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -2656,11 +2684,11 @@
 "juliettelabous": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfw9txrl6rx": {
@@ -2696,11 +2724,11 @@
 "kevin_vql": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -2732,6 +2760,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -2764,11 +2794,11 @@
 "lanesterwomenmorbihan": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -2975,11 +3005,11 @@
 "legruppetto": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -2988,11 +3018,11 @@
 "lennymrtz": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -3034,11 +3064,11 @@
 "lesfillesdelabreizhladies": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -3048,6 +3078,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -3058,13 +3090,17 @@
 "letourdefrance": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
-"publications_30j": 3,
+"palier": "B",
+"publications_30j": 4,
 "pubs": {
+"instagram.com/p/dfbvfs7kyjq": {
+"annonce": false,
+"t": "2026-11-07T08:18+00:00"
+},
 "instagram.com/reel/dfacl3bjx3c": {
 "annonce": true,
 "t": "2026-11-06T16:27+00:00"
@@ -3079,7 +3115,7 @@
 }
 },
 "retenues_30j": 0,
-"score": 10
+"score": 12
 },
 "letourdesalpesmaritimes": {
 "ajout": "2000-01-01T00:00+00:00",
@@ -3159,11 +3195,11 @@
 "lnc_cyclisme": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -3184,6 +3220,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -3206,6 +3244,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -3334,15 +3374,19 @@
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
 "palier": "D",
-"publications_30j": 1,
+"publications_30j": 2,
 "pubs": {
 "instagram.com/p/dfxz3vgig-x": {
 "annonce": false,
 "t": "2026-11-05T15:56+00:00"
+},
+"instagram.com/reel/dfb3weuo1ib": {
+"annonce": false,
+"t": "2026-11-07T09:40+00:00"
 }
 },
 "retenues_30j": 0,
-"score": 2
+"score": 3
 },
 "maellegrossetete": {
 "ajout": "2000-01-01T00:00+00:00",
@@ -3369,11 +3413,11 @@
 "mapetiteentreprise_cyclisme": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfwqpl0ipul": {
@@ -3442,11 +3486,11 @@
 "marion_bunel": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -3511,6 +3555,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -3555,6 +3601,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -3711,11 +3759,11 @@
 "mayenneprocycling": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfal6pkdlhw": {
@@ -4063,11 +4111,11 @@
 "occitane_cyclisme_formation": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4106,6 +4154,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -4149,11 +4199,11 @@
 "pariscyclisteolympique": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4193,11 +4243,11 @@
 "paul.sxs": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4239,11 +4289,11 @@
 "paulineferrandprevot": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4256,16 +4306,24 @@
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
-"publications_30j": 1,
+"palier": "C",
+"publications_30j": 3,
 "pubs": {
 "instagram.com/p/dfw494hjzvh": {
 "annonce": false,
 "t": "2026-11-05T11:08+00:00"
+},
+"instagram.com/reel/dfbvfwoujvn": {
+"annonce": false,
+"t": "2026-11-07T08:22+00:00"
+},
+"instagram.com/reel/dfbxetyos8t": {
+"annonce": false,
+"t": "2026-11-07T08:40+00:00"
 }
 },
 "retenues_30j": 0,
-"score": 2
+"score": 5
 },
 "philippewagnerbazin": {
 "ajout": "2000-01-01T00:00+00:00",
@@ -4435,6 +4493,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -4496,7 +4556,7 @@
 "rocketscycling": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
@@ -4553,6 +4613,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -4604,6 +4666,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -4614,7 +4678,7 @@
 "routeschwenheim": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
@@ -4698,11 +4762,11 @@
 "scodijon": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4802,11 +4866,11 @@
 "sprinteur_club_feminin": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4860,6 +4924,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -4870,11 +4936,11 @@
 "team.lmp": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 2,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 3,
 "pubs": {
 "instagram.com/p/dfxfi9ojm1m": {
@@ -4896,11 +4962,11 @@
 "team_74_hautesavoie": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4920,11 +4986,11 @@
 "team_correze_suchet_na": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -4975,11 +5041,11 @@
 "teamcofidis": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 3,
 "pubs": {
 "instagram.com/p/dfz_pnrdd4_": {
@@ -5001,11 +5067,11 @@
 "teamcotedegranitrose": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5025,11 +5091,11 @@
 "teamelles": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5038,11 +5104,11 @@
 "teamfeminincvl": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5062,11 +5128,11 @@
 "teamnicemetropolecotedazur": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5087,6 +5153,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -5119,11 +5187,11 @@
 "teamsolutiontechnipporali": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfxh0wdozyi": {
@@ -5137,11 +5205,11 @@
 "teamsportbreizhaxelarmorlux": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5161,11 +5229,11 @@
 "teamtotalenergies": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5174,9 +5242,9 @@
 "teamu_lh": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 4,
-"epingle": false,
-"lectures": 1,
-"lu": "2026-11-07T09:41+00:00",
+"epingle": true,
+"lectures": 2,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "A",
 "publications_30j": 6,
@@ -5246,6 +5314,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -5301,6 +5371,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -5385,6 +5457,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -5463,7 +5537,7 @@
 "tropheemadiot": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
@@ -5490,6 +5564,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -5573,11 +5649,11 @@
 "uc_briochine": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 1,
 "pubs": {
 "instagram.com/p/dfvq8tzfap_": {
@@ -5613,13 +5689,17 @@
 "uci_cycling": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
-"publications_30j": 6,
+"palier": "B",
+"publications_30j": 7,
 "pubs": {
+"instagram.com/p/dfbwtcvcmdl": {
+"annonce": false,
+"t": "2026-11-07T08:33+00:00"
+},
 "instagram.com/p/dfuvaayith0": {
 "annonce": false,
 "t": "2026-11-04T11:19+00:00"
@@ -5646,7 +5726,7 @@
 }
 },
 "retenues_30j": 0,
-"score": 10
+"score": 12
 },
 "ucmonaco": {
 "ajout": "2000-01-01T00:00+00:00",
@@ -5726,7 +5806,7 @@
 "uvca_troyes": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
@@ -5796,11 +5876,11 @@
 "valentinmadouas": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5820,16 +5900,20 @@
 "vanryselroubaix": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
-"publications_30j": 2,
+"palier": "B",
+"publications_30j": 3,
 "pubs": {
 "instagram.com/p/dfzqaf2kxtn": {
 "annonce": true,
 "t": "2026-11-06T09:12+00:00"
+},
+"instagram.com/reel/dfbz84tazlv": {
+"annonce": false,
+"t": "2026-11-07T09:01+00:00"
 },
 "instagram.com/reel/dfuc8pxxe8u": {
 "annonce": false,
@@ -5837,7 +5921,7 @@
 }
 },
 "retenues_30j": 0,
-"score": 8
+"score": 10
 },
 "vc_morteau_montbenoit": {
 "ajout": "2000-01-01T00:00+00:00",
@@ -5864,11 +5948,11 @@
 "vca.saintquentin": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5921,11 +6005,11 @@
 "vcploudeac": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 2,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 5,
 "pubs": {
 "instagram.com/p/dfahsd3cjn5": {
@@ -5955,11 +6039,11 @@
 "vcrouen76": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -5980,8 +6064,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 6,
 "epingle": false,
-"lectures": 1,
-"lu": "2026-11-07T09:41+00:00",
+"lectures": 2,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "A",
 "publications_30j": 6,
@@ -6068,11 +6152,11 @@
 "vendee_u_primeo_energie": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 1,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "C",
+"palier": "B",
 "publications_30j": 2,
 "pubs": {
 "instagram.com/p/dfukjuwt8zc": {
@@ -6090,11 +6174,11 @@
 "vendeefeminine.rvc": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
-"epingle": false,
+"epingle": true,
 "lectures": 1,
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
-"palier": "D",
+"palier": "B",
 "publications_30j": 0,
 "pubs": {},
 "retenues_30j": 0,
@@ -6203,6 +6287,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -6218,8 +6304,12 @@
 "lu": "2026-11-07T09:41+00:00",
 "nouveau": false,
 "palier": "B",
-"publications_30j": 15,
+"publications_30j": 18,
 "pubs": {
+"instagram.com/p/dfbkwopcuj6": {
+"annonce": false,
+"t": "2026-11-07T06:45+00:00"
+},
 "instagram.com/p/dfu1hm3fwk1": {
 "annonce": true,
 "t": "2026-11-04T16:00+00:00"
@@ -6268,6 +6358,14 @@
 "annonce": false,
 "t": "2026-11-06T14:14+00:00"
 },
+"instagram.com/reel/dfb6rdyhmuq": {
+"annonce": false,
+"t": "2026-11-07T09:00+00:00"
+},
+"instagram.com/reel/dfbwx_fh1_z": {
+"annonce": false,
+"t": "2026-11-07T07:30+00:00"
+},
 "instagram.com/reel/dfuy-_mt24s": {
 "annonce": false,
 "t": "2026-11-04T11:54+00:00"
@@ -6288,6 +6386,8 @@
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
+"lectures": 1,
+"lu": "2026-11-07T10:39+00:00",
 "nouveau": false,
 "palier": "D",
 "publications_30j": 0,
@@ -6320,17 +6420,6 @@
 "score": 0
 },
 "xspeedunited": {
-"ajout": "2000-01-01T00:00+00:00",
-"annonces_30j": 0,
-"epingle": false,
-"nouveau": false,
-"palier": "D",
-"publications_30j": 0,
-"pubs": {},
-"retenues_30j": 0,
-"score": 0
-},
-"» sont épinglés : jamais lus moins souvent que toutes les 3 h.": {
 "ajout": "2000-01-01T00:00+00:00",
 "annonces_30j": 0,
 "epingle": false,
