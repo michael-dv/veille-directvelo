@@ -746,8 +746,137 @@ def section_youtube():
     return out[:MAX_ITEMS]
 
 
+# ---------------------------------------------------------------- Instagram : indice de qualité des comptes
+# Chaque compte reçoit un indice de 0 à 100, recalculé à chaque génération :
+#   - 50 points : pertinence = publications du compte retenues par la veille sur 30 jours (etat/traites.jsonl :
+#     alerte externe ou mercato = 3, encadré Instagram = 2, rebond DV = 1 ; plein à 6) ;
+#   - 30 points : annonces = publications des 30 derniers jours dont la légende annonce quelque chose
+#     (recrue, prolongation, effectif, départ… ; plein à 6) ;
+#   - 20 points : régularité = nombre de publications sur 30 jours (plein à 12).
+# L'indice fixe le palier, donc la fréquence de lecture : A toutes les heures, B toutes les 3 h, C toutes les 6 h,
+# D une fois par jour. Le palier dépend à la fois du rang (A = 15 % des comptes les mieux notés, B = 25 % suivants,
+# C = 35 %, D = le reste) et d'un indice minimal (A ≥ 40, B ≥ 20, C ≥ 5) : on retient le moins bon des deux.
+# Les comptes placés avant la ligne « # --- ROTATION » de etat/instagram.txt sont épinglés : jamais en dessous de B.
+# Un compte ajouté à la liste reste au moins en B pendant 7 jours, le temps d'être évalué.
+INSTAGRAM_SCORES = f"{ETAT}/instagram_scores.json"
+INSTAGRAM_SCORES_MD = f"{ETAT}/instagram_scores.md"
+IG_PALIERS = {"A": 1, "B": 3, "C": 6, "D": 24}           # intervalle de lecture, en heures
+IG_QUANTILES = [("A", 0.15), ("B", 0.40), ("C", 0.75)]   # part cumulée des comptes, par rang d'indice
+IG_SEUILS = [("A", 40), ("B", 20), ("C", 5)]            # indice minimal du palier
+IG_POIDS = {"alerte_externe": 3, "mercato": 3, "instagram": 2, "rebond_dv": 1}
+IG_ORDRE = "ABCD"
+
+
+def _ig_user(titre):
+    m = re.match(r"@([\w.]+)", titre or "")
+    return m.group(1).lower() if m else None
+
+
+def _ig_dt(s):
+    try:
+        d = datetime.fromisoformat(s)
+        return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        return None
+
+
+def ig_calcul_scores(comptes, epingles):
+    """Met à jour etat/instagram_scores.json (historique 30 j) et renvoie {compte: fiche} avec indice et palier."""
+    data = load_json(INSTAGRAM_SCORES, None)
+    premier = data is None
+    data = data or {}
+    lim30 = NOW - timedelta(days=30)
+    for u in comptes:
+        d = data.setdefault(u, {})
+        d.setdefault("ajout", "2000-01-01T00:00+00:00" if premier else NOW.isoformat(timespec="minutes"))
+        d.setdefault("pubs", {})
+    # Publications vues (vus.json garde 7 jours ; on les conserve 30 jours ici)
+    for k, v in VUS_DB.items():
+        if v.get("source") != "Instagram":
+            continue
+        u = _ig_user(v.get("titre"))
+        if u in data and k not in data[u]["pubs"]:
+            data[u]["pubs"][k] = {"t": v.get("pub") or v.get("vu"),
+                                  "annonce": bool(VISUEL_RE.search(v.get("titre", "")))}
+    proprio = {k: u for u, d in data.items() for k in d.get("pubs", {})}
+    # Publications retenues par la veille
+    retenues = defaultdict(dict)
+    try:
+        with open(TRAITES, encoding="utf-8") as f:
+            for line in f:
+                try:
+                    rec = json.loads(line)
+                except ValueError:
+                    continue
+                w = IG_POIDS.get(rec.get("type"))
+                if not w or (rec.get("date") or "") < lim30.strftime("%Y-%m-%d"):
+                    continue
+                k = url_key(rec.get("url") or "")
+                src = (rec.get("source") or "").strip()
+                u = proprio.get(k)
+                if not u and src.lower().startswith("instagram @"):
+                    u = src.split("@", 1)[1].strip().lower()
+                if not u and "instagram.com" not in k:
+                    continue
+                if u in data:
+                    cle = k or rec.get("sujet", "")[:60]
+                    retenues[u][cle] = max(retenues[u].get(cle, 0), w)
+    except OSError:
+        pass
+    # Indice
+    for u, d in data.items():
+        d["pubs"] = {k: p for k, p in d["pubs"].items() if (_ig_dt(p.get("t")) or NOW) >= lim30}
+        n = len(d["pubs"])
+        na = sum(1 for p in d["pubs"].values() if p.get("annonce"))
+        pts = sum(retenues[u].values())
+        d["publications_30j"], d["annonces_30j"], d["retenues_30j"] = n, na, len(retenues[u])
+        d["score"] = round(50 * min(pts / 6, 1) + 30 * min(na / 6, 1) + 20 * min(n / 12, 1))
+    # Paliers
+    actifs = sorted(comptes, key=lambda u: (-data[u]["score"], -data[u]["publications_30j"], u))
+    N = max(len(actifs), 1)
+    for i, u in enumerate(actifs):
+        d = data[u]
+        q = next((p for p, c in IG_QUANTILES if i / N < c), "D")
+        s = next((p for p, m in IG_SEUILS if d["score"] >= m), "D")
+        palier = max(q, s, key=IG_ORDRE.index)
+        nouveau = (_ig_dt(d["ajout"]) or NOW) > NOW - timedelta(days=7)
+        if u in epingles or nouveau:
+            palier = min(palier, "B", key=IG_ORDRE.index)
+        d["palier"], d["epingle"], d["nouveau"] = palier, u in epingles, nouveau
+    return data
+
+
+def ig_rapport(data, comptes, lus, dus):
+    """Écrit etat/instagram_scores.md : répartition par palier, meilleurs comptes, comptes muets."""
+    par = defaultdict(list)
+    for u in comptes:
+        par[data[u]["palier"]].append(u)
+    charge = sum(len(par[p]) / IG_PALIERS[p] for p in IG_ORDRE)
+    md = ["# Indice de qualité des comptes Instagram", "",
+          f"Mis à jour le {NOW.astimezone(ZoneInfo('Europe/Paris')).strftime('%d/%m/%Y à %Hh%M')} (heure de Paris).", "",
+          "Indice sur 100 : pertinence (publications retenues par la veille sur 30 jours, 50 points), annonces "
+          "(recrues, prolongations, effectifs… sur 30 jours, 30 points) et régularité (publications sur 30 jours, 20 points).", "",
+          "| Palier | Lecture | Comptes |", "|---|---|---|"]
+    for p in IG_ORDRE:
+        md.append(f"| {p} | {'toutes les heures' if p == 'A' else ('une fois par jour' if p == 'D' else f'toutes les {IG_PALIERS[p]} h')} | {len(par[p])} |")
+    md += ["", f"Charge théorique : {charge:.0f} lectures par heure (budget {INSTAGRAM_BUDGET}). "
+               f"Ce run : {lus} comptes lus, dont {dus} arrivés à échéance.", "",
+           "## Les 40 comptes les mieux notés", "",
+           "| Compte | Indice | Palier | Retenues (30 j) | Annonces (30 j) | Publications (30 j) |", "|---|---|---|---|---|---|"]
+    top = sorted(comptes, key=lambda u: -data[u]["score"])[:40]
+    for u in top:
+        d = data[u]
+        tag = " (épinglé)" if d.get("epingle") else (" (nouveau)" if d.get("nouveau") else "")
+        md.append(f"| @{u}{tag} | {d['score']} | {d['palier']} | {d['retenues_30j']} | {d['annonces_30j']} | {d['publications_30j']} |")
+    muets = sorted(u for u in comptes if data[u]["publications_30j"] == 0 and data[u].get("lectures", 0) >= 10)
+    md += ["", f"## Comptes muets depuis 30 jours ({len(muets)}), candidats au retrait", "",
+           ", ".join(f"@{u}" for u in muets) or "_Aucun._", ""]
+    with open(INSTAGRAM_SCORES_MD, "w", encoding="utf-8") as f:
+        f.write("\n".join(md))
+
+
 def section_instagram():
-    """Publications Instagram des dernières 24 h des comptes de etat/instagram.txt."""
+    """Publications Instagram récentes des comptes de etat/instagram.txt, lus selon leur indice de qualité."""
     uid, tok = (os.getenv("IG_USER_ID") or "").strip(), (os.getenv("IG_ACCESS_TOKEN") or "").strip()
     if not uid or not tok:
         return []
@@ -761,22 +890,46 @@ def section_instagram():
     invalides = load_json(INSTAGRAM_INVALIDES, {})
     limite = (NOW - timedelta(days=30)).isoformat(timespec="minutes")
     invalides = {k: v for k, v in invalides.items() if v >= limite}
-    ok = lambda l: l.split("|")[0].strip().lstrip("@").lower() not in invalides
-    prio, rot = [l for l in clean(head) if ok(l)], [l for l in clean(tail) if ok(l)]
-    place = max(INSTAGRAM_BUDGET - len(prio), 1)
-    groupes = max(1, -(-len(rot) // place))
-    g = int(NOW.timestamp() // 3600) % groupes
-    lines_ = prio + rot[g * place:(g + 1) * place]
-    record("Instagram (rotation)", INSTAGRAM_FILE, "—", len(lines_),
-           f"{len(prio)} comptes prioritaires + groupe {g + 1}/{groupes} ({len(rot)} comptes en rotation) ; {len(invalides)} écartés")
+    ligne_de = {}
+    for l in clean(head) + clean(tail):
+        u = l.split("|")[0].strip().lstrip("@").lower()
+        if u and u not in invalides and u not in ligne_de:
+            ligne_de[u] = l
+    epingles = {l.split("|")[0].strip().lstrip("@").lower() for l in clean(head)}
+    comptes = list(ligne_de)
+    data = ig_calcul_scores(comptes, epingles)
+
+    # Sélection : comptes arrivés à échéance (palier A d'abord, puis les plus en retard), dans la limite du budget
+    def retard(u):
+        last = _ig_dt(data[u].get("lu"))
+        if not last:
+            return 99.0
+        return (NOW - last).total_seconds() / 3600 / IG_PALIERS[data[u]["palier"]]
+    dus = [u for u in comptes if retard(u) >= 0.9]
+    dus.sort(key=lambda u: (IG_ORDRE.index(data[u]["palier"]), -retard(u), -data[u]["score"]))
+    choisis = dus[:INSTAGRAM_BUDGET]
+    if len(choisis) < INSTAGRAM_BUDGET:   # budget restant : comptes les plus proches de leur échéance
+        reste = sorted((u for u in comptes if u not in choisis and retard(u) >= 0.3), key=lambda u: -retard(u))
+        choisis += reste[:INSTAGRAM_BUDGET - len(choisis)]
+    nb = defaultdict(int)
+    for u in comptes:
+        nb[data[u]["palier"]] += 1
+    record("Instagram (indice de qualité)", INSTAGRAM_SCORES, "—", len(choisis),
+           f"A {nb['A']} · B {nb['B']} · C {nb['C']} · D {nb['D']} ; {len(choisis)} comptes lus ({min(len(dus), len(choisis))} à échéance "
+           f"sur {len(dus)}) ; {len(invalides)} écartés ; classement : etat/instagram_scores.md")
     stop = {"v": False}
     nouveaux_invalides = {}
+    lus_ok = set()
 
-    def one(line):
+    def one(user):
+        line = ligne_de[user]
         parts = [p.strip() for p in line.split("|")]
-        user, filtre = parts[0].lstrip("@"), len(parts) > 1 and parts[1] == "velo"
+        filtre = len(parts) > 1 and parts[1] == "velo"
         if stop["v"]:
             return []
+        last = _ig_dt(data[user].get("lu"))
+        depuis = max(NOW - timedelta(hours=72), last - timedelta(hours=1)) if last else SINCE
+        depuis = min(depuis, SINCE)
         fields = (f"business_discovery.username({user}){{username,media.limit(8)"
                   f"{{caption,timestamp,permalink,media_type,media_url}}}}")
         url = f"{INSTAGRAM_GRAPH}/{uid}"
@@ -792,7 +945,7 @@ def section_instagram():
             msg = f"code {err.get('code')} : {(err.get('message') or '')[:140]}"
             record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", code, 0, msg)
             if err.get("code") == 110 or err.get("error_subcode") == 2207013:  # compte introuvable ou non professionnel
-                nouveaux_invalides[user.lower()] = NOW.isoformat(timespec="minutes")
+                nouveaux_invalides[user] = NOW.isoformat(timespec="minutes")
             elif err.get("code") in (190, 10, 200, 102):  # jeton invalide ou accord expiré
                 stop["v"] = True
                 IG_ALERT.append(f"accès refusé par Meta ({msg}). Renouveler l'accord dans l'Explorateur de l'API Graph "
@@ -800,6 +953,7 @@ def section_instagram():
             elif err.get("code") in (4, 17, 32, 613):  # limite de débit : on arrête pour cette génération
                 stop["v"] = True
             return []
+        lus_ok.add(user)
         media = (d.get("business_discovery", {}).get("media") or {}).get("data", [])
         out = []
         for m in media:
@@ -807,28 +961,37 @@ def section_instagram():
                 dt = datetime.fromisoformat(m.get("timestamp", "").replace("+0000", "+00:00"))
             except ValueError:
                 dt = None
-            if dt is None or dt < SINCE:
+            if dt is None or dt < depuis:
                 continue
             cap = re.sub(r"\s+", " ", m.get("caption") or "(sans légende)")[:200]
             if filtre and not gn_ok(cap, "strict"):
                 continue
-            # Légende pauvre ou annonce probable : on joint l'image pour que l'agent la lise (OCR)
+            # Légende pauvre ou annonce probable : on joint l'image pour que l'agent la lise
             mu, mt = m.get("media_url"), m.get("media_type")
             vis = ""
             if mu and mt in ("IMAGE", "CAROUSEL_ALBUM") and (len(cap) < 120 or VISUEL_RE.search(cap)):
                 vis = f" 🖼️ VISUEL À LIRE : {mu}"
             out.append((dt, f"@{user} : {cap}{vis}", m.get("permalink", "")))
-        record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", code, min(len(out), INSTAGRAM_PER_ACCOUNT))
+        record(f"Instagram @{user}", f"{INSTAGRAM_GRAPH}/…/business_discovery", code,
+               min(len(out), INSTAGRAM_PER_ACCOUNT), f"palier {data[user]['palier']}, indice {data[user]['score']}")
         return out[:INSTAGRAM_PER_ACCOUNT]
 
     from concurrent.futures import ThreadPoolExecutor
     res = []
     with ThreadPoolExecutor(6) as ex:
-        for items in ex.map(one, lines_):
+        for items in ex.map(one, choisis):
             res += items
+    for u in lus_ok:
+        data[u]["lu"] = NOW.isoformat(timespec="minutes")
+        data[u]["lectures"] = data[u].get("lectures", 0) + 1
     if nouveaux_invalides:
         invalides.update(nouveaux_invalides)
         save_json(INSTAGRAM_INVALIDES, invalides)
+    save_json(INSTAGRAM_SCORES, {u: data[u] for u in comptes})
+    try:
+        ig_rapport(data, comptes, len(lus_ok), min(len(dus), len(choisis)))
+    except Exception as e:  # le rapport ne doit jamais faire échouer la collecte
+        record("Instagram (rapport d'indice)", INSTAGRAM_SCORES_MD, f"Erreur ({type(e).__name__})", 0, str(e)[:120])
     res.sort(key=lambda x: x[0] or NOW, reverse=True)
     return res[:150]
 
