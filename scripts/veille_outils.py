@@ -196,7 +196,7 @@ print("veille_outils chargé : lire_flux, section, lire_traites, ajouter_traites
 
 
 # ---------------------------------------------------------------- visuels Instagram (ajouté le 07/11/2026)
-def pousser_visuels(urls, edition, max_px=700):
+def pousser_visuels(urls, edition, max_px=640):
     """Télécharge les visuels Instagram (URL « VISUEL À LIRE »), les réduit et les dépose dans visuels/ du dépôt.
     Renvoie [(url_cdn, url_raw ou None, erreur)] ; l'agent lit ensuite chaque url_raw en local (curl + Read)."""
     import io, base64, requests
@@ -208,7 +208,7 @@ def pousser_visuels(urls, edition, max_px=700):
             r.raise_for_status()
             im = Image.open(io.BytesIO(r.content)).convert("RGB")
             im.thumbnail((max_px, max_px))
-            b = io.BytesIO(); im.save(b, "JPEG", quality=70)
+            b = io.BytesIO(); im.save(b, "JPEG", quality=65)
             chemin = f"visuels/{edition}_{i}.jpg"
             res, err = proxy_execute("PUT", f"/repos/michael-dv/veille-directvelo/contents/{chemin}", "github",
                                      body={"message": f"visuel {edition} {i}", "branch": "main",
@@ -228,7 +228,7 @@ def nettoyer_visuels():
         return 0
     n = 0
     for f in res:
-        _, e = proxy_execute("DELETE", f"/repos/michael-dv/veille-directvelo/contents/{f['path']}", "github",
-                             body={"message": "nettoyage visuels", "sha": f["sha"], "branch": "main"})
+        _, e = run_composio_tool("GITHUB_DELETE_A_FILE", {"owner": "michael-dv", "repo": "veille-directvelo",
+                                 "path": f["path"], "message": "nettoyage visuels", "sha": f["sha"], "branch": "main"})
         n += 0 if e else 1
     return n
