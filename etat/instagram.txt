@@ -4,7 +4,7 @@
 # Fréquence de lecture : chaque compte reçoit un indice de qualité sur 100 (publications retenues par la veille,
 # annonces, régularité, sur 30 jours) qui fixe son palier : A toutes les heures, B toutes les 3 h, C toutes les 6 h,
 # D une fois par jour. Classement mis à jour à chaque génération dans etat/instagram_scores.md.
-# Les comptes placés AVANT la ligne « # --- ROTATION » sont épinglés : jamais lus moins souvent que toutes les 3 h.
+# Les comptes placés avant la ligne de rotation (plus bas) sont épinglés : jamais lus moins souvent que toutes les 3 h.
 # Un compte ajouté n'importe où est lu au moins toutes les 3 h pendant 7 jours, le temps d'être évalué.
 # Meta limite l'application à environ 200 appels par heure : la collecte en fait 150 au plus par génération.
 # Les comptes introuvables ou non professionnels sont écartés d'eux-mêmes (etat/instagram_invalides.json, retestés après 30 jours).
