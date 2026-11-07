@@ -24,18 +24,48 @@ vendee_u_primeo_energie
 burgosburpelletbh
 vcrouen76
 
+# --- Clubs DN, Continentales françaises et réseau amateur (lus à chaque génération depuis le 07/11)
+equipebmcbeziers
+cchartrescyclisme
+uvca_troyes
+routeschwenheim
+cycloclubperigueuxdordogne
+vcploudeac
+uc_briochine
+teamsportbreizhaxelarmorlux
+teamcotedegranitrose
+team_correze_suchet_na
+team_74_hautesavoie
+bourgaincyclisme
+creuseoxygene
+scodijon
+gscblagnacvs31
+cr4croanne
+pariscyclisteolympique
+vca.saintquentin
+dinansportcycling
+teamsolutiontechnipporali
+occitane_cyclisme_formation
+dunkerquegrandlittoral
+team.lmp
+tropheemadiot
+
+# --- Équipes féminines et DN dames (lus à chaque génération depuis le 07/11)
+ecthaon.team
+teamu_lh
+lanesterwomenmorbihan
+teamelles
+teamfeminincvl
+vendeefeminine.rvc
+dn_feminin_hdf
+sprinteur_club_feminin
+lesfillesdelabreizhladies
+
 # --- Instances et courses
 ffcyclisme
 lnc_cyclisme
 uci_cycling
 letourdefrance
-letourfemmes
-tourdelavenir
-paristourscourse
-parisnicecourse
-cictourdelaprovence
-letourdesalpesmaritimes
-etoile_de_besseges
 
 # --- Coureurs et coureuses français
 paul.sxs
@@ -46,7 +76,6 @@ alafpolak
 david_gaudu
 valentinmadouas
 benoit.cosnefroy
-clement.champoussin
 aubin_sparfel
 paulineferrandprevot
 evita_mzc
@@ -58,12 +87,22 @@ juliettelabous
 # --- Médias et suiveurs cyclisme
 legruppetto
 cyclismactu1
-france_peloton
-lefrenchcyclard
-pierre_carrey
-danslamusette
 
-# --- ROTATION : lus à tour de rôle (environ toutes les 3 à 5 heures)
+# --- ROTATION
+# Comptes lus à tour de rôle, par groupes (environ toutes les 6 heures).
+# Comptes retirés de la liste prioritaire le 07/11 (courses hors saison, médias peu productifs)
+letourfemmes
+tourdelavenir
+paristourscourse
+parisnicecourse
+cictourdelaprovence
+letourdesalpesmaritimes
+etoile_de_besseges
+lefrenchcyclard
+danslamusette
+pierre_carrey
+clement.champoussin
+france_peloton
 # Instances, courses et équipes étrangères
 giroditalia
 lavuelta
@@ -129,7 +168,6 @@ legend_wheels
 teampoltivisitmalta
 chris_lap
 labrossejordan
-tropheemadiot
 vloulergue
 le_ratagaz
 volkerwesselscyclingteam_men
@@ -140,22 +178,13 @@ gpbousquet_essorbreton
 e.houcou
 simon_visual_
 tourdugevaudanoccitanie
-dinansportcycling
 agencepancarte
-teamsolutiontechnipporali
-ecthaon.team
-lanesterwomenmorbihan
 hexagone.cc
 velo_club_luceen
 velo_club_avranchinais
-vca.saintquentin
 us_saint_herblain
 u1923.cycling.project
-teamsportbreizhaxelarmorlux
 sportbreizh_axel_armorlux
-teamcotedegranitrose
-team_correze_suchet_na
-team_74_hautesavoie
 ssc.cyclisme
 orbea
 occ_antibes
@@ -166,18 +195,14 @@ istres_sport_cyclisme
 issoirecyclisme_n3
 gmc38ef
 asptt_nancy_cyclisme
-cycloclubperigueuxdordogne
 unioncyclistepelussin
 vcdolois
-teamu_lh
 teamvittelnside
-team.lmp
 top16cyclisme
 moyon_percy_vc
 esegdouai
 es_torigni
 teamlacrepedebroceliande
-cchartrescyclisme
 montluconcyclisme
 guidon_chalettois
 mnstry.nutrition
@@ -189,27 +214,19 @@ vdm_trawobo_cyclingteam
 quentinphotographiebecycling
 belgian_cycling
 baloise.poetsbureaulions
-uc_briochine
-equipebmcbeziers
 apoge.cycliste
 teambricquebeccotentin
 desrouesenelles
 donnonsdesellesauvelo
 vcesqy.team.voussert
 teamstamina.cycling
-dn_feminin_hdf
-sprinteur_club_feminin
 lyonsprintevolution_
 chamberycyclismecompetition
 vc_morteau_montbenoit
-uvca_troyes
 myvelo.de
 act_cycling_ape
 circuit_des_plages_vendeennes
 teamdeuxsevrescyclisme
-teamelles
-teamfeminincvl
-vendeefeminine.rvc
 arques_cx_team
 cicmondedusport
 mayenne_monbana_rapido
@@ -217,7 +234,6 @@ u.v.aube
 clementizquierdo
 henri_haquin
 tour79_
-pariscyclisteolympique
 alex__vinokurov
 nico.vino
 daphnemyn_photographies
@@ -225,7 +241,6 @@ louischaleil
 rouinsardfelix
 billy_lebelge
 laclassicvar
-routeschwenheim
 lucas_bnto
 mathys_rdl
 williamjunior.lecerf
@@ -355,8 +370,6 @@ henry.lawton
 maximilienjuillard
 joeypidcock
 theo_menant
-occitane_cyclisme_formation
-dunkerquegrandlittoral
 creactuelmariemorinu22
 ccic_38
 xspeedunited
@@ -407,7 +420,6 @@ aurelien_philibert
 lpeters1904
 ozarm_custom
 jeremycabot
-bourgaincyclisme
 finishlineusa
 alexisrenard_
 cyclomaurienne
@@ -555,7 +567,6 @@ florentinlecamus
 s1neo.cycles
 fouache.kevin
 clementventurini
-lesfillesdelabreizhladies
 juubernard
 jason_yon_snoeck
 juliensimon85
@@ -581,11 +592,6 @@ gussevphoto
 tourdelain_cycliste
 liliancalmejane
 eliegesbert
-vcploudeac
-scodijon
-creuseoxygene
-gscblagnacvs31
-cr4croanne
 team_lockimmo_ccnogentsuroise
 avcaix_dole
 francisspruyt
