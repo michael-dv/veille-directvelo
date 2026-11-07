@@ -1,8 +1,12 @@
 # Comptes Instagram lus par la veille (API Graph de Meta, comptes professionnels uniquement).
 # Une ligne par compte : « identifiant » ou « identifiant | velo » (compte généraliste : on ne garde que ses publications
 # qui parlent de cyclisme). 4 publications au plus par compte et par génération.
-# Meta limite l'application à environ 200 appels par heure : les comptes placés avant la ligne de rotation (plus bas) sont lus à
-# chaque génération (en garder une cinquantaine au plus) ; ceux d'après sont lus à tour de rôle, par groupes.
+# Fréquence de lecture : chaque compte reçoit un indice de qualité sur 100 (publications retenues par la veille,
+# annonces, régularité, sur 30 jours) qui fixe son palier : A toutes les heures, B toutes les 3 h, C toutes les 6 h,
+# D une fois par jour. Classement mis à jour à chaque génération dans etat/instagram_scores.md.
+# Les comptes placés AVANT la ligne « # --- ROTATION » sont épinglés : jamais lus moins souvent que toutes les 3 h.
+# Un compte ajouté n'importe où est lu au moins toutes les 3 h pendant 7 jours, le temps d'être évalué.
+# Meta limite l'application à environ 200 appels par heure : la collecte en fait 150 au plus par génération.
 # Les comptes introuvables ou non professionnels sont écartés d'eux-mêmes (etat/instagram_invalides.json, retestés après 30 jours).
 
 # --- Équipes et structures françaises
@@ -89,7 +93,7 @@ legruppetto
 cyclismactu1
 
 # --- ROTATION
-# Comptes lus à tour de rôle, par groupes (environ toutes les 6 heures).
+# Comptes non épinglés : fréquence de lecture fixée par leur indice de qualité.
 # Comptes retirés de la liste prioritaire le 07/11 (courses hors saison, médias peu productifs)
 letourfemmes
 tourdelavenir
