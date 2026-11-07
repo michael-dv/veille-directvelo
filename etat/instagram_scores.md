@@ -1,6 +1,6 @@
 # Indice de qualité des comptes Instagram
 
-Mis à jour le 07/11/2026 à 13h41 (heure de Paris).
+Mis à jour le 07/11/2026 à 14h40 (heure de Paris).
 
 Indice sur 100 : pertinence (publications retenues par la veille sur 30 jours, 50 points), annonces (recrues, prolongations, effectifs… sur 30 jours, 30 points) et régularité (publications sur 30 jours, 20 points).
 
@@ -11,7 +11,7 @@ Indice sur 100 : pertinence (publications retenues par la veille sur 30 jours, 5
 | C | toutes les 6 h | 24 |
 | D | une fois par jour | 366 |
 
-Charge théorique : 48 lectures par heure (budget 150). Ce run : 62 comptes lus, dont 150 arrivés à échéance.
+Charge théorique : 48 lectures par heure (budget 150). Ce run : 150 comptes lus, dont 150 arrivés à échéance.
 
 ## Les 40 comptes les mieux notés
 
@@ -35,12 +35,12 @@ Charge théorique : 48 lectures par heure (budget 150). Ce run : 62 comptes lus,
 | @vcploudeac (épinglé) | 18 | B | 0 | 2 | 5 |
 | @efprocycling | 17 | C | 0 | 2 | 4 |
 | @team.lmp (épinglé) | 15 | B | 0 | 2 | 3 |
+| @letourdefrance (épinglé) | 15 | B | 0 | 1 | 6 |
 | @bourgaincyclisme (épinglé) | 13 | B | 0 | 2 | 2 |
 | @jotdownmagazine | 13 | C | 0 | 1 | 5 |
 | @teampoltivisitmalta | 13 | C | 0 | 2 | 2 |
 | @uccholet49 | 13 | C | 0 | 2 | 2 |
 | @uci_cycling (épinglé) | 12 | B | 0 | 0 | 7 |
-| @letourdefrance (épinglé) | 12 | B | 0 | 1 | 4 |
 | @teamcofidis (épinglé) | 10 | B | 0 | 1 | 3 |
 | @vanryselroubaix (épinglé) | 10 | B | 0 | 1 | 3 |
 | @lefrenchcyclard | 10 | C | 0 | 1 | 3 |
