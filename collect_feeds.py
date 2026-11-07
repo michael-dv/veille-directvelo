@@ -885,7 +885,8 @@ def section_instagram():
             raw = f.read()
     except OSError:
         return []
-    head, _, tail = raw.partition("# --- ROTATION")
+    morceaux = re.split(r"^# --- ROTATION.*$", raw, maxsplit=1, flags=re.M)  # ligne de rotation en début de ligne seulement
+    head, tail = morceaux[0], (morceaux[1] if len(morceaux) > 1 else "")
     clean = lambda txt: [l.split("#", 1)[0].strip() for l in txt.splitlines() if l.split("#", 1)[0].strip()]
     invalides = load_json(INSTAGRAM_INVALIDES, {})
     limite = (NOW - timedelta(days=30)).isoformat(timespec="minutes")
